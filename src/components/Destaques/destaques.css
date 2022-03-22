@@ -33,6 +33,7 @@
 }
 
 .card-destaque {
+  cursor: pointer;
   width: 243px;
   height: 300px;
   border-radius: 10px;
@@ -53,6 +54,12 @@
   line-height: 20px;
   color: #000;
   text-transform: uppercase;
+  transition: 400ms;
+}
+
+.title-card:hover {
+  color: #00607d;
+  transition: 400ms;
 }
 
 .description-card {

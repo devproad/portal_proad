@@ -5,7 +5,7 @@ export default function Destaques(){
   return(
     <div className="container-destaques">
       <div className="header-destaques">
-        <a href="">Destaques</a>
+        <a href="">Notícias</a>
         <a href="">Editais & Licitações</a>
         <a href="">Editais Homologados</a>
       </div>
