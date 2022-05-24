@@ -9,6 +9,7 @@ import NoticiaDetalhada from '../NoticiaDetalhada/NoticiaDetalhada';
 import SitesUteis from '../SitesUteis/sitesuteis';
 import Destaques from '../Destaques/destaques';
 import NoticiasRecentesItem from '../NoticiasRecentesItem/NoticiasRecentesItem';
+import DestaquesItem from '../DestaquesItem/DestaquesItem';
 
 
 
@@ -18,9 +19,9 @@ export default class Principal extends React.Component {
     }
   
     componentDidMount() {
-      axios.get(`http://127.0.0.1:1337/api/noticias`)
+      axios.get(`http://localhost:1337/api/noticias?populate=*`)
         .then(res => {
-          console.log(res.data.data);
+            console.log(res.data.data)
           const data = res.data.data;
           this.setState({ data });
         })
@@ -29,7 +30,11 @@ render() {
     return (
         <div className='Principal'>
             <div className='esquerdo'>
-                <Destaques></Destaques>
+                <Destaques>
+                        {this.state.data.map(data =>
+                            <DestaquesItem key={data.id}  imagem={"http://localhost:1337"+data.attributes.Image.data[0].attributes.formats.thumbnail.url} titulo={data.attributes.Title} descricaoDestaques={data.attributes.descricaoDestaques} data={data.attributes.Date}/>
+                        )}
+                </Destaques>
                 <NoticiasRecentes>
 
                         {this.state.data.map(data =>

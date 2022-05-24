@@ -9,7 +9,7 @@ const NoticiasRecentes = (props) => {
             <div className='gridNoticiasRecentes'>
                 {props.children}
             </div>
-            <a className='visualizarNoticias' href='#'>Vizualizar todas as noticias</a>
+            <a className='visualizarNoticias' href='#'>Visualizar todas as noticias</a>
         </div>
     );
 }
