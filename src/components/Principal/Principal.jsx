@@ -5,6 +5,7 @@ import MenuLateral from '../MenuLateral/MenuLateral';
 import NoticiasRecentes from '../NoticiasRecentes/NoticiasRecentes';
 import LinksImportantes from '../LinksImportantes/LinksImportantes'
 import UltimosDocumentos from '../UltimosDocumentos/UltimosDocumentos';
+import UltimosDocumentosItem from '../UltimosDocumentosItem/UltimosDocumentosItem'
 import NoticiaDetalhada from '../NoticiaDetalhada/NoticiaDetalhada';
 import SitesUteis from '../SitesUteis/sitesuteis';
 import Destaques from '../Destaques/destaques';
@@ -46,7 +47,11 @@ render() {
             </div>
             <div className='direito'>
                 <MenuLateral>
-                    <UltimosDocumentos></UltimosDocumentos>
+                    <UltimosDocumentos>
+                        {this.state.data.map(data =>
+                            <UltimosDocumentosItem key={data.id} titulo={data.attributes.Title} linkDocumento = {"http://localhost:1337"+data.attributes.Arquivo.url}/>
+                        )}
+                    </UltimosDocumentos>
                     <LinksImportantes></LinksImportantes>
                     <SitesUteis></SitesUteis>
                 </MenuLateral>
