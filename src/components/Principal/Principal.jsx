@@ -13,6 +13,7 @@ import DestaquesItem from '../DestaquesItem/DestaquesItem';
 
 
 
+
 export default class Principal extends React.Component {
     state = {
       data: []
@@ -21,7 +22,6 @@ export default class Principal extends React.Component {
     componentDidMount() {
       axios.get(`http://localhost:1337/api/noticias?populate=*`)
         .then(res => {
-            console.log(res.data.data)
           const data = res.data.data;
           this.setState({ data });
         })
@@ -31,7 +31,7 @@ render() {
         <div className='Principal'>
             <div className='esquerdo'>
                 <Destaques>
-                        {this.state.data.map(data =>
+                        {this.state.data.slice(0, 3).map(data =>
                             <DestaquesItem key={data.id}  imagem={"http://localhost:1337"+data.attributes.Image.data[0].attributes.formats.thumbnail.url} titulo={data.attributes.Title} descricaoDestaques={data.attributes.descricaoDestaques} data={data.attributes.Date}/>
                         )}
                 </Destaques>
@@ -43,6 +43,7 @@ render() {
 
                 </NoticiasRecentes>
                 <NoticiaDetalhada></NoticiaDetalhada>
+
             </div>
             <div className='direito'>
                 <MenuLateral>

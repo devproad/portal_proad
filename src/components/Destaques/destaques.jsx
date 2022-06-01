@@ -1,4 +1,5 @@
-import './destaques.css'
+import './destaques.css';
+import { Link} from 'react-router-dom';
 
 export default function Destaques(props){
   return(
@@ -19,7 +20,7 @@ export default function Destaques(props){
           <div className="circle"></div>
           <div className="circle"></div>
         </div>
-        <a href="#">Vizualizar todos</a>
+        <Link to="/destaques">Vizualizar todos</Link>
       </div>
     </div>
   )

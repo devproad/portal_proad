@@ -1,12 +1,12 @@
 import './Menu.css'
 import logoProad from '../../assets/Menu/LogoPROAD.svg'
 import arrow from '../../assets/Menu/ArrowMenu.svg'
-
+import { Link} from 'react-router-dom';
 const Menu = () => {
     return (
         <div className="menu">
             <ul className='menuLinks'>
-                <li><a href='#'>INÍCIO</a></li>
+                <li><Link to='/'>INÍCIO</Link></li>
                     <li id='dropdown'><a href='#'>INSTITUICIONAL <img id="dropdownArrow" src={arrow}></img></a></li>
                         <ul className='dropdownMenu'>
                             <li><a href='#'>EXEMPLO 1</a></li>
