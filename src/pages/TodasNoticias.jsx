@@ -6,6 +6,7 @@ import Menu from '../components/Menu/Menu';
 import MenuLateral from '../components/MenuLateral/MenuLateral';
 import SitesUteis from '../components/SitesUteis/sitesuteis';
 import TodosDestaques from '../components/TodosDestaques/TodosDestaques'
+import TodasNoticias from '../components/TodasNoticias/todasNoticias'
 import UltimosDocumentos from '../components/UltimosDocumentos/UltimosDocumentos';
 
 
@@ -17,7 +18,7 @@ const Home = () => {
             <Menu></Menu>
             <div className='Principal'>
                 <div className='esquerdo'>
-                    <TodosDestaques></TodosDestaques>
+                    <TodasNoticias></TodasNoticias>
                 </div>
                 <div className='direito'>
                     <MenuLateral>

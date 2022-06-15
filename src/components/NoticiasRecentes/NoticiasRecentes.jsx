@@ -1,5 +1,6 @@
 import React from 'react'
 import './NoticiasRecentes.css'
+import { Link} from 'react-router-dom';
 
 const NoticiasRecentes = (props) => {
     return (
@@ -9,7 +10,8 @@ const NoticiasRecentes = (props) => {
             <div className='gridNoticiasRecentes'>
                 {props.children}
             </div>
-            <a className='visualizarNoticias' href='#'>Visualizar todas as noticias</a>
+            <Link className='visualizarNoticias' to="/noticias">Visualizar todas as noticias</Link>
+            {/* <a className='visualizarNoticias' href='#'>Visualizar todas as noticias</a> */}
         </div>
     );
 }
