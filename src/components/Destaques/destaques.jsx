@@ -15,11 +15,6 @@ export default function Destaques(props){
         
       </div>
       <div className="footer-destaques">
-        <div className="circle-destaques">
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-        </div>
         <Link to="/destaques">Vizualizar todos</Link>
       </div>
     </div>

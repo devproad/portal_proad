@@ -11,7 +11,7 @@ import SitesUteis from '../SitesUteis/sitesuteis';
 import Destaques from '../Destaques/destaques';
 import NoticiasRecentesItem from '../NoticiasRecentesItem/NoticiasRecentesItem';
 import DestaquesItem from '../DestaquesItem/DestaquesItem';
-
+import Carousel from '../Carousel/Carousel'
 
 
 
@@ -32,10 +32,13 @@ render() {
         <div className='Principal'>
             <div className='esquerdo'>
                 <Destaques>
-                        {this.state.data.slice(0, 3).map(data =>
+                    <Carousel>
+                        {this.state.data.map(data =>
                             <DestaquesItem key={data.id}  imagem={"http://localhost:1337"+data.attributes.Image.data[0].attributes.formats.thumbnail.url} titulo={data.attributes.Title} descricaoDestaques={data.attributes.descricaoDestaques} data={data.attributes.Date}/>
                         )}
+                    </Carousel>
                 </Destaques>
+                
                 <NoticiasRecentes>
 
                         {this.state.data.map(data =>

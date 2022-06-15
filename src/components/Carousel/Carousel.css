@@ -1,0 +1,28 @@
+.carousel{
+width: 100%;
+}
+
+.dots{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    transition: 400ms;
+}
+
+.slick-dots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+}
+
+.slick-dots li{
+margin: 0 0;
+}
+
+.dots:hover{
+    background-color: #00607d;
+    transition: 400ms;
+}
