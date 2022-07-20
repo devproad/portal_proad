@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(../../../assets/Banner/Poppins.ttf) format('woff');
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient(103.7deg, #00607D 51.45%, #0387AE 51.46%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.4fr 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 80px;
+}
+
+
+.bannerTopo {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.bannerLadoEsquerdo {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.bannerLadoDireito {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.bannerBase {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.bannerMenu {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bannerMenuRedes img {
+    margin: 5px;
+}
+
+.bannerLadoEsquerdo {
+    margin-left: 10%;
+}
+
+.bannerLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerLadoEsquerdo h1 {
+    width: 600px;
+    height: 134.19px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.bannerLadoEsquerdo p {
+    width: 550px;
+    height: 134.19px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+#btnContato {
+    transform: skew(-20deg);
+    width: 170px;
+    height: 50.32px;
+    background: transparent;
+    border: 2px solid #5FC2E0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+#btnQuemSomos {
+    transform: skew(-20deg);
+    width: 170px;
+    height: 50.32px;
+    background: #5FC2E0;
+    border: 2px solid #5FC2E0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+
+#btnContato:hover {
+    background: #5fc2e025;
+    border: 2px solid #6fdeff;
+
+}
+
+#btnQuemSomos:hover {
+    background: #2198bd;
+    border: 2px solid #5fc2e025;
+
+}
+
+#btnContato:active {
+    background: transparent;
+    border: 2px solid #5FC2E0;
+
+}
+
+#btnQuemSomos:active {
+    background: #5FC2E0;
+    border: 2px solid #5FC2E0;
+
+}
+
+#btnContato a {
+    transform: skew(20deg);
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#btnQuemSomos a {
+    transform: skew(20deg);
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.botoes {
+    display: flex;
+    grid-gap: 30px;
+    margin-left: 10px;
+}
+
+.bannerBase {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+}
+
+.bannerBase a {
+    margin-bottom: 2%;
+}

@@ -4,6 +4,7 @@ import Logistic from '../../assets/DiretoriasCoordenadorias/Logistic.svg'
 import SecurityLogo from '../../assets/DiretoriasCoordenadorias/SecurityLogo.svg'
 import ShopeLogo from '../../assets/DiretoriasCoordenadorias/ShopLogo.svg'
 import ContractLogo from '../../assets/DiretoriasCoordenadorias/ContractLogo.svg'
+import{Link} from "react-router-dom"
 
 export default function DiretoriasCoord(){
   return(
@@ -28,6 +29,7 @@ export default function DiretoriasCoord(){
               <p className="item-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet in eos laudantium architecto quaerat, nesciunt, placeat optio labore distinctio maiores odit vitae ratione. Quam veritatis sit assumenda. Quaerat, quia suscipit.</p>
             </div>
           </div>
+          <Link to="/dcom" className='link-DiretCoord'>
           <div className="item-DiretCoord">
             <img src={ShopeLogo} alt="logo" />
             <div className="item-content">
@@ -35,6 +37,7 @@ export default function DiretoriasCoord(){
               <p className="item-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet in eos laudantium architecto quaerat, nesciunt, placeat optio labore distinctio maiores odit vitae ratione. Quam veritatis sit assumenda. Quaerat, quia suscipit.</p>
             </div>
           </div>
+          </Link>
           <div className="item-DiretCoord">
             <img src={ContractLogo} alt="logo" />
             <div className="item-content">
