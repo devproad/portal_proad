@@ -32,7 +32,7 @@ const Banner = () => {
 
             <div className='bannerLadoEsquerdo'>
                 <h1>Pró-Reitoria de Administração da UFRN</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis fringilla habitant non tellus est eleifend odio. Nunc quam enim adipiscing netus nunc, phasellus. Varius accumsan ac, enim sed duis id odio semper. Vestibulum a urna aliquet praesent turpis nulla convallis.</p>
+                <p>Sendo diretamente subordinada à Reitoria, a PROAD é um órgão responsável pela supervisão e coordenação das áreas de contabilidade, finanças, material, patrimônio, segurança, transportes, gestão da informação e contratos administrativos da UFRN. Emite pareceres sobre assuntos de sua competência, delega as atribuições aos servidores envolvidos nas ações da Pró-Reitoria. É subdividida por diretorias e coordenadorias que cada uma com sua função específica consegue administrar a universidade buscando sempre o êxito. </p>
                
                 <div className='botoes'>
                     <button id='btnQuemSomos'>     
