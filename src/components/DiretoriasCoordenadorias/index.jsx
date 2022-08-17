@@ -7,12 +7,17 @@ import ContractLogo from '../../assets/DiretoriasCoordenadorias/ContractLogo.svg
 import{Link} from "react-router-dom"
 
 export default function DiretoriasCoord(){
+
   return(
     <section className="DiretCoord">
       <div className="container-DiretCoord">
         <div className="header-DiretCoord">
-          <a href="">Diretorias</a>
-          <a href="">Coordenadorias</a>
+        <Link to="/" className='link-DiretCoord'>
+          <p>Diretorias</p>
+          </Link>
+          <Link to="/Coord" className='link-DiretCoord'>
+          <p className=''>Coordenadorias</p>
+          </Link>
         </div>  
         <div className="itens-DiretCoord">
           <div className="item-DiretCoord">
