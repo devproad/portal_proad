@@ -7,7 +7,20 @@ import facebook from '../../assets/Banner/facebook.svg'
 import instagram from '../../assets/Banner/instagram.svg'
 import linkedin from '../../assets/Banner/linkedin.svg'
 
-const Banner = () => {
+const Banner = (props) => {
+
+    const banner = Array.from(document.getElementsByClassName('banner'));
+    
+    if(props.isDark === true){
+        banner.forEach((item) => {
+            item.style = 'background:  linear-gradient(103.7deg, #00151b 51.45%, #004053 51.46%);'
+        })
+    }else{
+        banner.forEach((item) => {
+            item.style = 'background:  linear-gradient(103.7deg, #00607D 51.45%, #0387AE 51.46%)'
+        })
+    }
+
     return (
         <div className='banner'>
             <div className='bannerTopo'>

@@ -10,7 +10,7 @@ import Banner from '../components/Banner/Banner';
 import Principal from '../components/Principal/Principal';
 
 
-const Home = () => {
+const Coordenadorias = () => {
     return (
         <Fragment>
             <Banner></Banner>
@@ -26,4 +26,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Coordenadorias;

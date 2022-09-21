@@ -7,7 +7,7 @@ import TodasNoticias from './pages/TodasNoticias';
 import Dcom from './pages/Dcom';
 import Coord from './pages/Coord';
 
-export default (props) => (
+ const App = (props) => (
   <div className='App'>
      <BrowserRouter>
       <Routes>
@@ -19,6 +19,8 @@ export default (props) => (
       </Routes>
     </BrowserRouter>
   
-   
+
   </div>
 )
+
+export default App;

@@ -27,7 +27,57 @@ export default class Principal extends React.Component {
           this.setState({ data });
         })
     }
+
+
+    
 render() {
+       
+    const textoPrincipal = Array.from(document.querySelectorAll('.Principal p, .Principal h1, .headerSitesUteis, .esquerdo a, .direito a'));
+    const classesAzul = Array.from(document.querySelectorAll('.TituloNoticiaDetalhada, .NoticiaDetalhadaPaginacao, .btnDownloadNoticiaDetalhada'));
+    const classesDestacadas = Array.from(document.querySelectorAll('.UltimosDocumentosTitulo, .noticiasRecentesTitulo, .LinksImportantesTitulo'));
+    const fundoServicos = Array.from(document.querySelectorAll('.container-services'));
+    const formularioContato = Array.from(document.querySelectorAll('form input, form textarea'));
+    const blocoContatoLetras = Array.from(document.querySelectorAll('.contato h1, .contato span, .contato a, .contato form label, .localizacao'));
+    if(this.props.isDark === true){
+        textoPrincipal.forEach((item) => {  
+            item.style = 'color: #FFFFFF;'
+      })
+        classesAzul.forEach((item) => {
+            item.style = 'color: #FFFFFF;'
+        })
+        classesDestacadas.forEach((item) => {
+            item.style = 'color: #FFFFFF;'
+        })
+        fundoServicos.forEach((item) => {
+            item.style = 'background: linear-gradient(93.93deg, rgb(0, 64, 83) 45.4%, rgb(2, 123, 161) 99.79%);'
+        })
+        formularioContato.forEach((item) => {
+            item.style = 'background: #FFFF;'
+        })
+        blocoContatoLetras.forEach((item) => {
+            item.style = 'color: #FFFFFF;'
+        })
+    }else{
+        textoPrincipal.forEach((item) => {
+            item.style = 'color: #4E4E4E;'
+        }) 
+        classesAzul.forEach((item) => {
+            item.style = 'color: #003C4F;'
+        })
+        classesDestacadas.forEach((item) => {
+            item.style = 'color: #282828;'
+        })
+        fundoServicos.forEach((item) => {
+            item.style = 'background: linear-gradient(95.93deg, #0089b2 45.4%, #00607d 99.79%);'
+        })
+        formularioContato.forEach((item) => {
+            item.style = 'background: rgba(229, 229, 229, 0.4);'
+        })
+        blocoContatoLetras.forEach((item) => {
+            item.style = 'color: #004d64;'
+        })
+    }
+      
     return (
         <div className='Principal'>
             <div className='esquerdo'>

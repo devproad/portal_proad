@@ -9,7 +9,7 @@ import Banner from '../components/Dcom/Banner/Banner';
 import Principal from '../components/Principal/Principal';
 
 
-const Home = () => {
+const Dcom = () => {
     return (
         <Fragment>
             <Banner></Banner>
@@ -24,4 +24,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Dcom;

@@ -6,7 +6,19 @@ import ShopeLogo from '../../assets/DiretoriasCoordenadorias/ShopLogo.svg'
 import ContractLogo from '../../assets/DiretoriasCoordenadorias/ContractLogo.svg'
 import{Link} from "react-router-dom"
 
-export default function DiretoriasCoord(){
+const DiretoriasCoord = (props) => {
+  const fundoDiretoria = Array.from(document.querySelectorAll('.DiretCoord'));
+
+  if(props.isDark === true){
+    fundoDiretoria.forEach((item) => {  
+       item.style = 'background: linear-gradient(93.93deg, #004053 45.4%, #027ba1 99.79%);'
+  })
+  }else{
+    fundoDiretoria.forEach((item) => {
+        item.style = 'background: linear-gradient(93.93deg, #00607d 45.4%, #0089b2 99.79%);'
+    })
+  }
+
 
   return(
     <section className="DiretCoord">
@@ -67,3 +79,5 @@ export default function DiretoriasCoord(){
     </section>
   )
 }
+
+export default DiretoriasCoord;

@@ -10,7 +10,7 @@ import UltimosDocumentos from '../components/UltimosDocumentos/UltimosDocumentos
 
 
 
-const Home = () => {
+const Noticias = () => {
     return (
         <Fragment>
             <BarraSuperior></BarraSuperior>
@@ -32,4 +32,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Noticias;
