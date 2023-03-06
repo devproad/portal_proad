@@ -11,7 +11,7 @@
   margin-bottom: 15px;
 }
 
-.header-destaques a {
+.header-destaques span {
   color: #6e6e6e;
   text-decoration: none;
   margin-right: 15px;
@@ -20,9 +20,10 @@
   transition: 400ms;
 }
 
-.header-destaques a:hover {
+.header-destaques span:hover {
   color: #00607d;
   transition: 400ms;
+  cursor: pointer;
 }
 
 /* CARDS */

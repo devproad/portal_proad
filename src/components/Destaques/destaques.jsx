@@ -1,13 +1,24 @@
 import './destaques.css';
 import { Link} from 'react-router-dom';
+import { useState } from 'react';
+
 
 export default function Destaques(props){
+
+  const [selectedLink, setSelectedLink] = useState(null);
+
+  const handleClick = (selected) => {
+    setSelectedLink(selected);
+    props.onLinkSelected(selected);
+  };
+
+
   return(
     <div className="container-destaques">
       <div className="header-destaques">
-        <a href="">Notícias</a>
-        <a href="">Editais & Licitações</a>
-        <a href="">Editais Homologados</a>
+        <span onClick={() => handleClick("noticias")}>Notícias</span>
+        <span onClick={() => handleClick("editais_licitacoes")}>Editais & Licitações</span>
+        <span onClick={() => handleClick("editais_homologados")}>Editais Homologados</span>
       </div>
       <div className="cards-destaques">
           
