@@ -31,7 +31,7 @@ const Banner = (props) => {
                             <img src={facebook} alt="Facebook"></img>
                         </a>
                     
-                        <a href='#'>
+                        <a href='https://www.instagram.com/proadufrn/'>
                             <img src={instagram} alt="Instagram"></img>
                         </a>
                     
