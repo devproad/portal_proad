@@ -7,7 +7,7 @@ import line from '../../assets/NossosServiços/line.svg'
 
 export default function NossosServicos(){
   return (
-    <div className="container-services">
+    <div className="container-services" id='nossos-servicos'>
       <div className="header-services">
         <h1>Nossos Serviços</h1>
         <p>A Pró-Reitoria de Administração, subordinada diretamente à Reitoria,  é o órgão responsável pela supervisão e coordenação das áreas de contabilidade, finanças, material, patrimônio, segurança, transportes e serviços gerais da UFRN, a qual compete:</p>

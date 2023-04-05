@@ -82,8 +82,12 @@
     margin-bottom: 80px;
 }
 
-#btnContato {
-    transform: skew(-20deg);
+.botoes {
+    display: flex;
+    align-items: center;
+}
+
+.botoes button {
     width: 170px;
     height: 50.32px;
     background: transparent;
@@ -95,29 +99,18 @@
     line-height: 31px;
     display: flex;
     align-items: center;
-    text-align: justify;
     justify-content: center;
     color: #FFFFFF;
-}
-
-#btnQuemSomos {
     transform: skew(-20deg);
-    width: 170px;
-    height: 50.32px;
-    background: #5FC2E0;
-    border: 2px solid #5FC2E0;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 31px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    justify-content: center;
-    color: #FFFFFF;
 }
 
+.botoes #btnQuemSomos {
+    background: #5FC2E0;
+}
+
+.botoes a button span {
+    transform: skew(20deg);
+}
 
 #btnContato:hover {
     background: #5fc2e025;
@@ -143,22 +136,17 @@
 
 }
 
-#btnContato a {
-    transform: skew(20deg);
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-#btnQuemSomos a {
-    transform: skew(20deg);
-    text-decoration: none;
-    color: #FFFFFF;
-}
 
 .botoes {
     display: flex;
     grid-gap: 30px;
     margin-left: 10px;
+}
+
+.botoes a, .botoes button {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
 }
 
 .bannerBase {

@@ -6,7 +6,7 @@ import tel from '../../assets/Contato/TelIcon.svg'
 
 const Contato = () => {
     return (
-        <div className='contato'>
+        <div className='contato' id='contato'>
             <h1 className='titulo'>CONTATO</h1>
             <div className='parent'>
                 <div className='div1'>                   
