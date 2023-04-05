@@ -23,7 +23,7 @@
 
 .card-noticia img {
   width: 250px;
-  height: 150px;
+  height: auto;
   border-radius: 10px 0px 0px 10px;
 }
 

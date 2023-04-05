@@ -1,5 +1,4 @@
-import React from 'react'
-import { Fragment } from 'react/cjs/react.production.min';
+import React, {Fragment} from 'react'
 import LinksImportantes from '../components/LinksImportantes/LinksImportantes';
 import BarraSuperior from '../components/BarraSuperior/BarraSuperior'
 import Menu from '../components/Menu/Menu';

@@ -19,22 +19,9 @@ export default class Principal extends React.Component {
     state = {
         data: [],
         data_noticias: [],
-        data_editais_licitacoes: [],
-        data_editais_homologados: [],
         selectedLink: 'noticias',
 
     }
-
-    componentDidMount() {
-      axios.get(`http://localhost:1337/api/noticias?populate=*`)
-        .then(res => {
-          const data = res.data.data;
-          this.setState({ data });
-        })
-    }
-
-
-    //armazenamento por json externo
     componentDidMount() {
         axios.get('https://raw.githubusercontent.com/RubenFilipe07/proad-json/main/noticias.json')
           .then(response => {
@@ -69,344 +56,6 @@ export default class Principal extends React.Component {
                 }
             );
       }
-
-    //Armazenamento por estado
-    // componentDidMount() {
-    //     const data_noticias = [
-    //         {
-    //             id: 1,
-    //             attributes: {
-    //                 Title: 'Título da notícia',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisls, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '01/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 2,
-    //             attributes: {
-    //                 Title: 'Título da notícia 2',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, t amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '02/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 3,
-    //             attributes: {
-    //                 Title: 'Título da notícia 3',
-    //                 Description: 'sl. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '03/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             },
-    //         },
-    //         {
-    //             id: 4,
-    //             attributes: {
-    //                 Title: 'Título da notícia 4',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '04/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-
-    //     ]
-    //     this.setState({ data_noticias });
-
-    //     const data_editais_licitacoes = [
-    //         {
-    //             id: 1,
-    //             attributes: {
-    //                 Title: 'Título do edital',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisls, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '01/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 2,
-    //             attributes: {
-    //                 Title: 'Título do edital 2',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, t amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '02/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 3,
-    //             attributes: {
-    //                 Title: 'Título do edital 3',
-    //                 Description: 'sl. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '03/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             },
-    //         },
-    //         {
-    //             id: 4,
-    //             attributes: {
-    //                 Title: 'Título do edital 4',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '04/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 5,
-    //             attributes: {
-    //                 Title: 'Título do edital 5',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '05/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 6,
-    //             attributes: {
-    //                 Title: 'Título do edital 6',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '06/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         }
-    //     ]
-    //     this.setState({ data_editais_licitacoes });
-
-    //     const data_editais_homologados = [
-    //         {
-    //             id: 1,
-    //             attributes: {
-    //                 Title: 'Título do edital homologado',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisls, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '01/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 2,
-    //             attributes: {
-    //                 Title: 'Título do edital homologado 2',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, t amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '02/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //     id: 3,
-    //             attributes: {
-    //                 Title: 'Título do edital homologado 3',
-    //                 Description: 'sl. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '03/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             },
-    //         },
-    //         {
-    //             id: 4,
-    //             attributes: {
-    //                 Title: 'Título do edital homologado 4',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '04/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         },
-    //         {
-    //             id: 5,
-    //             attributes: {
-    //                 Title: 'Título do edital homologado 5',
-    //                 Description: 'Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet aliquam luctus, nisi nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.',
-    //                 Date: '05/03/2023',
-    //                 Image: {
-    //                     data: [
-    //                         {
-    //                             attributes: {
-    //                                 formats: {
-    //                                     thumbnail: {
-    //                                         url: 'https://res.cloudinary.com/duvilxqtv/image/upload/v1677293623/VypFAIp_1_v8amji.webp'
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     ]
-    //                 }
-    //             }
-    //         }
-    //     ]
-    //     this.setState({ data_editais_homologados });
-
-
-    // }
-
-
-
-
-
 
     render() {
 
@@ -480,7 +129,7 @@ export default class Principal extends React.Component {
                     <Destaques onLinkSelected={handleLinkSelected}>
                         <Carousel>
                             {this.state.selectedLink === 'noticias' ? (
-                                this.state.data_noticias.map(data_noticias => (
+                            this.state.data_noticias.filter(item => item.attributes.Tag.includes("noticias".toLowerCase())).map(data_noticias => (
                                     <DestaquesItem
                                         key={data_noticias.id}
                                         imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
@@ -491,24 +140,24 @@ export default class Principal extends React.Component {
                                 ))
                             ) : null}
                             {this.state.selectedLink === 'editais_licitacoes' ? (
-                                this.state.data_editais_licitacoes.map(data_editais_licitacoes => (
+                                this.state.data_noticias.filter(item => item.attributes.Tag.includes("editais_licitacoes".toLowerCase())).map(data_noticias => (
                                     <DestaquesItem
-                                        key={data_editais_licitacoes.id}
-                                        imagem={data_editais_licitacoes.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                        titulo={data_editais_licitacoes.attributes.Title}
-                                        descricaoDestaques={data_editais_licitacoes.attributes.Description}
-                                        data_editais_licitacoes={data_editais_licitacoes.attributes.Date}
+                                        key={data_noticias.id}
+                                        imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
+                                        titulo={data_noticias.attributes.Title}
+                                        descricaoDestaques={data_noticias.attributes.Description}
+                                        data_noticias={data_noticias.attributes.Date}
                                     />
                                 ))
                             ) : null}
                             {this.state.selectedLink === 'editais_homologados' ? (
-                                this.state.data_editais_homologados.map(data_editais_homologados => (
+                                this.state.data_noticias.filter(item => item.attributes.Tag.includes("editais_homologados".toLowerCase())).map(data_noticias => (
                                     <DestaquesItem
-                                        key={data_editais_homologados.id}
-                                        imagem={data_editais_homologados.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                        titulo={data_editais_homologados.attributes.Title}
-                                        descricaoDestaques={data_editais_homologados.attributes.Description}
-                                        data_editais_homologados={data_editais_homologados.attributes.Date}
+                                        key={data_noticias.id}
+                                        imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
+                                        titulo={data_noticias.attributes.Title}
+                                        descricaoDestaques={data_noticias.attributes.Description}
+                                        data_noticias={data_noticias.attributes.Date}
                                     />
                                 ))
                             ) : null}
@@ -518,12 +167,11 @@ export default class Principal extends React.Component {
 
                     <NoticiasRecentes>
 
-                        {this.state.data_noticias.map(data_noticias =>
-                            <NoticiasRecentesItem key={data_noticias.id} titulo={data_noticias.attributes.Title} descricao={data_noticias.attributes.Description} data_noticias={data_noticias.attributes.Date} />
-                        )}
+                    {this.state.data_noticias.slice(0, 6).map(data_noticias =>
+    <NoticiasRecentesItem key={data_noticias.id} titulo={data_noticias.attributes.Title} descricao={data_noticias.attributes.Description} data_noticias={data_noticias.attributes.Date} />
+)}
 
                     </NoticiasRecentes>
-                    <NoticiaDetalhada></NoticiaDetalhada>
 
                 </div>
                 <div className='direito'>
