@@ -9,3 +9,31 @@
 .esquerdo {
   margin-left: 140px;
 }
+
+.slick-active .dots{
+  background-color: #00607d;
+}
+
+.dots:hover {
+  background-color: #c4c4c4 !important;
+}
+
+.dots:active {
+  background-color: #00607d !important;
+}
+
+
+@media (max-width: 1000px) {
+  .Principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .esquerdo {
+    margin-left: 0px;
+  }
+  
+}

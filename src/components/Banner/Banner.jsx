@@ -68,7 +68,7 @@ const Banner = (props) => {
             </div>
 
             <div className='bannerBase'>
-                <a href='#'>
+                <a href='#menu'>
                     <img className='arrowImage' src={arrow} alt="Seta" width={20}></img>
                 </a>
             </div>

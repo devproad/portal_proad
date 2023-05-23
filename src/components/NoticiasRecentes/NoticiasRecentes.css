@@ -1,7 +1,7 @@
 .noticiasRecentes {
   margin-left: 50px;
   margin-top: 35px;
-  width: 830px;
+  max-width: 830px;
 }
 
 .linhaNoticiasRecentes {
@@ -47,4 +47,30 @@
 
 a.visualizarNoticias:hover {
   color: #494949;
+}
+
+@media only screen and (max-width: 1024px) {
+  .noticiasRecentes {
+    margin-left: 0px auto;
+  }
+  .gridNoticiasRecentes {
+    grid-auto-columns: 270px;
+    grid-template-areas: "a"
+  }
+
+  .visualizarNoticias {
+    margin-left: 0px auto;
+    display: block;
+  }
+
+  .noticiasRecentesTitulo {
+   max-width: fit-content;
+  }
+  .linhaNoticiasRecentes {
+    width: 90%;
+  }
+
+  .itemNoticiasRecentes {
+    width: 100% !important;
+  }
 }

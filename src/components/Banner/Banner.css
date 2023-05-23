@@ -157,5 +157,72 @@
 }
 
 .bannerBase a {
-    margin-bottom: 2%;
+    margin-bottom: 6%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .banner {
+        background:  #0387AE;
+        display: block;
+        position: relative;
+        z-index: 0;
+        height: 100vh;
+    }
+
+    .botoes{
+        margin-left: 20px;
+        grid-gap: 30px;
+        position: relative;
+        top: 30px;
+    }
+
+    .botoes button {
+        width: 130px;
+    }
+
+
+    .bannerLadoEsquerdo h1 {
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: normal;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    
+    .bannerLadoEsquerdo p {
+        width: 94%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: justify;
+        justify-content: left;
+        margin-bottom: 100px;
+    }
+
+    .bannerLogo {
+        position: absolute;
+        z-index: -1;
+        top: 120px;
+        width: 100%;
+        opacity: 0.4;
+    }
+
+
+    .bannerBase{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        width: 100%;
+        opacity: 0.4;
+      
+    }
+    
+    
+ 
 }

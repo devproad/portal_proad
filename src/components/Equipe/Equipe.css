@@ -116,3 +116,17 @@ h1.tituloEquipe {
 .emailEquipe{
     margin: 15px 15px 5px 15px;
 }
+
+/* generate auto mobile css using media */
+@media (max-width: 768px) {
+    .gridEquipe {
+        grid-template-areas: "a";
+        grid-auto-columns: auto;
+        padding: 0px;
+    }
+
+    .itemEquipe {
+        align-items: center;
+        width: 200px;
+    }
+}

@@ -20,6 +20,7 @@ hr {
 }
 
 .item a {
+  color: white !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +34,6 @@ hr {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 300;
-  color: white;
   text-decoration: none;
   font-size: 18px;
   transition: 300ms;
@@ -42,4 +42,11 @@ hr {
 .item a:hover {
   background-color: #0387ae;
   transition: 300ms;
+}
+
+
+@media (max-width: 1000px) {
+  hr{
+    width: 100%;
+  }
 }

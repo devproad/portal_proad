@@ -120,3 +120,28 @@
   background-color: #00607d;
   transition: 400ms;
 }
+
+@media only screen and (max-width: 1200px) {
+  .container-destaques {
+    /* width: 311px !important; */
+    width: 70vw !important;
+    margin: 0px auto !important;
+    margin-left: 0px;
+  }
+
+  .footer-destaques a{
+   margin: 0px auto !important;
+  }
+
+  .header-destaques {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .header-destaques span {
+    margin: 5px;
+    
+  }
+}

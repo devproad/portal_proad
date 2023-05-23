@@ -26,7 +26,7 @@ const BarraSuperior = (props) => {
     }
 
     return (
-        <div className="barraSuperior">
+        <div className="barraSuperior" id='menu'>
                 <div className='centralizado'>
                     <a id='alto_constraste'  onClick={props.toggleTheme}>
                         <img src={constrastIcon} className="IconeContraste imgConstraste" alt="Alto Constraste"></img>

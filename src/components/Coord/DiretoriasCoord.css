@@ -9,12 +9,11 @@
 }
 
 .container-DiretCoord {
-  width: 1200px;
+  max-width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .header-DiretCoord {
   width: 100%;
   display: flex;
@@ -61,6 +60,7 @@
   margin: 7px;
   cursor: pointer;
   transition: 400ms;
+  flex-wrap: wrap;
 }
 
 

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Poppins';
     src: local('Poppins'), url(../../../assets/Banner/Poppins.ttf) format('woff');
 }
@@ -167,5 +167,5 @@
 }
 
 .bannerBase a {
-    margin-bottom: 2%;
-}
+    margin-bottom: 6%;
+} */

@@ -9,3 +9,25 @@ div .MenuLateral{
 .MenuLateral .LinksImportantes {
     margin-top: 35px;
 }
+
+
+@media (max-width: 1000px) {
+    .MenuLateral{
+        display: block;
+        margin: 0px auto;
+        width: 80%;
+    }
+
+    div .MenuLateral{
+        margin: 20px 0px 40px 50px;
+
+    }
+  }
+
+/* Create another @media for 1450px */
+@media (max-width: 1450px) {
+    div .MenuLateral{
+        margin-right: 0px;
+    }
+}
+

@@ -68,7 +68,7 @@ export default class Principal extends React.Component {
 
     render() {
 
-        const textoPrincipal = Array.from(document.querySelectorAll('.Principal p, .Principal h1, .headerSitesUteis, .esquerdo a, .direito a'));
+        const textoPrincipal = Array.from(document.querySelectorAll('.Principal p, .Principal h1, .esquerdo a, .direito a'));
         const classesAzul = Array.from(document.querySelectorAll('.TituloNoticiaDetalhada, .NoticiaDetalhadaPaginacao, .btnDownloadNoticiaDetalhada, .nomeEquipe'));
         const classesDestacadas = Array.from(document.querySelectorAll('.UltimosDocumentosTitulo, .noticiasRecentesTitulo, .LinksImportantesTitulo'));
         const fundoServicos = Array.from(document.querySelectorAll('.container-services'));
