@@ -57,16 +57,12 @@
 .contatos {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .contatos a,
 .contatos span {
   font-weight: 400;
-}
-
-.contatos:nth-child(2) {
-  margin-bottom: 35px;
 }
 
 .contatos img {
@@ -76,6 +72,7 @@
 form {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 40px;
 }
 
 form label {
@@ -159,4 +156,40 @@ form button {
 
 #btn_cancelar:active {
   background-color: #ffff;
+}
+
+
+
+.mapaReitoria{
+  border: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1000px) {
+  .form-contatos {
+    padding: 7px;
+  }
+
+  .parent{
+    display: block;
+  }
+
+  .mapaReitoria {
+    width: 90%;
+  }
+
+  form input {
+    max-width: 95vw;
+  }
+
+  form textarea {
+    max-width: 95vw;
+  }
+
+  #btn_enviar {
+    margin-left: 20px;
+  }
 }
