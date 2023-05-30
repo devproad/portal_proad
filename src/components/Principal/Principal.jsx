@@ -26,7 +26,7 @@ const Principal = (props) => {
 
 
     useEffect(() => {
-        axios.get('https://raw.githubusercontent.com/RubenFilipe07/proad-json/main/noticias.json')
+        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/noticias.json')
             .then(response => {
                 const data_noticias = response.data.data_noticias;
                 setDataNoticias(data_noticias);
@@ -36,7 +36,7 @@ const Principal = (props) => {
                 console.log(error);
             });
 
-        axios.get('https://raw.githubusercontent.com/RubenFilipe07/proad-json/main/editais_licitacoes.json')
+        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/editais_licitacoes.json')
             .then(response => {
                 const data_editais_licitacoes = response.data.data_editais_licitacoes;
                 setDataEditaisLicitacoes(data_editais_licitacoes);
@@ -47,7 +47,7 @@ const Principal = (props) => {
             }
             );
 
-        axios.get('https://raw.githubusercontent.com/RubenFilipe07/proad-json/main/editais_homologados.json')
+        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/editais_homologados.json')
             .then(response => {
                 const data_editais_homologados = response.data.data_editais_homologados;
                 setDataEditaisHomologados(data_editais_homologados);

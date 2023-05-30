@@ -17,7 +17,7 @@ export default class TodasNoticias extends React.Component {
   //     })
 
     componentDidMount() {
-      axios.get('https://raw.githubusercontent.com/RubenFilipe07/proad-json/main/noticias.json')
+      axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/noticias.json')
       .then(response => {
         const data_noticias = response.data.data_noticias;
         this.setState({ data_noticias });
