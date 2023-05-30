@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contato.css'
-import formImage from '../../assets/Contato/DrawForm.svg'
+import whatsapp from '../../assets/Contato/whatsapp.svg'
 import mail from '../../assets/Contato/EmailIcon.svg'
 import tel from '../../assets/Contato/TelIcon.svg'
 
@@ -15,12 +15,12 @@ const Contato = () => {
                     <span className='subtitulo'>Telefones</span> <br />
                         <div className='contatos'>
                             <img src={tel} alt='Telefone'></img>
-                            <a className='subtitulo' href="wa.me/0000000">(84) 3215-3305 / 3208</a>
+                            <a className='subtitulo'>(84) 3215-3305 / 3208</a>
                         </div>
 
                         <div className='contatos'>
-                            <img src={tel} alt='Telefone'></img>
-                            <a className='subtitulo' href="wa.me/0000000">(84) 3215-3305 / 3208</a>
+                            <img src={whatsapp} alt='Whatsapp'></img>
+                            <a className='subtitulo' href="https://wa.me/5584998993667">(84) 99899-3667</a>
                         </div>
 
                         <span className='subtitulo'>Email</span> <br />
@@ -37,7 +37,6 @@ const Contato = () => {
                     <p className='localizacao'>Centro da Reitoria <br />
                         Campus Universitário Lagoa Nova, CEP 59078-970 | Natal/RN - Brasil
                     </p>
-                    {/* <img src={formImage} className='imagemForm' alt='Imagem do formulário'></img> */}
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.559750750371!2d-35.205610630617!3d-5.838775640967804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff9d0d533939%3A0x74e83eb2d823dfd5!2sReitoria%20da%20UFRN!5e0!3m2!1spt-BR!2sbr!4v1684819008626!5m2!1spt-BR!2sbr" title='mapa' className='mapaReitoria' width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
                     </iframe>
