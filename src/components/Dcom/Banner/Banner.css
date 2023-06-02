@@ -2,3 +2,21 @@ p.bannerDescricao {
  margin: 0px;
  padding: auto;
 }
+
+.bannerDcom{
+    background-image:
+    linear-gradient(to left, #00607d9c 0.49%, #00607D 100%),
+    url('../../../assets/Banner/Banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.4fr 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 80px;
+
+}

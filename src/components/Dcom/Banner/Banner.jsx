@@ -9,7 +9,7 @@ import linkedin from '../../../assets/Banner/linkedin.svg'
 
 const Banner = () => {
     return (
-        <div className='banner'>
+        <div className='bannerDcom'>
             <div className='bannerTopo'>
                 <div className='bannerMenu'>
                  <img src={logoUfrn} alt="UFRN"></img>
