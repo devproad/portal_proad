@@ -15,64 +15,64 @@ const Equipe = () => {
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil2} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil3} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil4} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>        
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil2} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil3} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={perfil4} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Bolsista</span>
-                    <p className='descEquipe'>Graduando em Engenharia da Computação</p>
+                    <span className='cargoEquipe'>Cargo</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
                     <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
                 </div>                          
 

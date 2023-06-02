@@ -1,0 +1,98 @@
+.DiretCoord {
+  width: 100%;
+  height: 563px;
+  background: linear-gradient(93.93deg, #00607d 45.4%, #0089b2 99.79%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-DiretCoord {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-DiretCoord {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header-DiretCoord p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.header-DiretCoord p:hover {
+  color: #fff;
+  transition: 400ms;
+}
+
+.itens-DiretCoord {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-DiretCoord-Dcom {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 7px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+
+.item-DiretCoord-Dcom:hover {
+  background-color: #004c63;
+  transition: 400ms;
+}
+
+.item-DiretCoord-Dcom img {
+  height: 80px;
+  margin: auto;
+}
+
+.item-content {
+  margin-left: 20px;
+}
+
+.item-content h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 100;
+  font-size: 15px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.item-content p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 11px;
+  margin: 10px 0px 0px 0px;
+}
+
+.link-DiretCoord{
+ text-decoration: none;
+}

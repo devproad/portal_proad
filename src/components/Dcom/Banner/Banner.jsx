@@ -14,25 +14,20 @@ const Banner = () => {
                 <div className='bannerMenu'>
                  <img src={logoUfrn} alt="UFRN"></img>
                     <div className='bannerMenuRedes'>
-                        <a href='#'>
-                            <img src={facebook} alt="Facebook"></img>
-                        </a>
                     
-                        <a href='#'>
+                        <a href='https://www.instagram.com/proadufrn/'>
                             <img src={instagram} alt="Instagram"></img>
                         </a>
-                    
-                        <a href='#'> 
-                            <img src={linkedin} alt="linkedin"></img>
-                        </a>
+                
                     </div>  
                 </div>
 
             </div>
 
             <div className='bannerLadoEsquerdo'>
-                <h1>Diretoria de compras - DCOM</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis fringilla habitant non tellus est eleifend odio. Nunc quam enim adipiscing netus nunc, phasellus. Varius accumsan ac, enim sed duis id odio semper. Vestibulum a urna aliquet praesent turpis nulla convallis.</p>
+                <h1>Diretoria de compras</h1>
+                <p className='bannerDescricao'>A Diretoria de Compras tem a finalidade de planejar, coordenar e executar as aquisições de bens e materiais e contratações de serviços institucionais de âmbito nacional e internacional. (texto do Regimento Interno)</p>
+                <p className='bannerDescricao'>A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”.</p>
                
                 <div className='botoes'>
                     <button id='btnQuemSomos'>     
@@ -47,7 +42,6 @@ const Banner = () => {
 
             <div className='bannerLadoDireito'>
                 <div className='bannerLogo'>
-                <img  src={logoProad} alt="Logo Proad" />
                 </div>
             </div>
 

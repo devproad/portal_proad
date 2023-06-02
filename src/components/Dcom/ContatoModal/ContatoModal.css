@@ -1,0 +1,16 @@
+.contatosModal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.contatosModal img{
+    margin-right: 7px;
+    width: 20px;
+}
+
+.contatoModal h1{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}

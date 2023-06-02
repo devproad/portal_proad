@@ -3,15 +3,16 @@ import axios from 'axios';
 import './Principal.css'
 import MenuLateral from '../MenuLateral/MenuLateral';
 import NoticiasRecentes from '../NoticiasRecentes/NoticiasRecentes';
-import LinksImportantes from '../LinksImportantes/LinksImportantes'
+import LinksImportantes from '../Dcom/LinksImportantes/LinksImportantes'
 import UltimosDocumentos from '../UltimosDocumentos/UltimosDocumentos';
 import UltimosDocumentosItem from '../UltimosDocumentosItem/UltimosDocumentosItem'
 import NoticiaDetalhada from '../NoticiaDetalhada/NoticiaDetalhada';
-import SitesUteis from '../SitesUteis/sitesuteis';
-import Destaques from '../Destaques/destaques';
+import SitesUteis from '../Dcom/SitesUteis/sitesuteis';
+import Destaques from '../Dcom/Destaques/destaques';
 import NoticiasRecentesItem from '../NoticiasRecentesItem/NoticiasRecentesItem';
 import DestaquesItem from '../DestaquesItem/DestaquesItem';
 import Carousel from '../Carousel/Carousel'
+import Informacoes from '../Dcom/Informações/Informações';
 import { useMediaQuery } from 'react-responsive'
 
 
@@ -135,7 +136,12 @@ const PrincipalDcom = (props) => {
 
     return (
         <div className='Principal'>
+
             <div className='esquerdo'>
+            <div className='sobreDcom'>
+                <h1>Sobre</h1>
+                <p>A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”. Portanto, seu principal objetivo é disponibilizar itens em Atas de Registro de Preço, e formalizar adesões e contratações diretas para atender as demandas da comunidade universitária.</p>
+            </div>
                 <Destaques onLinkSelected={handleLinkSelected}>
                     <Carousel>
                         {selectedLink === 'noticias' ? (
@@ -211,6 +217,7 @@ const PrincipalDcom = (props) => {
                             
                         )}
                     </UltimosDocumentos> */}
+                    <Informacoes></Informacoes>
                     <LinksImportantes></LinksImportantes>
                     <SitesUteis></SitesUteis>
                 </MenuLateral>

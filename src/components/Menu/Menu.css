@@ -25,6 +25,7 @@ ul {
 
 .menuLinks li a:hover{
     color: #059bc9;
+    cursor: pointer;
 }
 
 .dropdownMenu {
