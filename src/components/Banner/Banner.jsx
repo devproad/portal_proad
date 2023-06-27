@@ -27,16 +27,8 @@ const Banner = (props) => {
                 <div className='bannerMenu'>
                     <img src={logoUfrn} alt="UFRN"></img>
                     <div className='bannerMenuRedes'>
-                        <a href='#'>
-                            <img src={facebook} alt="Facebook"></img>
-                        </a>
-
-                        <a href='https://www.instagram.com/proadufrn/'>
+                        <a target="_blank" rel="noopener" href='https://www.instagram.com/proadufrn/'>
                             <img src={instagram} alt="Instagram"></img>
-                        </a>
-
-                        <a href='#'>
-                            <img src={linkedin} alt="linkedin"></img>
                         </a>
                     </div>
                 </div>
@@ -50,12 +42,12 @@ const Banner = (props) => {
                 <div className='botoes'>
                     <a href='#nossos-servicos'>
                         <button id='btnQuemSomos'>
-                        <span>Quem Somos</span>
+                            <span>Quem Somos</span>
                         </button>
                     </a>
                     <a href='#contato'>
                         <button id='btnContato'>
-                        <span>Contato</span>
+                            <span>Contato</span>
                         </button>
                     </a>
                 </div>

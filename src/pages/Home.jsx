@@ -11,47 +11,67 @@ import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from "styled-components";
 import GlobalTheme from "../globals";
 import { lightTheme, darkTheme } from "../theme";
+import MenuMobile from '../components/Menu/MenuMobile';
+
 
 const Home = () => {
-    const [ theme, setTheme ] = useState('light');
-    const [isDark, setIsDark] = useState(false);
 
-    const toggleTheme = () => {
-        if (theme === "light") {
-         window.localStorage.setItem("theme", "dark");
-          setTheme("dark");
-          setIsDark(true);
-        } else {
-        window.localStorage.setItem("theme", "light");
-          setTheme("light");
-          setIsDark(false);
-        }
-      };
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1000);
 
-      useEffect(() => {
-        const localTheme = window.localStorage.getItem("theme");
-        localTheme && setTheme(localTheme);
-        if (localTheme === "dark") {
-          setIsDark(true);
-        }else{
-          setIsDark(false);
-        }
-      }, []);
-    
-    return (
-        <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-        <GlobalTheme />
-            <Banner isDark={isDark}></Banner>
-            <BarraSuperior toggleTheme={toggleTheme} isDark={isDark}></BarraSuperior>
-            <Menu isDark={isDark}></Menu>
-            <DiretoriasCoord isDark={isDark}></DiretoriasCoord>
-            <Principal isDark={isDark}></Principal>
-            <NossosServicos></NossosServicos>
-            <Contato></Contato>
-            <Equipe></Equipe>
-            <Footer></Footer>
-        </ThemeProvider>
-    );
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 1000);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
+  const [theme, setTheme] = useState('light');
+  const [isDark, setIsDark] = useState(false);
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      window.localStorage.setItem("theme", "dark");
+      setTheme("dark");
+      setIsDark(true);
+    } else {
+      window.localStorage.setItem("theme", "light");
+      setTheme("light");
+      setIsDark(false);
+    }
+  };
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme");
+    localTheme && setTheme(localTheme);
+    if (localTheme === "dark") {
+      setIsDark(true);
+    } else {
+      setIsDark(false);
+    }
+  }, []);
+
+
+
+
+  return (
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <GlobalTheme />
+      <Banner isDark={isDark}></Banner>
+      <BarraSuperior toggleTheme={toggleTheme} isDark={isDark}></BarraSuperior>
+      {isDesktop ? <Menu isDark={isDark} /> : <MenuMobile />}
+      <DiretoriasCoord isDark={isDark}></DiretoriasCoord>
+      <Principal isDark={isDark}></Principal>
+      <NossosServicos></NossosServicos>
+      <Contato></Contato>
+      <Equipe></Equipe>
+      <Footer></Footer>
+    </ThemeProvider>
+  );
 }
 
 export default Home;

@@ -14,7 +14,7 @@ import Coord from './pages/Coord';
         <Route path='/' exact element={<Home/>}></Route>
         <Route path='/dcom' exact element={<Dcom/>}></Route>
         <Route path='/coord' element={<Coord/>}></Route>
-        <Route path='/destaques' element={<Noticias/>}></Route>
+        <Route path='/destaques' element={<TodasNoticias/>}></Route>
         <Route path='/noticias' element={<TodasNoticias/>}></Route>
       </Routes>
     </BrowserRouter>

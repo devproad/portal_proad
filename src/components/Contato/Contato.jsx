@@ -20,7 +20,7 @@ const Contato = () => {
 
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' href="https://wa.me/5584998993667">(84) 99899-3667</a>
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584998993667">(84) 99899-3667</a>
                         </div>
 
                         <span className='subtitulo'>Email</span> <br />

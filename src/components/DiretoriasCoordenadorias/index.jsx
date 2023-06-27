@@ -55,7 +55,7 @@ const DiretoriasCoord = (props) => {
             <img src={ShopeLogo} alt="logo" />
             <div className="item-content">
               <h1 className='item-title'>diretoria de compras</h1>
-              <p className="item-description">Responsável por orientar as unidades da UFRN em assuntos administrativos de qualquer natureza. Sua finalidade é planejar, coordenar e executar as aquisições de bens e materiais e contratações de serviços institucionais de âmbito nacional e internacional. É constituída por: Divisão de Planejamento e Gerenciamento de Compras; Divisão de Fase Interna de Compras e Divisão de Fase Externa de Compras.</p>
+              <p className="item-description">Tem como finalidade planejar, coordenar e executar as aquisições de bens e contratações de serviços institucionais no âmbito nacional e internacional. A unidade é constituída pela Direção, Divisão de Fase Interna de Compras, Divisão de Fase Externa de Compras e Divisão de Planejamento e Gerenciamento de Compras.”</p>
             </div>
           </div>
           </Link>

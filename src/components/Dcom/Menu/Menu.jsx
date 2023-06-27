@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom';
 import ContatoModal from '../ContatoModal/ContatoModal';
 import DocumentosItem from '../Banner/DocumentosItem/DocumentosItem';
 
+import ContatoModalHorizontal from '../ContatoModal/ContatoModalHorizontal';
+
 
 const Menu = (props) => {
     const textos = Array.from(document.querySelectorAll('.menuLinks a'));
@@ -66,22 +68,6 @@ const Menu = (props) => {
                 <ul className='dropdownMenu'>
                     <li>
                         <a onClick={() => openModal(
-                            'Diretoria de Compras', <>
-                            <p>
-                                A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”. Portanto, seu principal objetivo é disponibilizar itens em Atas de Registro de Preço, e formalizar adesões e contratações diretas para atender as demandas da comunidade universitária.
-                            </p>
-
-                            <p>
-                                A estrutura organizacional é composta pela Direção, Divisão de Fase Interna de Compras, Divisão de Fase Externa de Compras e Divisão de Planejamento e Gerenciamento de Compras, e conta com 42 de funcionários.
-                            </p>
-                        </>
-                        )}>
-                            Sobre
-                        </a>
-                    </li>
-
-                    <li>
-                        <a onClick={() => openModal(
                             'Direção', <>
                             <p>
                                 Conforme o Regimento Interno da Reitoria, compete ao Diretor de Compras: <br />
@@ -104,7 +90,7 @@ const Menu = (props) => {
                                     VII – Fornecer com presteza e em tempo hábil informações às instâncias superiores e diversos órgãos de controle do poder público, sempre que solicitado.
                                 </p>
 
-                                <ContatoModal nome='João Paulo Paiva' emailPrimario="direcao@compras.ufrn.br" emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84)99480-6899" />
+                                <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="direcao@compras.ufrn.br" emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
 
                             </p>
                         </>
@@ -140,10 +126,7 @@ const Menu = (props) => {
                                     VII – controlar e acompanhar as notificações para fins de apuração de inadimplências.
                                 </p>
 
-                                <p>Rute Clea Pereira de Noronha <br />
-                                    Telefone/WhatsApp: (84) 99204-5432
-
-                                </p>
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
 
                             </p>
                         </>
@@ -178,7 +161,7 @@ const Menu = (props) => {
                                 <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
 
-                                <ContatoModal nome='Chianc Leocádio de Lima' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+                                <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
 
 
                             </p>
@@ -212,7 +195,7 @@ const Menu = (props) => {
                                 <p>VII – formalizar e conduzir a publicação dos atos cabíveis aos certames licitatórios, de acordo com a modalidade de disputa. </p>
 
 
-                                <ContatoModal nome='Adriana da Silva Cardoso' telefone="(84) 98746-7713" />
+                                <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 98746-7713" />
 
 
                             </p>
@@ -221,6 +204,23 @@ const Menu = (props) => {
                             DFE
                         </a>
                     </li>
+
+                    <li>
+                        <a onClick={() => openModal(
+                            'Diretoria de Compras', <>
+                            <p>
+                                A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”. Portanto, seu principal objetivo é disponibilizar itens em Atas de Registro de Preço, e formalizar adesões e contratações diretas para atender as demandas da comunidade universitária.
+                            </p>
+
+                            <p>
+                                A estrutura organizacional é composta pela Direção, Divisão de Fase Interna de Compras, Divisão de Fase Externa de Compras e Divisão de Planejamento e Gerenciamento de Compras, e conta com 42 de funcionários.
+                            </p>
+                        </>
+                        )}>
+                            Sobre
+                        </a>
+                    </li>
+
 
                     <li>
                         <a onClick={() => openModal(
@@ -305,46 +305,62 @@ const Menu = (props) => {
                             Relatórios de gestão
                         </a>
                     </li>
-                    <li><a href='#'>Editais abertos</a></li>
                     <li><a href='#'>Painel de Indicadores</a></li>
                     <li><a href='#'>Matriz de Priorização de Compras</a></li>
-                    <li><a href='#'>PCA</a></li>
+                    <li>
+                        <a onClick={() => openModal(
+                            'Planos de Contratações Anuais ', <>
+                            Para consultar todos os planos de contratação anuais registrados pela UFRN, acesse o link: <a href="#">(Exemplo)</a>
+
+                        </>
+                        )}>
+                            Planos de Contratações Anuais
+                        </a>
+                    </li>
                 </ul>
             </ul>
             <img src={logoDcom} alt='Logo Proad' className='logoProad'></img>
             <ul className='menuLinks'>
-                <li id='dropdown'><a href='#'>MANUAIS <img id="dropdownArrow" src={arrow}></img></a></li>
+                <li id='dropdown'><a href='#'>ORIENTAÇÕES<img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu dropDownManuais'>
-                    <li><a href='#'>Check List</a></li>
-                    <li><a href='#'>Manual</a></li>
                     <li><a href='#'>Coleta de demandas</a></li>
+                    <li><a href='#'>Check List</a></li>
+                    <li><a href='#'>Cartilhas</a></li>
+                    <li><a href='#'>Manuais</a></li>
+                    <li>  <a onClick={() => openModal(
+                        'Fluxos Processuais', <>
+                        <p>A Diretoria de Compras disponibiliza os fluxos processuais aplicados às compras e contratações da UFRN, conforme links abaixo:</p>
+
+                        <DocumentosItem titulo="Adesão SRP – Lei n° 8.666/1993" link="https://drive.google.com/file/d/18bktC1330JZ2s19dKJx_Y-Noo29rKhHd/view?usp=sharing" />
+                        <DocumentosItem titulo="Contratação Direta – Lei n° 8.666/1993" link="https://drive.google.com/file/d/1ALtTt8NZjPOxjYstD-YDHarOVVQlxxjP/view?usp=sharing" />
+                        <DocumentosItem titulo="Importação – Lei n° 8.666/1993" link="https://drive.google.com/file/d/1oTxqTPxiBxGHtDxbBD0r9gB9pJqxgW-E/view?usp=sharing" />
+                        <DocumentosItem titulo="Pagamento de artigos e inscrições – Lei 8.666/1993" link="https://drive.google.com/file/d/1ohM12pksIrq68nunkffAzqN7t7844ysc/view?usp=sharing" />
+                        <DocumentosItem titulo="Participação em IRP – Lei n° 8.666/1993" link="https://drive.google.com/file/d/1R_eer9ilz2PsBe6UVwm4oaaNUORISybv/view?usp=sharing" />
+                        <DocumentosItem titulo="Pregão Eletrônico – Lei n° 8.666/1993" link="https://drive.google.com/file/d/17A3sseWtaB0NOpyxwZCywNOWHgx1CAr-/view?usp=sharing" />
+                        <DocumentosItem titulo="Dispensa de Licitação Eletrônica – Lei n° 14.133/2021" link="https://drive.google.com/file/d/1N2xN_01NLCLV2jLA-1-70PAX0jKJ22Gg/view?usp=sharing" />
+                        <DocumentosItem titulo="Inexigibilidade de Licitação – Lei n° 14.133/2021" link="https://drive.google.com/file/d/1yMy6V-mxIrd_t_ZK8fQZi54YSwi5-GCu/view?usp=sharing" />
+
+                    </>
+                    )}>
+                        Fluxos processuais
+                    </a></li>
+
                 </ul>
                 <li id='dropdown'><a href='#'>COMUNICAÇÃO <img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu dropDownComunicacao'>
-                    <li><a href='#'>Notícias</a></li>
-                    <li><a href='#'>Calendário de Eventos</a></li>
+                    <li><a href='#'>Acompanhamento de processos</a></li>
+                    <li><a href='https://sipac.ufrn.br/public/listaEditais.do?tipo=2&aba=p-editais-atas&buscaTodas=true&acao=544'>Atas vigentes</a></li>
+                    <li><a href='https://sipac.ufrn.br/public/listaEditais.do?tipo=1&aba=p-comunicados'>Editais Abertos</a></li>
                     <li>
                         <a onClick={() => openModal(
-                            'Agenda Administrativa', <>
-                            <iframe src="https://calendar.google.com/calendar/embed?src=proadufrn%40gmail.com&ctz=America%2FFortaleza" style={{ border: 0 }} width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+                            'Agenda do Diretor ', <>
+                            <iframe src="https://calendar.google.com/calendar/u/0/embed?src=proadufrn@gmail.com&ctz=America/Fortaleza&pli=1" style={{ border: 0 }} width="100%" height="600" frameborder="0" scrolling="no"></iframe>
                         </>
                         )}>
-                            Agenda Administrativa
+                            Agenda do Diretor 
                         </a>
                     </li>
-                    <li>
-                        <a onClick={() => openModal(
-                            'Canais', <>
-                            <div className='contatosModal'>
-                                <img src={instagram} width={100} />
-                                <a href="https://www.instagram.com/proadufrn/" alt="Instagram">@proadufrn</a>
-                            </div>
-
-                        </>
-                        )}>
-                            Canais
-                        </a>
-                    </li>
+        
 
                 </ul>
                 <li id='dropdown'><a href='#'>CONTATO <img id="dropdownArrow" src={arrow}></img></a></li>
@@ -352,7 +368,7 @@ const Menu = (props) => {
                     <li>
                         <a onClick={() => openModal(
                             'Direção', <>
-                            <p>
+                             <p>
                                 Para manter contato com a Direção, utilize os seguintes canais de comunicação:
                             </p>
 
@@ -377,11 +393,38 @@ const Menu = (props) => {
                                 Telefone/WhatsApp: (84) 99141-5018
                             </p>
 
+                            <div className='grid-contatos'>
+
                             <p>
                                 Matheus Wanderley <br />
                                 E-mail: matheus.wanderley@ufrn.br <br />
                                 Telefone/WhatsApp: (84) 98828-1950
                             </p>
+
+                            <p>
+                                Matheus Wanderley <br />
+                                E-mail: matheus.wanderley@ufrn.br <br />
+                                Telefone/WhatsApp: (84) 98828-1950
+                            </p>
+
+                            </div> 
+
+                            <div className='grid-contatos'>
+
+                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                            <ContatoModal nome ='Edjane Cortez (Secretária)' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
+                            <ContatoModal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
+
+                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                            <ContatoModal nome ='Edjane Cortez (Secretária)' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
+                            <ContatoModal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
+
+                            <ContatoModalHorizontal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                            <ContatoModalHorizontal nome ='Edjane Cortez (Secretária)' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
+                            <ContatoModalHorizontal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
+
+
+                            </div>
 
 
 

@@ -139,8 +139,6 @@ const PrincipalDcom = (props) => {
 
             <div className='esquerdo'>
             <div className='sobreDcom'>
-                <h1>Sobre</h1>
-                <p>A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”. Portanto, seu principal objetivo é disponibilizar itens em Atas de Registro de Preço, e formalizar adesões e contratações diretas para atender as demandas da comunidade universitária.</p>
             </div>
                 <Destaques onLinkSelected={handleLinkSelected}>
                     <Carousel>

@@ -42,43 +42,38 @@ const DiretoriasCoord = (props) => {
           </Link>
         </div>
         <div className="itens-DiretCoord">
-          <div className="item-DiretCoord-Dcom" onClick={() => openModal(
-                            'DPGC', <>
-                            <p>
-                                À Divisão de Planejamento e Gerenciamento de Compras compete: <br />
-                                <p>
-                                    I – planejar a fase interna das licitações, fazendo interface com a fase externa;
-                                </p>
-                                <p>
-                                    II – gerir o catálogo e grupos de materiais;
-                                </p>
-                                <p>
-                                    III – acompanhar as equipes de planejamento;
-                                </p>
-                                <p>
-                                    IV – gerenciar as atas de registro de preços;
-                                </p>
-                                <p>
-                                    V – estabelecer relacionamento entre unidades requisitantes da UFRN, Diretoria de Compras e mercado fornecedor;
-                                </p>
-                                <p>
-                                    VI – controlar e acompanhar os processos para pagamento e os empenhos junto aos fornecedores dos bens e serviços contratados;
-                                </p>
-                                <p>
-                                    VII – controlar e acompanhar as notificações para fins de apuração de inadimplências.
-                                </p>
+        <div className="item-DiretCoord-Dcom" onClick={() => openModal(
+            'Direção', <>
+            <p>
+              Conforme o Regimento Interno da Reitoria, compete ao Diretor de Compras: <br />
+              <p>
+                I - Planejar, coordenar e executar as contratações institucionais de âmbito nacional e internacional de forma a subsidiar o desenvolvimento das atividades da UFRN e apoiar administrativamente as demais unidades requisitantes no desenvolvimento de instrumentos de planejamento de contratações.
+              </p>
+              <p>
+                III – Responder pela execução dos planos de trabalho referentes ao planejamento e gerenciamento de contratações da Universidade.
+              </p>
+              <p>
+                IV – Utilizar aplicações de tecnologia de informação e comunicação para subsidiar a melhoria de processos de planejamento e gerenciamento de contratações.
+              </p>
+              <p>
+                V – Coordenar e supervisionar as atividades e responsabilidades atribuídas às divisões vinculadas à diretoria.
+              </p>
+              <p>
+                VI – Recomendar alterações e adaptações na estrutura organizacional da Diretoria de modo a assegurar a eficiência.
+              </p>
+              <p>
+                VII – Fornecer com presteza e em tempo hábil informações às instâncias superiores e diversos órgãos de controle do poder público, sempre que solicitado.
+              </p>
 
-                                <ContatoModal nome='Rute Clea Pereira de Noronha'  telefone="(84) 99204-5432" />
+              <ContatoModal nome='João Paulo Paiva (Diretor)' emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84)99480-6899" />
 
-                            </p>
-                        </>
-                        )} >
-            <img src={CashLogo} alt="logo" />
+            </p>
+          </>
+          )}>
+            <img src={ContractLogo} alt="logo" />
             <div className="item-content">
-              <h1 className='item-title'>DIVISÃO DE PLANEJAMENTO DE GERENCIAMENTO DE COMPRAS</h1>
-              <p className="item-description">Cabe a Divisão de Planejamento de Gerenciamento de Compras (DPGC) coordenar o planejamento das contratações por meio de
-                licitação que resultam futuramente em itens disponibilizados em atas SRP (próprias ou de outros órgãos por meio de adesão), bem como das
-                contratações diretas. </p>
+              <h1 className='item-title'>DIREÇÃO</h1>
+              <p className="item-description">Tem a finalidade de planejar, coordenar e executar as aquisições de bens e materiais e contratações de serviços institucionais de âmbito nacional e internacional.</p>
             </div>
           </div>
           <div className="item-DiretCoord-Dcom" onClick={() => openModal(
@@ -106,7 +101,7 @@ const DiretoriasCoord = (props) => {
               <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
 
-              <ContatoModal nome='Chianc Leocádio de Lima' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+              <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
 
             </p>
           </>
@@ -118,7 +113,7 @@ const DiretoriasCoord = (props) => {
             </div>
           </div>
 
-          <Link to="/dcom" className='link-DiretCoord'>
+         
             <div className="item-DiretCoord-Dcom" onClick={() => openModal(
               'DFE', <>
               <p>
@@ -142,7 +137,7 @@ const DiretoriasCoord = (props) => {
                 <p>VII – formalizar e conduzir a publicação dos atos cabíveis aos certames licitatórios, de acordo com a modalidade de disputa. </p>
 
 
-                <ContatoModal nome='Adriana da Silva Cardoso' telefone="(84) 98746-7713" />
+                <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' telefone="(84) 98746-7713" emailPrimario="licitacaoufrn@gmail.com" />
 
               </p>
             </>
@@ -150,42 +145,50 @@ const DiretoriasCoord = (props) => {
               <img src={ShopeLogo} alt="logo" />
               <div className="item-content">
                 <h1 className='item-title'>DIVISÃO DE FASE EXTERNA</h1>
-                <p className="item-description">Cabe a Divisão de Fase externa (DFE) coordenar e gerenciar a fase externa dos processos licitatórios. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet condimentum metus. Duis pulvinar maximus diam sed imperdiet. Cras condimentum eu quam at auctor. </p>
+                <p className="item-description">Cabe a Divisão de Fase externa (DFE) coordenar e gerenciar a fase externa dos processos licitatórios. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet condimentum metus. Duis pulvinar maximus diam sed imperdiet. Cras condimentum eu quam at auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet condimentum metus. </p>
               </div>
             </div>
-          </Link>
+       
+          
+        
+
           <div className="item-DiretCoord-Dcom" onClick={() => openModal(
-            'Direção', <>
-            <p>
-              Conforme o Regimento Interno da Reitoria, compete ao Diretor de Compras: <br />
-              <p>
-                I - Planejar, coordenar e executar as contratações institucionais de âmbito nacional e internacional de forma a subsidiar o desenvolvimento das atividades da UFRN e apoiar administrativamente as demais unidades requisitantes no desenvolvimento de instrumentos de planejamento de contratações.
-              </p>
-              <p>
-                III – Responder pela execução dos planos de trabalho referentes ao planejamento e gerenciamento de contratações da Universidade.
-              </p>
-              <p>
-                IV – Utilizar aplicações de tecnologia de informação e comunicação para subsidiar a melhoria de processos de planejamento e gerenciamento de contratações.
-              </p>
-              <p>
-                V – Coordenar e supervisionar as atividades e responsabilidades atribuídas às divisões vinculadas à diretoria.
-              </p>
-              <p>
-                VI – Recomendar alterações e adaptações na estrutura organizacional da Diretoria de modo a assegurar a eficiência.
-              </p>
-              <p>
-                VII – Fornecer com presteza e em tempo hábil informações às instâncias superiores e diversos órgãos de controle do poder público, sempre que solicitado.
-              </p>
+                            'DPGC', <>
+                            <p>
+                                À Divisão de Planejamento e Gerenciamento de Compras compete: <br />
+                                <p>
+                                    I – planejar a fase interna das licitações, fazendo interface com a fase externa;
+                                </p>
+                                <p>
+                                    II – gerir o catálogo e grupos de materiais;
+                                </p>
+                                <p>
+                                    III – acompanhar as equipes de planejamento;
+                                </p>
+                                <p>
+                                    IV – gerenciar as atas de registro de preços;
+                                </p>
+                                <p>
+                                    V – estabelecer relacionamento entre unidades requisitantes da UFRN, Diretoria de Compras e mercado fornecedor;
+                                </p>
+                                <p>
+                                    VI – controlar e acompanhar os processos para pagamento e os empenhos junto aos fornecedores dos bens e serviços contratados;
+                                </p>
+                                <p>
+                                    VII – controlar e acompanhar as notificações para fins de apuração de inadimplências.
+                                </p>
 
-              <ContatoModal nome='João Paulo Paiva' emailPrimario="direcao@compras.ufrn.br" emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84)99480-6899" />
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)'  telefone="(84) 99204-5432" emailPrimario="rute.noronha@ufrn.br" />
 
-            </p>
-          </>
-          )}>
-            <img src={ContractLogo} alt="logo" />
+                            </p>
+                        </>
+                        )} >
+            <img src={CashLogo} alt="logo" />
             <div className="item-content">
-              <h1 className='item-title'>DIREÇÃO</h1>
-              <p className="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet condimentum metus. Duis pulvinar maximus diam sed imperdiet. Cras condimentum eu quam at auctor.</p>
+              <h1 className='item-title'>DIVISÃO DE PLANEJAMENTO DE GERENCIAMENTO DE COMPRAS</h1>
+              <p className="item-description">Cabe a Divisão de Planejamento de Gerenciamento de Compras (DPGC) coordenar o planejamento das contratações por meio de
+                licitação que resultam futuramente em itens disponibilizados em atas SRP (próprias ou de outros órgãos por meio de adesão), bem como das
+                contratações diretas. </p>
             </div>
           </div>
 

@@ -2,14 +2,14 @@ import './ContatoModal.css'
 import email from '../../../assets/Contato/EmailIcon.svg'
 import whatsapp from '../../../assets/Contato/whatsapp.svg'
 
-const ContatoModal = (props) => {
+const contatoModalHorizontal = (props) => {
     return (
-        <div className="contatoModal">
+        <div className="contatoModalHorizontal">
             <h1>{props.nome}</h1>
 
 
             {props.emailPrimario &&
-                <div className="contatosModal">
+                <div className="contatosModalHorizontal">
                     <img src={email} />
                     <a href={"mailto:" + props.emailPrimario}>
                         {props.emailPrimario}
@@ -18,10 +18,8 @@ const ContatoModal = (props) => {
             }
 
 
-
-
             {props.emailSecundario &&
-                <div className="contatosModal">
+                <div className="contatosModalHorizontal">
                     <img src={email} />
                     <a href={"mailto:" + props.emailSecundario}>
                         {props.emailSecundario}
@@ -29,11 +27,8 @@ const ContatoModal = (props) => {
                 </div>
             }
 
-
-
-
             {props.telefone &&
-                <div className="contatosModal">
+                <div className="contatosModalHorizontal">
                     <img src={whatsapp} />
                     <a href={"https://wa.me/55" + props.telefone.replace(/\D/g, "")}>
                         {props.telefone}
@@ -49,4 +44,4 @@ const ContatoModal = (props) => {
     );
 }
 
-export default ContatoModal;
+export default contatoModalHorizontal;

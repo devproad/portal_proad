@@ -25,8 +25,7 @@ const Banner = () => {
             </div>
 
             <div className='bannerLadoEsquerdo'>
-                <h1>Diretoria de compras</h1>
-                <p className='bannerDescricao'>A Diretoria de Compras tem a finalidade de planejar, coordenar e executar as aquisições de bens e materiais e contratações de serviços institucionais de âmbito nacional e internacional. (texto do Regimento Interno)</p>
+                <h1>Diretoria de Compras</h1>
                 <p className='bannerDescricao'>A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”.</p>
                
                 <div className='botoes'>
@@ -46,7 +45,7 @@ const Banner = () => {
             </div>
 
             <div className='bannerBase'>
-                <a href='#'>
+                <a href='#menu'>
                     <img className='arrowImage' src={arrow} alt="Seta" width={20}></img>
                 </a>
             </div>

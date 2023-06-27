@@ -31,3 +31,13 @@
     margin: 0px
 }
 
+
+.grid-contatos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+ .grid-contatos .contatoModal, .grid-contatos p{
+    min-width: 250px;
+    margin: 10px 25px 10px 0px;
+}
