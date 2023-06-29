@@ -1,9 +1,13 @@
 import React from 'react'
 import './Equipe.css'
-import perfil from '../../../assets/Equipe/perfil.png'
-import perfil2 from '../../../assets/Equipe/perfil2.png'
-import perfil3 from '../../../assets/Equipe/perfil3.png'
-import perfil4 from '../../../assets/Equipe/perfil4.png'
+
+import chianc from '../../../assets/Equipe/chianclima.jpeg'
+import rute from '../../../assets/Equipe/rutenoronha.jpeg'
+import thiago from '../../../assets/Equipe/thiagocorreia.jpeg'
+import joao from '../../../assets/Equipe/joaopaulo.jpeg'
+import adriana from '../../../assets/Equipe/adrianacardoso.jpeg'
+import daniel from '../../../assets/Equipe/danieloliveira.jpeg'
+
 
 const Equipe = () => {
     return (
@@ -13,68 +17,54 @@ const Equipe = () => {
             
             <div className='gridEquipe'>
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
+                    <img className='perfilEquipe' src={joao} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>João Paulo Paiva</h1>
+                    <span className='cargoEquipe'>Diretor de Compras</span>
                     {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
+                    {/* <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span> */}
                 </div>
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil2} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
+                    <img className='perfilEquipe' src={rute} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Rute Noronha</h1>
+                    <span className='cargoEquipe'>Diretora de Compras (Substituta)</span>
                     {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
+                    {/* <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span> */}
                 </div>
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil3} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
+                    <img className='perfilEquipe' src={daniel} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Daniel Oliveira</h1>
+                    <span className='cargoEquipe'>Chefe da DPGC (Substituto)</span>
                     {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
+                    {/* <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span> */}
                 </div>
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil4} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
+                    <img className='perfilEquipe' src={adriana} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Adriana Cardoso</h1>
+                    <span className='cargoEquipe'>Chefe da DFE</span>
                     {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
-                </div>        
+                    {/* <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span> */}
+                </div>      
+
+                
+                <div className='itemEquipe'>
+                    <img className='perfilEquipe' src={thiago} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Thiago Correia</h1>
+                    <span className='cargoEquipe'>Chefe da  DFI (Substituto)</span>
+                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
+                    {/* <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span> */}
+                </div>         
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
+                    <img className='perfilEquipe' src={chianc} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Chianc Lima</h1>
+                    <span className='cargoEquipe'>Chefe da DFI</span>
                     {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
+                    {/* <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span> */}
                 </div>
 
-                <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil2} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
-                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
-                </div>
-
-                <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil3} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
-                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
-                </div>
-
-                <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={perfil4} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Lorem <br/> Ipsum</h1>
-                    <span className='cargoEquipe'>Cargo</span>
-                    {/* <p className='descEquipe'>Graduando em Engenharia da Computação</p> */}
-                    <span className='emailEquipe'><a href="mailto:#">loremipsum@ufrn.br</a></span>
-                </div>                          
 
             </div>
 
