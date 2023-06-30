@@ -68,6 +68,22 @@ const Menu = (props) => {
                 <ul className='dropdownMenu'>
                     <li>
                         <a onClick={() => openModal(
+                            'Diretoria de Compras', <>
+                            <p>
+                                A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”. Portanto, seu principal objetivo é disponibilizar itens em Atas de Registro de Preço, e formalizar adesões e contratações diretas para atender as demandas da comunidade universitária.
+                            </p>
+
+                            <p>
+                                A estrutura organizacional é composta pela Direção, Divisão de Fase Interna de Compras, Divisão de Fase Externa de Compras e Divisão de Planejamento e Gerenciamento de Compras, e conta com 42 de funcionários.
+                            </p>
+                        </>
+                        )}>
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a onClick={() => openModal(
                             'Direção', <>
                             <p>
                                 Conforme o Regimento Interno da Reitoria, compete ao Diretor de Compras: <br />
@@ -91,6 +107,7 @@ const Menu = (props) => {
                                 </p>
 
                                 <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="direcao@compras.ufrn.br" emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Diretora Substituta)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
 
                             </p>
                         </>
@@ -126,8 +143,8 @@ const Menu = (props) => {
                                     VII – controlar e acompanhar as notificações para fins de apuração de inadimplências.
                                 </p>
 
-                                <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
-
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
+                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="daniel.oliveira@ufrn.br" telefone="(84) 98821-4683" />
                             </p>
                         </>
                         )}>
@@ -162,8 +179,7 @@ const Menu = (props) => {
 
 
                                 <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
-
-
+                                <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
                             </p>
                         </>
                         )}>
@@ -202,22 +218,6 @@ const Menu = (props) => {
                         </>
                         )}>
                             DFE
-                        </a>
-                    </li>
-
-                    <li>
-                        <a onClick={() => openModal(
-                            'Diretoria de Compras', <>
-                            <p>
-                                A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão “promover soluções em compras institucionais”. Portanto, seu principal objetivo é disponibilizar itens em Atas de Registro de Preço, e formalizar adesões e contratações diretas para atender as demandas da comunidade universitária.
-                            </p>
-
-                            <p>
-                                A estrutura organizacional é composta pela Direção, Divisão de Fase Interna de Compras, Divisão de Fase Externa de Compras e Divisão de Planejamento e Gerenciamento de Compras, e conta com 42 de funcionários.
-                            </p>
-                        </>
-                        )}>
-                            Sobre
                         </a>
                     </li>
 
@@ -323,8 +323,6 @@ const Menu = (props) => {
             <ul className='menuLinks'>
                 <li id='dropdown'><a href='#'>ORIENTAÇÕES<img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu dropDownManuais'>
-                    <li><a href='#'>Coleta de demandas</a></li>
-                    <li><a href='#'>Check List</a></li>
                     <li><a href='#'>Cartilhas</a></li>
                     <li><a href='#'>Manuais</a></li>
                     <li>  <a onClick={() => openModal(
@@ -357,10 +355,10 @@ const Menu = (props) => {
                             <iframe src="https://calendar.google.com/calendar/u/0/embed?src=proadufrn@gmail.com&ctz=America/Fortaleza&pli=1" style={{ border: 0 }} width="100%" height="600" frameborder="0" scrolling="no"></iframe>
                         </>
                         )}>
-                            Agenda do Diretor 
+                            Agenda do Diretor
                         </a>
                     </li>
-        
+
 
                 </ul>
                 <li id='dropdown'><a href='#'>CONTATO <img id="dropdownArrow" src={arrow}></img></a></li>
@@ -368,69 +366,71 @@ const Menu = (props) => {
                     <li>
                         <a onClick={() => openModal(
                             'Direção', <>
-                             <p>
+                            <p>
                                 Para manter contato com a Direção, utilize os seguintes canais de comunicação:
                             </p>
 
+                            <h1 className='titulo-atendimento'>Atendimento</h1>
+                            <ContatoModal emailPrimario="diretoriacomprasufrn@gmail.com" />
 
-                            <p>
-                                E-mail: diretoriacomprasufrn@gmail.com<br />
-                                Telefone: (84) 3342-2274 / Ramal 114
-                            </p>
-
-                            <p>
-                                João Paulo Paiva (Diretor de Compras) <br />
-                                E-mail: direcao@compras.ufrn.br / joao.paulo.paiva@ufrn.br <br />
-                                Telefone/WhatsApp: (84)99480-6899
-                            </p>
-
-
+                            <h1 className='titulo-atendimento'>Chefia</h1>
                             <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
 
-                            <p>
-                                Edjane Cortez (Secretária) <br />
-                                E-mail:  edjane.cortez@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 99141-5018
-                            </p>
 
+                            <h1 className='titulo-atendimento'>Secretaria</h1>
                             <div className='grid-contatos'>
-
-                            <p>
-                                Matheus Wanderley <br />
-                                E-mail: matheus.wanderley@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 98828-1950
-                            </p>
-
-                            <p>
-                                Matheus Wanderley <br />
-                                E-mail: matheus.wanderley@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 98828-1950
-                            </p>
-
-                            </div> 
-
-                            <div className='grid-contatos'>
-
-                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-                            <ContatoModal nome ='Edjane Cortez (Secretária)' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
-                            <ContatoModal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
-
-                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-                            <ContatoModal nome ='Edjane Cortez (Secretária)' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
-                            <ContatoModal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
-
-                            <ContatoModalHorizontal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-                            <ContatoModalHorizontal nome ='Edjane Cortez (Secretária)' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
-                            <ContatoModalHorizontal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
-
-
+                                <ContatoModal nome='Edjane Cortez' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
+                                <ContatoModal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
                             </div>
-
 
 
                         </>
                         )}>
                             Direção
+                        </a>
+                    </li>
+
+                    <li>
+                        <a onClick={() => openModal(
+                            'DPGC', <>
+                            <p>
+                                Para manter contato a Divisão de Planejamento e Gerenciamento de Compras, utilize os seguintes canais de comunicação:
+                            </p>
+
+
+                            <div className='grid-contatos-titulo'>
+                                <h1 className='titulo-atendimento'>Atendimento</h1>
+
+                                <h1 className='titulo-atendimento'>Pós-Compras</h1>
+                            </div>
+
+                            <div className='grid-contatos'>
+
+                                <ContatoModal emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
+
+
+
+                                <ContatoModal emailPrimario="poscomprasufrn@gmail.com" telefone="(84) 99204-5432" />
+                            </div>
+
+                            <h1 className='titulo-atendimento'>Chefia</h1>
+                            <div className='grid-contatos'>
+
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Titular)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99193-6070" />
+                                <ContatoModal nome='Daniel Oliveira (Substituto)' emailPrimario="daniel.oliveira@ufrn.br" telefone="(84) 98821-4683" />
+                            </div>
+
+                            <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
+
+                            <div className='grid-contatos'>
+                                <ContatoModal nome='Adrielly Nunes' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
+                                <ContatoModal nome='Flávio Albuquerque' emailPrimario="flavio.carlos@ufrn.br" telefone="(84) 99126-5808" />
+                                <ContatoModal nome='Pedro Rocha' emailPrimario="pedro.rocha@ufrn.br" telefone="(84) 98704-1923" />
+                                <ContatoModal nome='Thays Lins' emailPrimario="thays.lins@ufrn.br" telefone="(84) 98166-5859" />
+                            </div>
+                        </>
+                        )}>
+                            DPGC
                         </a>
                     </li>
 
@@ -442,37 +442,20 @@ const Menu = (props) => {
                             </p>
 
 
-                            <p>
-                                Chianc Leocádio de Lima (Chefe) <br />
-                                E-mail: chianc.leocadio@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 99899-3667
-                            </p>
+                            <h1 className='titulo-atendimento'>Atendimento</h1>
+                            <ContatoModal emailPrimario="atendimentodfi@compras.ufrn.br" telefone="(84) 99421-6182"/>
 
-                            <ContatoModal nome='Chianc Leocádio de Lima' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+                            <h1 className='titulo-atendimento'>Chefia</h1>
+                            <div className='grid-contatos'>
+                            <ContatoModal nome='Chianc Leocádio de Lima (Titular)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+                            <ContatoModal nome='Thiago Correia (Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99899-3667" />
+                            </div>
 
-                            <p>
-                                Thiago Correia <br />
-                                E-mail: thiago.correia@ufrn.br <br />
-                                Telefone/WhatsApp: (84)99639-6314
-                            </p>
+                            <h1 className='titulo-atendimento'>Elaboração de editais</h1>
+                            <h1 className='titulo-atendimento'>Contratações diretas</h1>
+                            <h1 className='titulo-atendimento'>Pesquisa de preços</h1>
 
-                            <ContatoModal nome='Thiago Correia' emailPrimario="thiago.correia@ufrn.br" telefone="(84)99639-6314" />
-
-                            <p>
-                                Chianc Leocádio de Lima (Chefe) <br />
-                                E-mail: chianc.leocadio@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 99899-3667
-                            </p>
-
-                            <ContatoModal nome='Chianc Leocádio de Lima' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
-
-                            <p>
-                                Thiago Correia <br />
-                                E-mail: thiago.correia@ufrn.br <br />
-                                Telefone/WhatsApp: (84)99639-6314
-                            </p>
-
-                            <ContatoModal nome='Thiago Correia' emailPrimario="thiago.correia@ufrn.br" telefone="(84)99639-6314" />
+                         
                         </>
                         )}>
                             DFI
@@ -486,91 +469,25 @@ const Menu = (props) => {
                                 Para manter contato com a Divisão de Fase Externa de Compras, utilize os seguintes canais de comunicação:
                             </p>
 
+                            <h1 className='titulo-atendimento'>Atendimento</h1>
+                            <ContatoModal emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 99193-6375"/>
 
-                            <p>
-                                Adriana da Silva Cardoso (Chefe)  <br />
-                                E-mail: adriana.cardoso@ufrn.br  <br />
-                                Telefone/WhatsApp: (84) 98746-7713
-                            </p>
+                            <h1 className='titulo-atendimento'>Chefia</h1>
+                            <ContatoModal nome="Adriana da Silva Cardoso (Titular)" emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
 
-                            <ContatoModal nome='Chianc Leocádio de Lima' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+                            <h1 className='titulo-atendimento'>Pregoeiros</h1>
 
-                            <p>
-                                Thiago Correia <br />
-                                E-mail: thiago.correia@ufrn.br <br />
-                                Telefone/WhatsApp: (84)99639-6314
-                            </p>
+                            <div className='grid-contatos'>
+                                <ContatoModal nome="Andrea Lopes" telefone="(84) 99120-7227" />
+                                <ContatoModal nome="Diego Brito" telefone="(84) 99660-9085" />
+                                <ContatoModal nome="Leonardo Belchior" telefone="(85) 98153-7379" />
+                                <ContatoModal nome="Paulo Pereira" telefone="(84) 99952-6209" />
+                                <ContatoModal nome="Patrícia Melo" telefone="(84) 99630-9934" />
+                            </div>
 
-                            <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
-
-                            <p>
-                                Bráulio Costa <br />
-                                E-mail: braulio.costa@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 99993-9114
-                            </p>
-
-                            <ContatoModal nome='Bráulio Costa' emailPrimario="braulio.costa@ufrn.br" telefone="(84) 99993-9114" />
-
-                            <p>
-                                Adriana da Silva Cardoso (Chefe) <br />
-                                E-mail: adriana.cardoso@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 98746-7713
-                            </p>
-
-                            <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
-
-                            <p>
-                                Bráulio Costa <br />
-                                E-mail: braulio.costa@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 99993-9114
-                            </p>
-
-                            <ContatoModal nome='Bráulio Costa' emailPrimario="braulio.costa@ufrn.br" telefone="(84) 99993-9114" />
                         </>
                         )}>
                             DFE
-                        </a>
-                    </li>
-
-                    <li>
-                        <a onClick={() => openModal(
-                            'DPGC', <>
-                            <p>
-                                Para manter contato a Divisão de Planejamento e Gerenciamento de Compras, utilize os seguintes canais de comunicação:
-                            </p>
-
-
-                            <p>
-                                E-mail: planejamentodpgcufrn@gmail.com <br />
-                                Telefone/WhatsApp: (84) 99204-5432
-                            </p>
-
-                            <p>
-                                E-mail: poscomprasufrn@gmail.com <br />
-                                Telefone/WhatsApp: (84) 99193-6070
-                            </p>
-
-                            <p>
-                                Rute Clea Pereira de Noronha (Chefe) <br />
-                                E-mail: rute.noronha@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 99204-5432
-                            </p>
-
-                            <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
-
-                            <p>
-                                Daniel Oliveira <br />
-                                E-mail: daniel.oliveira@ufrn.br <br />
-                                Telefone/WhatsApp: (84) 98821-4683
-                            </p>
-
-                            <ContatoModal nome='Daniel Oliveira' emailPrimario="daniel.oliveira@ufrn.br" telefone="84) 98821-4683" />
-
-
-
-                        </>
-                        )}>
-                            DPGC
                         </a>
                     </li>
                 </ul>

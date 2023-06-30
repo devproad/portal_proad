@@ -37,9 +37,10 @@ h1.tituloEquipe {
 }
 
 .perfilEquipe {
-    width: 80%;
+    width: 85%;
     border-radius: 50%;
     height: 160px;
+    object-fit: cover;
 }
 
 .nomeEquipe {
@@ -118,7 +119,6 @@ h1.tituloEquipe {
     margin: 15px 15px 5px 15px;
 }
 
-/* generate auto mobile css using media */
 @media (max-width: 768px) {
     .gridEquipe {
         grid-template-areas: "a";

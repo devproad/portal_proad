@@ -16,12 +16,12 @@ const Contato = () => {
 
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' href="https://wa.me/5584994806899">(84) 99480-6899 (Direção)</a> 
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584994806899">(84) 99480-6899 (Direção)</a> 
                         </div>
 
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' href="https://wa.me/5584994216182">(84) 99421-6182 (DFI)</a>
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584994216182">(84) 99421-6182 (DFI)</a>
                         </div>
                         
                         <div className='contatos'>

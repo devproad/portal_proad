@@ -140,44 +140,7 @@ const PrincipalDcom = (props) => {
             <div className='esquerdo'>
             <div className='sobreDcom'>
             </div>
-                <Destaques onLinkSelected={handleLinkSelected}>
-                    <Carousel>
-                        {selectedLink === 'noticias' ? (
-                            data_noticias.filter(item => item.attributes.Tag.includes("noticias")).map(data_noticias => (
-                                <DestaquesItem
-                                    key={data_noticias.id}
-                                    imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                    titulo={data_noticias.attributes.Title}
-                                    descricaoDestaques={data_noticias.attributes.Description}
-                                    data_noticias={data_noticias.attributes.Date}
-                                />
-                            ))
-                        ) : null}
-                        {selectedLink === 'editais_licitacoes' ? (
-                            data_noticias.filter(item => item.attributes.Tag.includes("editais_licitacoes")).map(data_noticias => (
-                                <DestaquesItem
-                                    key={data_noticias.id}
-                                    imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                    titulo={data_noticias.attributes.Title}
-                                    descricaoDestaques={data_noticias.attributes.Description}
-                                    data_noticias={data_noticias.attributes.Date}
-                                />
-                            ))
-                        ) : null}
-                        {selectedLink === 'editais_homologados' ? (
-                            data_noticias.filter(item => item.attributes.Tag.includes("editais_homologados")).map(data_noticias => (
-                                <DestaquesItem
-                                    key={data_noticias.id}
-                                    imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                    titulo={data_noticias.attributes.Title}
-                                    descricaoDestaques={data_noticias.attributes.Description}
-                                    data_noticias={data_noticias.attributes.Date}
-                                />
-                            ))
-                        ) : null}
-                    </Carousel>
-
-                </Destaques>
+                
 
                 <NoticiasRecentes>
                 {
@@ -191,7 +154,7 @@ const PrincipalDcom = (props) => {
                             />
                         ))
                     ) : (
-                        data_noticias.slice(0, 6).map(data_noticias => (
+                        data_noticias.slice(0, 9).map(data_noticias => (
                             <NoticiasRecentesItem
                                 key={data_noticias.id}
                                 titulo={data_noticias.attributes.Title}

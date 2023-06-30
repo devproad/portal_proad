@@ -59,6 +59,10 @@
   margin: 15px;
 }
 
+.img-services-dcom{
+  border-radius: 10px;
+  border: 0px solid transparent;
+}
 
 @media (max-width: 1000px) {
 
