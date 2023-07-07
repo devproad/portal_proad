@@ -30,7 +30,7 @@ const contatoModalHorizontal = (props) => {
             {props.telefone &&
                 <div className="contatosModalHorizontal">
                     <img src={whatsapp} />
-                    <a href={"https://wa.me/55" + props.telefone.replace(/\D/g, "")}>
+                    <a target="_blank" rel="noopener" href={"https://wa.me/55" + props.telefone.replace(/\D/g, "")}>
                         {props.telefone}
                     </a>
                 </div>

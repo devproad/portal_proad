@@ -35,7 +35,8 @@
 .grid-contatos {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 700px;
+    column-gap: 70px;
 }
 
 .grid-contatos-titulo{
@@ -47,7 +48,7 @@
 }
 
 div.grid-contatos-titulo > h1:nth-child(2) {
-    margin-left: -24px;
+    margin-left: 59px;
 }
 
 .grid-contatos .contatoModal, .grid-contatos p {

@@ -14,7 +14,7 @@ const Equipe = () => {
         <div className='equipe'>
 
             <h1 className='tituloEquipe'>EQUIPE DE GESTORES</h1>
-            
+
             <div className='gridEquipe'>
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={joao} alt='perfil'></img>
@@ -25,7 +25,7 @@ const Equipe = () => {
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={rute} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Rute Noronha</h1>
-                    <span className='cargoEquipe'>Chefe da DPGC</span>
+                    <span className='cargoEquipe'>Diretora (Substituta) <br/> Chefe da DPGC</span>
                 </div>
 
                 <div className='itemEquipe'>
@@ -35,26 +35,26 @@ const Equipe = () => {
                 </div>
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={adriana} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Adriana Cardoso</h1>
-                    <span className='cargoEquipe'>Chefe da DFE</span>
-                </div>      
-
-                
-                <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={thiago} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Thiago Correia</h1>
-                    <span className='cargoEquipe'>Chefe da  DFI (Substituto)</span>
-                </div>         
-
-                <div className='itemEquipe'>
                     <img className='perfilEquipe' src={chianc} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Chianc Lima</h1>
+                    <h1 className='nomeEquipe'>Chianc Leocádio</h1>
                     <span className='cargoEquipe'>Chefe da DFI</span>
                 </div>
 
 
+                <div className='itemEquipe'>
+                    <img className='perfilEquipe' src={thiago} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Thiago Correia</h1>
+                    <span className='cargoEquipe'>Chefe da  DFI (Substituto)</span>
+                </div>
+
+                <div className='itemEquipe'>
+                    <img className='perfilEquipe' src={adriana} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Adriana Cardoso</h1>
+                    <span className='cargoEquipe'>Chefe da DFE</span>
+                </div>
             </div>
+
+
 
         </div>
     );

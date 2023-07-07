@@ -3,6 +3,7 @@ import CashLogo from '../../../assets/DiretoriasCoordenadorias/CashLogo.svg'
 import Logistic from '../../../assets/DiretoriasCoordenadorias/Logistic.svg'
 import SecurityLogo from '../../../assets/DiretoriasCoordenadorias/SecurityLogo.svg'
 import ShopeLogo from '../../../assets/DiretoriasCoordenadorias/ShopLogo.svg'
+import HammerLogo from '../../../assets/DiretoriasCoordenadorias/HammerLogo.svg'
 import ContractLogo from '../../../assets/DiretoriasCoordenadorias/ContractLogo.svg'
 import { Link } from "react-router-dom"
 import { useState } from 'react';
@@ -101,16 +102,16 @@ const DiretoriasCoord = (props) => {
               <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
 
-              <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
-              <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
+              <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
+              <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99639-6314" />
 
             </p>
           </>
           )}>
-            <img src={SecurityLogo} alt="logo" />
+            <img src={HammerLogo} alt="logo" />
             <div className="item-content">
               <h1 className='item-title'>DIVISÃO DE FASE INTERNA</h1>
-              <p className="item-description">A Divisão de Fase interna (DFI) é responsável pela instrução e formalização dos processos de compras da UFRN.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet condimentum metus. Duis pulvinar maximus diam sed imperdiet. Cras condimentum eu quam at auctor. </p>
+              <p className="item-description">A Divisão de Fase Interna (DFI) é responsável por formalizar os processos licitatórios em sua fase interna: editais, pesquisas de mercado, contratações diretas nacionais e internacionais, e divulgação dessas demandas nos sítios do Governo Federal.</p>
             </div>
           </div>
 
@@ -143,10 +144,10 @@ const DiretoriasCoord = (props) => {
               </p>
             </>
             )}>
-              <img src={ShopeLogo} alt="logo" />
+              <img src={ContractLogo} alt="logo" />
               <div className="item-content">
                 <h1 className='item-title'>DIVISÃO DE FASE EXTERNA</h1>
-                <p className="item-description">Cabe a Divisão de Fase externa (DFE) coordenar e gerenciar a fase externa dos processos licitatórios. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet condimentum metus. Duis pulvinar maximus diam sed imperdiet. Cras condimentum eu quam at auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet condimentum metus. </p>
+                <p className="item-description">Compete à Divisão de Fase Externa de Compras coordenar e gerenciar a fase externa dos processos licitatórios, dispensa de licitação eletrônica e Regime Diferenciado de Contratação (RDC). </p>
               </div>
             </div>
        
@@ -180,7 +181,7 @@ const DiretoriasCoord = (props) => {
                                 </p>
 
                                 <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
-                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="daniel.oliveira@ufrn.br" telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="planejamentodpgcufrn@gmail.com " telefone="(84) 98821-4683" />
 
                             </p>
                         </>
@@ -188,9 +189,7 @@ const DiretoriasCoord = (props) => {
             <img src={CashLogo} alt="logo" />
             <div className="item-content">
               <h1 className='item-title'>DIVISÃO DE PLANEJAMENTO DE GERENCIAMENTO DE COMPRAS</h1>
-              <p className="item-description">Cabe a Divisão de Planejamento de Gerenciamento de Compras (DPGC) coordenar o planejamento das contratações por meio de
-                licitação que resultam futuramente em itens disponibilizados em atas SRP (próprias ou de outros órgãos por meio de adesão), bem como das
-                contratações diretas. </p>
+              <p className="item-description">Compete à Divisão de Planejamento e Gerenciamento de Compras coordenar o planejamento das contratações institucionais, do qual resultam os pregões, adesões a atas de outros órgãos federais e compras diretas.</p>
             </div>
           </div>
 

@@ -11,5 +11,10 @@ body {
 
 .ant-modal-title{
   font-size: 20px !important;
+  margin-left: 10px !important;
   font-weight: 600 !important;
+}
+
+.ant-modal-body{
+  margin-left: 25px !important;
 }

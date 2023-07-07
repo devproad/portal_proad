@@ -144,7 +144,7 @@ const Menu = (props) => {
                                 </p>
 
                                 <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
-                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="daniel.oliveira@ufrn.br" telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="planejamentodpgcufrn@gmail.com " telefone="(84) 98821-4683" />
                             </p>
                         </>
                         )}>
@@ -178,8 +178,8 @@ const Menu = (props) => {
                                 <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
 
-                                <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
-                                <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
+                                <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
+                                <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99639-6314" />
                             </p>
                         </>
                         )}>
@@ -347,8 +347,8 @@ const Menu = (props) => {
                 <li id='dropdown'><a href='#'>COMUNICAÇÃO <img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu dropDownComunicacao'>
                     <li><a href='#'>Acompanhamento de processos</a></li>
-                    <li><a href='https://sipac.ufrn.br/public/listaEditais.do?tipo=2&aba=p-editais-atas&buscaTodas=true&acao=544'>Atas vigentes</a></li>
-                    <li><a href='https://sipac.ufrn.br/public/listaEditais.do?tipo=1&aba=p-comunicados'>Editais Abertos</a></li>
+                    <li><a  target="_blank" rel="noopener" href='https://sipac.ufrn.br/public/listaEditais.do?tipo=2&aba=p-editais-atas&buscaTodas=true&acao=544'>Atas vigentes</a></li>
+                    <li><a  target="_blank" rel="noopener" href='https://sipac.ufrn.br/public/listaEditais.do?tipo=1&aba=p-comunicados'>Editais Abertos</a></li>
                     <li>
                         <a onClick={() => openModal(
                             'Agenda do Diretor ', <>
@@ -374,13 +374,13 @@ const Menu = (props) => {
                             <ContatoModal emailPrimario="diretoriacomprasufrn@gmail.com" />
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
-                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="direcao@compras.ufrn.br" emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
 
 
                             <h1 className='titulo-atendimento'>Secretaria</h1>
                             <div className='grid-contatos'>
-                                <ContatoModal nome='Edjane Cortez' emailPrimario="edjane.cortez@ufrn.br" telefone="(84) 99141-5018" />
-                                <ContatoModal nome='Matheus Wanderley' emailPrimario="matheus.wanderley@ufrn.br" telefone="(84) 98828-1950" />
+                                <ContatoModal nome='Edjane Cortez' telefone="(84) 99141-5018" />
+                                <ContatoModal nome='Matheus Wanderley' telefone="(84) 98828-1950" />
                             </div>
 
 
@@ -410,23 +410,23 @@ const Menu = (props) => {
 
 
 
-                                <ContatoModal emailPrimario="poscomprasufrn@gmail.com" telefone="(84) 99204-5432" />
+                                <ContatoModal emailPrimario="poscomprasufrn@gmail.com" telefone="(84) 99193-6070" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <div className='grid-contatos'>
 
-                                <ContatoModal nome='Rute Clea Pereira de Noronha (Titular)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99193-6070" />
-                                <ContatoModal nome='Daniel Oliveira (Substituto)' emailPrimario="daniel.oliveira@ufrn.br" telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Titular)'  telefone="(84) 99204-5432" />
+                                <ContatoModal nome='Daniel Oliveira (Substituto)' telefone="(84) 98821-4683" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
 
                             <div className='grid-contatos'>
-                                <ContatoModal nome='Adrielly Nunes' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
-                                <ContatoModal nome='Flávio Albuquerque' emailPrimario="flavio.carlos@ufrn.br" telefone="(84) 99126-5808" />
-                                <ContatoModal nome='Pedro Rocha' emailPrimario="pedro.rocha@ufrn.br" telefone="(84) 98704-1923" />
-                                <ContatoModal nome='Thays Lins' emailPrimario="thays.lins@ufrn.br" telefone="(84) 98166-5859" />
+                                <ContatoModal nome='Adrielly Nunes'  telefone="(84) 99632-8004" />
+                                <ContatoModal nome='Flávio Albuquerque'  telefone="(84) 99126-5808" />
+                                <ContatoModal nome='Pedro Rocha' telefone="(84) 98704-1923" />
+                                <ContatoModal nome='Thays Lins' telefone="(84) 98166-5859" />
                             </div>
                         </>
                         )}>
@@ -443,17 +443,46 @@ const Menu = (props) => {
 
 
                             <h1 className='titulo-atendimento'>Atendimento</h1>
-                            <ContatoModal emailPrimario="atendimentodfi@compras.ufrn.br" telefone="(84) 99421-6182"/>
+                            <ContatoModal emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99421-6182"/>
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <div className='grid-contatos'>
-                            <ContatoModal nome='Chianc Leocádio de Lima (Titular)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
-                            <ContatoModal nome='Thiago Correia (Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99899-3667" />
+                            <ContatoModal nome='Chianc Leocádio (Titular)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
+                            <ContatoModal nome='Thiago Correia (Substituto)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
                             </div>
 
-                            <h1 className='titulo-atendimento'>Elaboração de editais</h1>
-                            <h1 className='titulo-atendimento'>Contratações diretas</h1>
+                            <h1 className='titulo-atendimento'>Equipe Elaboração de Edital</h1>
+
+
+
+                            <div className='grid-contatos'>
+                                <ContatoModal nome='Stefferson Sarthour' telefone="(84) 99629-6551" />
+                                <ContatoModal nome='Klayton Lima' telefone="(84) 99854-2266" />
+                                <ContatoModal nome='Rosana Garcia' telefone="(84) 98838-0349" />
+                            </div>
+
+                        
+                            <h1 className='titulo-atendimento'>Equipe SIASG</h1>
+
+                            <div className='grid-contatos'>
+                                <ContatoModal nome='Daniel Galvão (Adesão)' telefone="(84) 99640-7489" />
+                                <ContatoModal nome='Marília Linhares (IRP/SIDEC)' telefone="(84) 99846-9331" />
+                                <ContatoModal nome='Sonaydy Dantas (IRP/SIDEC)' telefone="(84) 98749-6196" />
+                            </div>
+
+
+
+
+                            <h1 className='titulo-atendimento'>Equipe Contratações diretas</h1>
+
+                            <div className='grid-contatos'>
+                                <ContatoModal nome='Ana Karla Duarte (Importação/Pagamento de taxa de publicação)' telefone="(84) 99921-6898" />
+                                <ContatoModal nome='Éricka Jácome (Dispensa de Licitação/Inexigibilidade)' telefone="(84) 98805-7119" />
+                            </div>
+
                             <h1 className='titulo-atendimento'>Pesquisa de preços</h1>
+                            <ContatoModal  telefone="(84) 99421-6182" />
+
 
                          
                         </>
@@ -473,7 +502,7 @@ const Menu = (props) => {
                             <ContatoModal emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 99193-6375"/>
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
-                            <ContatoModal nome="Adriana da Silva Cardoso (Titular)" emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
+                            <ContatoModal nome="Adriana da Silva Cardoso (Titular)" emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 98746-7713" />
 
                             <h1 className='titulo-atendimento'>Pregoeiros</h1>
 

@@ -16,22 +16,22 @@ const Contato = () => {
 
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584994806899">(84) 99480-6899 (Direção)</a> 
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584994806899">(84) 99480-6899 (João Paulo - Direção)</a> 
                         </div>
 
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584994216182">(84) 99421-6182 (DFI)</a>
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584998993667">(84) 99899-3667 (Atendimento - DFI)</a>
                         </div>
                         
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584991936375">(84) 99193-6375 (DFE)</a> 
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584991936375">(84) 99193-6375 (Atendimento - DFE)</a> 
                         </div>
 
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584992045432">(84) 99204-5432 (DPGC)</a> 
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584992045432">(84) 99204-5432 (Atendimento - DPGC)</a> 
                         </div>
 
                         <span className='subtitulo'>Email</span> <br />

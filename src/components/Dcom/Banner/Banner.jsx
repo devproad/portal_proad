@@ -15,7 +15,7 @@ const Banner = () => {
                  <img src={logoUfrn} alt="UFRN"></img>
                     <div className='bannerMenuRedes'>
                     
-                        <a href='https://www.instagram.com/proadufrn/'>
+                        <a target="_blank" rel="noopener" href='https://www.instagram.com/proadufrn/'>
                             <img src={instagram} alt="Instagram"></img>
                         </a>
                 

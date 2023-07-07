@@ -1,7 +1,13 @@
 .contatosModal {
     display: flex;
     align-items: center;
-    margin-bottom: 13px;
+    margin: 15px 10px 15px 5px;
+}
+
+.contatoModalHorizontal {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px 15px 5px;
 }
 
 .contatosModal img {
@@ -13,6 +19,7 @@
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 .contatoModalHorizontal {
