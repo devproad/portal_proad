@@ -242,7 +242,7 @@ const Menu = (props) => {
                         <a onClick={() => openModal(
                             'Organograma', <>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia eveniet commodi asperiores rerum similique minus eligendi, aliquid delectus ad ratione soluta. Deserunt quia distinctio nobis placeat! Reprehenderit, neque perferendis!
+                                Em elaboração
                             </p>
                         </>
                         )}>
@@ -305,12 +305,26 @@ const Menu = (props) => {
                             Relatórios de gestão
                         </a>
                     </li>
-                    <li><a href='#'>Painel de Indicadores</a></li>
-                    <li><a href='#'>Matriz de Priorização de Compras</a></li>
+                    <li><a onClick={() => openModal(
+                        'Painel de Indicadores', <>
+                        <p>Em elaboração</p>
+                    </>
+                    )}>
+                        Painel de Indicadores
+                    </a>
+                    </li>
+                    <li><a onClick={() => openModal(
+                        'Matriz de Priorização de Compras', <>
+                        <p>Em elaboração</p>
+                    </>
+                    )}>
+                        Matriz de Priorização de Compras
+                    </a>
+                    </li>
                     <li>
                         <a onClick={() => openModal(
                             'Planos de Contratações Anuais ', <>
-                            Para consultar todos os planos de contratação anuais registrados pela UFRN, acesse o link: <a href="#">(Exemplo)</a>
+                            Para consultar os Planos de Contratações Anuais registrados pela UFRN, acesse o link do Portal Nacional de Contratações Públicas:  <a href="https://pncp.gov.br/app/pca?pagina=1&orgaos=75006">https://pncp.gov.br/app/pca?pagina=1&orgaos=75006</a>
 
                         </>
                         )}>
@@ -323,8 +337,20 @@ const Menu = (props) => {
             <ul className='menuLinks'>
                 <li id='dropdown'><a href='#'>ORIENTAÇÕES<img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu dropDownManuais'>
-                    <li><a href='#'>Cartilhas</a></li>
-                    <li><a href='#'>Manuais</a></li>
+                    <li><a onClick={() => openModal(
+                        'Cartilhas', <>
+                        <p>Em elaboração</p>
+                    </>
+                    )}>
+                        Cartilhas
+                    </a></li>
+                    <li><a onClick={() => openModal(
+                        'Manuais', <>
+                        <p>Em elaboração</p>
+                    </>
+                    )}>
+                        Manuais
+                    </a></li>
                     <li>  <a onClick={() => openModal(
                         'Fluxos Processuais', <>
                         <p>A Diretoria de Compras disponibiliza os fluxos processuais aplicados às compras e contratações da UFRN, conforme links abaixo:</p>
@@ -346,13 +372,19 @@ const Menu = (props) => {
                 </ul>
                 <li id='dropdown'><a href='#'>COMUNICAÇÃO <img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu dropDownComunicacao'>
-                    <li><a href='#'>Acompanhamento de processos</a></li>
-                    <li><a  target="_blank" rel="noopener" href='https://sipac.ufrn.br/public/listaEditais.do?tipo=2&aba=p-editais-atas&buscaTodas=true&acao=544'>Atas vigentes</a></li>
-                    <li><a  target="_blank" rel="noopener" href='https://sipac.ufrn.br/public/listaEditais.do?tipo=1&aba=p-comunicados'>Editais Abertos</a></li>
+                    <li><a onClick={() => openModal(
+                        'Acompanhamentos de processos', <>
+                        <p>Em elaboração</p>
+                    </>
+                    )}>
+                        Acompanhamentos de processos
+                    </a></li>
+                    <li><a target="_blank" rel="noopener" href='https://sipac.ufrn.br/public/listaEditais.do?tipo=2&aba=p-editais-atas&buscaTodas=true&acao=544'>Atas vigentes</a></li>
+                    <li><a target="_blank" rel="noopener" href='https://sipac.ufrn.br/public/listaEditais.do?tipo=1&aba=p-comunicados'>Editais Abertos</a></li>
                     <li>
                         <a onClick={() => openModal(
                             'Agenda do Diretor ', <>
-                            <iframe src="https://calendar.google.com/calendar/u/0/embed?src=proadufrn@gmail.com&ctz=America/Fortaleza&pli=1" style={{ border: 0 }} width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+                            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FFortaleza&src=Mzc0YzI2MDlhMmJhNDUwNGFmOTIzNzNlMmU2MGZmMWE5NTE3YmUzZmJlMDRlNGE4M2EyOTUyYjJlOWYxZmI4OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style={{ border: 0 }} width="100%" height="600" frameborder="0" scrolling="no"></iframe>
                         </>
                         )}>
                             Agenda do Diretor
@@ -416,15 +448,15 @@ const Menu = (props) => {
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <div className='grid-contatos'>
 
-                                <ContatoModal nome='Rute Clea Pereira de Noronha (Titular)'  telefone="(84) 99204-5432" />
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Titular)' telefone="(84) 99204-5432" />
                                 <ContatoModal nome='Daniel Oliveira (Substituto)' telefone="(84) 98821-4683" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
 
                             <div className='grid-contatos'>
-                                <ContatoModal nome='Adrielly Nunes'  telefone="(84) 99632-8004" />
-                                <ContatoModal nome='Flávio Albuquerque'  telefone="(84) 99126-5808" />
+                                <ContatoModal nome='Adrielly Nunes' telefone="(84) 99632-8004" />
+                                <ContatoModal nome='Flávio Albuquerque' telefone="(84) 99126-5808" />
                                 <ContatoModal nome='Pedro Rocha' telefone="(84) 98704-1923" />
                                 <ContatoModal nome='Thays Lins' telefone="(84) 98166-5859" />
                             </div>
@@ -443,12 +475,12 @@ const Menu = (props) => {
 
 
                             <h1 className='titulo-atendimento'>Atendimento</h1>
-                            <ContatoModal emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99421-6182"/>
+                            <ContatoModal emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99421-6182" />
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <div className='grid-contatos'>
-                            <ContatoModal nome='Chianc Leocádio (Titular)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
-                            <ContatoModal nome='Thiago Correia (Substituto)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
+                                <ContatoModal nome='Chianc Leocádio (Titular)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
+                                <ContatoModal nome='Thiago Correia (Substituto)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Equipe Elaboração de Edital</h1>
@@ -461,7 +493,7 @@ const Menu = (props) => {
                                 <ContatoModal nome='Rosana Garcia' telefone="(84) 98838-0349" />
                             </div>
 
-                        
+
                             <h1 className='titulo-atendimento'>Equipe SIASG</h1>
 
                             <div className='grid-contatos'>
@@ -481,10 +513,10 @@ const Menu = (props) => {
                             </div>
 
                             <h1 className='titulo-atendimento'>Pesquisa de preços</h1>
-                            <ContatoModal  telefone="(84) 99421-6182" />
+                            <ContatoModal telefone="(84) 99421-6182" />
 
 
-                         
+
                         </>
                         )}>
                             DFI
@@ -499,7 +531,7 @@ const Menu = (props) => {
                             </p>
 
                             <h1 className='titulo-atendimento'>Atendimento</h1>
-                            <ContatoModal emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 99193-6375"/>
+                            <ContatoModal emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 99193-6375" />
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <ContatoModal nome="Adriana da Silva Cardoso (Titular)" emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 98746-7713" />
