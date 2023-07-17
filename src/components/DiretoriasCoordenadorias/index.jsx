@@ -31,6 +31,8 @@ const DiretoriasCoord = (props) => {
           <p className=''>Coordenadorias</p>
           </Link>
         </div>  
+
+        
         <div className="itens-DiretCoord">
           <div className="item-DiretCoord">
             <img src={CashLogo} alt="logo" />
@@ -42,6 +44,8 @@ const DiretoriasCoord = (props) => {
               de Execução Orçamentária, Setor de Análise e Liquidação de Despesa, e Setor de Finanças; </p>
             </div>
           </div>
+
+  
           <div className="item-DiretCoord">
             <img src={SecurityLogo} alt="logo" />
             <div className="item-content">
@@ -49,16 +53,19 @@ const DiretoriasCoord = (props) => {
               <p className="item-description">Finalidade de planejar, coordenar, executar e avaliar a segurança patrimonial. É constituída apenas pela Divisão Operacional que compete em: orientar as diversas unidades da UFRN em assuntos de segurança, coordenar as ações pertinentes à segurança, executar medidas de segurança em sua forma presencial e ostensiva, por meio de equipamentos eletrônicos de proteção e de monitoramento. </p>
             </div>
           </div>
+  
           
-          <Link to="/compras" className='link-DiretCoord'>
+      
           <div className="item-DiretCoord">
+          <Link to="/compras" className='link-DiretCoord'>
             <img src={ShopeLogo} alt="logo" />
             <div className="item-content">
               <h1 className='item-title'>diretoria de compras</h1>
               <p className="item-description">Tem como finalidade planejar, coordenar e executar as aquisições de bens e contratações de serviços institucionais no âmbito nacional e internacional. A unidade é constituída pela Direção, Divisão de Fase Interna de Compras, Divisão de Fase Externa de Compras e Divisão de Planejamento e Gerenciamento de Compras.”</p>
             </div>
+            </Link>
           </div>
-          </Link>
+          
           <div className="item-DiretCoord">
             <img src={ContractLogo} alt="logo" />
             <div className="item-content">
@@ -66,6 +73,7 @@ const DiretoriasCoord = (props) => {
               <p className="item-description">Possui a finalidade de planejar, acompanhar a execução físico-financeira e coordenar a fiscalização administrativa dos contratos de obras e serviços de engenharia, cessão patrimonial e de serviços de natureza continuada, em consonância com as políticas e diretrizes de governança em contratações e aquisições regulamentadas pelo Conselho de Administração da UFRN. É constituída por: Divisão de Formalização e Acompanhamento de Contratos, e  Divisão de Fiscalização de Contratos.</p>
             </div>
           </div>
+          
           <div className="item-DiretCoord">
             <img src={Logistic} alt="logo" />
             <div className="item-content">

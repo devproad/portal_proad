@@ -71,6 +71,7 @@
 .item-DiretCoord img {
   height: 80px;
   margin: auto;
+  display: block;
 }
 
 .item-content {
