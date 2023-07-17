@@ -38,7 +38,7 @@ const DiretoriasCoord = (props) => {
     <section className="DiretCoord">
       <div className="container-DiretCoord">
         <div className="header-DiretCoord">
-          <Link to="/dcom" className='link-DiretCoord'>
+          <Link to="/compras" className='link-DiretCoord'>
             <p>ESTRUTURA ORGANIZACIONAL</p>
           </Link>
         </div>

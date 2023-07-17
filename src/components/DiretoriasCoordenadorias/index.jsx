@@ -50,7 +50,7 @@ const DiretoriasCoord = (props) => {
             </div>
           </div>
           
-          <Link to="/dcom" className='link-DiretCoord'>
+          <Link to="/compras" className='link-DiretCoord'>
           <div className="item-DiretCoord">
             <img src={ShopeLogo} alt="logo" />
             <div className="item-content">
