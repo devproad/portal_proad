@@ -26,9 +26,9 @@ const Principal = (props) => {
 
 
     useEffect(() => {
-        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/noticias.json')
+        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/noticias-migracao.json')
             .then(response => {
-                const data_noticias = response.data.data_noticias;
+                const data_noticias = response.data;
                 setDataNoticias(data_noticias);
                 console.log(data_noticias);
             })
@@ -36,28 +36,6 @@ const Principal = (props) => {
                 console.log(error);
             });
 
-        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/editais_licitacoes.json')
-            .then(response => {
-                const data_editais_licitacoes = response.data.data_editais_licitacoes;
-                setDataEditaisLicitacoes(data_editais_licitacoes);
-                console.log(data_editais_licitacoes);
-            })
-            .catch(error => {
-                console.log(error);
-            }
-            );
-
-        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/editais_homologados.json')
-            .then(response => {
-                const data_editais_homologados = response.data.data_editais_homologados;
-                setDataEditaisHomologados(data_editais_homologados);
-                console.log(data_editais_homologados);
-            }
-            )
-            .catch(error => {
-                console.log(error);
-            }
-            );
     }, []);
 
     const textoPrincipal = Array.from(document.querySelectorAll('.Principal p, .Principal h1, .esquerdo a, .direito a, .header-destaques span'));
@@ -139,35 +117,35 @@ const Principal = (props) => {
                 <Destaques onLinkSelected={handleLinkSelected}>
                     <Carousel>
                         {selectedLink === 'noticias' ? (
-                            data_noticias.filter(item => item.attributes.Tag.includes("noticias")).map(data_noticias => (
+                            data_noticias.filter(item => item.tags.includes("proad")).map(data_noticias => (
                                 <DestaquesItem
-                                    key={data_noticias.id}
-                                    imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                    titulo={data_noticias.attributes.Title}
-                                    descricaoDestaques={data_noticias.attributes.Description}
-                                    data_noticias={data_noticias.attributes.Date}
+                                    key={data_noticias.titulo}
+                                    imagem={data_noticias.imagem}
+                                    titulo={data_noticias.titulo}
+                                    descricaoDestaques={data_noticias.descricao}
+                                    data_noticias={data_noticias.dataPublicacao}
                                 />
                             ))
                         ) : null}
                         {selectedLink === 'editais_licitacoes' ? (
-                            data_noticias.filter(item => item.attributes.Tag.includes("editais_licitacoes")).map(data_noticias => (
+                            data_noticias.filter(item => item.tags.includes("proad")).map(data_noticias => (
                                 <DestaquesItem
-                                    key={data_noticias.id}
-                                    imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                    titulo={data_noticias.attributes.Title}
-                                    descricaoDestaques={data_noticias.attributes.Description}
-                                    data_noticias={data_noticias.attributes.Date}
+                                    key={data_noticias.titulo}
+                                    imagem={data_noticias.imagem}
+                                    titulo={data_noticias.titulo}
+                                    descricaoDestaques={data_noticias.descricao}
+                                    data_noticias={data_noticias.dataPublicacao}
                                 />
                             ))
                         ) : null}
                         {selectedLink === 'editais_homologados' ? (
-                            data_noticias.filter(item => item.attributes.Tag.includes("editais_homologados")).map(data_noticias => (
+                            data_noticias.filter(item => item.tags.includes("proad")).map(data_noticias => (
                                 <DestaquesItem
-                                    key={data_noticias.id}
-                                    imagem={data_noticias.attributes.Image.data[0].attributes.formats.thumbnail.url}
-                                    titulo={data_noticias.attributes.Title}
-                                    descricaoDestaques={data_noticias.attributes.Description}
-                                    data_noticias={data_noticias.attributes.Date}
+                                    key={data_noticias.titulo}
+                                    imagem={data_noticias.imagem}
+                                    titulo={data_noticias.titulo}
+                                    descricaoDestaques={data_noticias.descricao}
+                                    data_noticias={data_noticias.dataPublicacao}
                                 />
                             ))
                         ) : null}
@@ -176,28 +154,28 @@ const Principal = (props) => {
                 </Destaques>
 
                 <NoticiasRecentes>
-                {
-                    isMobile ? (
-                     data_noticias.slice(0, 2).map(data_noticias => (
-                            <NoticiasRecentesItem
-                                key={data_noticias.id}
-                                titulo={data_noticias.attributes.Title}
-                                descricao={data_noticias.attributes.Description}
-                                data_noticias={data_noticias.attributes.Date}
-                            />
-                        ))
-                    ) : (
-                        data_noticias.slice(0, 6).map(data_noticias => (
-                            <NoticiasRecentesItem
-                                key={data_noticias.id}
-                                titulo={data_noticias.attributes.Title}
-                                descricao={data_noticias.attributes.Description}
-                                data_noticias={data_noticias.attributes.Date}
-                            />
-                        ))
-                    )
-                    
-                }
+                    {
+                        isMobile ? (
+                            data_noticias.slice(0, 2).map(data_noticias => (
+                                <NoticiasRecentesItem
+                                    key={data_noticias.titulo}
+                                    titulo={data_noticias.titulo}
+                                    descricao={data_noticias.descricao}
+                                    data_noticias={data_noticias.dataPublicacao.slice(0, 10)}
+                                />
+                            ))
+                        ) : (
+                            data_noticias.slice(0, 6).map(data_noticias => (
+                                <NoticiasRecentesItem
+                                    key={data_noticias.titulo}
+                                    titulo={data_noticias.titulo}
+                                    descricao={data_noticias.descricao}
+                                    data_noticias={data_noticias.dataPublicacao.slice(0, 10)}
+                                />
+                            ))
+                        )
+
+                    }
 
                 </NoticiasRecentes>
 

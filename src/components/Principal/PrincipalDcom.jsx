@@ -27,38 +27,15 @@ const PrincipalDcom = (props) => {
 
 
     useEffect(() => {
-        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/noticias.json')
+        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/noticias-migracao.json')
             .then(response => {
-                const data_noticias = response.data.data_noticias;
+                const data_noticias = response.data;
                 setDataNoticias(data_noticias);
                 console.log(data_noticias);
             })
             .catch(error => {
                 console.log(error);
             });
-
-        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/editais_licitacoes.json')
-            .then(response => {
-                const data_editais_licitacoes = response.data.data_editais_licitacoes;
-                setDataEditaisLicitacoes(data_editais_licitacoes);
-                console.log(data_editais_licitacoes);
-            })
-            .catch(error => {
-                console.log(error);
-            }
-            );
-
-        axios.get('https://raw.githubusercontent.com/devproad/proad-json/main/editais_homologados.json')
-            .then(response => {
-                const data_editais_homologados = response.data.data_editais_homologados;
-                setDataEditaisHomologados(data_editais_homologados);
-                console.log(data_editais_homologados);
-            }
-            )
-            .catch(error => {
-                console.log(error);
-            }
-            );
     }, []);
 
     const textoPrincipal = Array.from(document.querySelectorAll('.Principal p, .Principal h1, .esquerdo a, .direito a, .header-destaques span'));
@@ -138,33 +115,33 @@ const PrincipalDcom = (props) => {
         <div className='Principal'>
 
             <div className='esquerdo'>
-            <div className='sobreDcom'>
-            </div>
-                
+                <div className='sobreDcom'>
+                </div>
+
 
                 <NoticiasRecentes>
-                {
-                    isMobile ? (
-                     data_noticias.slice(0, 2).map(data_noticias => (
-                            <NoticiasRecentesItem
-                                key={data_noticias.id}
-                                titulo={data_noticias.attributes.Title}
-                                descricao={data_noticias.attributes.Description}
-                                data_noticias={data_noticias.attributes.Date}
-                            />
-                        ))
-                    ) : (
-                        data_noticias.slice(0, 9).map(data_noticias => (
-                            <NoticiasRecentesItem
-                                key={data_noticias.id}
-                                titulo={data_noticias.attributes.Title}
-                                descricao={data_noticias.attributes.Description}
-                                data_noticias={data_noticias.attributes.Date}
-                            />
-                        ))
-                    )
-                    
-                }
+                    {
+                        isMobile ? (
+                            data_noticias.slice(0, 2).map(data_noticias => (
+                                <NoticiasRecentesItem
+                                    key={data_noticias.titulo}
+                                    titulo={data_noticias.titulo}
+                                    descricao={data_noticias.descricao}
+                                    data={data_noticias.dataPublicacao.slice(0, 10)}
+                                />
+                            ))
+                        ) : (
+                            data_noticias.slice(0, 9).map(data_noticias => (
+                                <NoticiasRecentesItem
+                                    key={data_noticias.titulo}
+                                    titulo={data_noticias.titulo}
+                                    descricao={data_noticias.descricao}
+                                    data={data_noticias.dataPublicacao.slice(0, 10)}
+                                />
+                            ))
+                        )
+
+                    }
 
                 </NoticiasRecentes>
 

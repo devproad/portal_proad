@@ -2,8 +2,8 @@ import React from 'react'
 import './DestaquesItem.css'
 
 const DestaquesItem = (props) => {
-    const titMaxCaracteres = 55;
-    const descMaxCaracteres = 150;
+    const titMaxCaracteres = 40;
+    const descMaxCaracteres = 120;
 
     return (
             <div className="card-destaque" id={props.id}>
