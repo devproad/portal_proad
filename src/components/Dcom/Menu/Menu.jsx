@@ -324,7 +324,7 @@ const Menu = (props) => {
                     <li>
                         <a onClick={() => openModal(
                             'Planos de Contratações Anuais ', <>
-                            Para consultar os Planos de Contratações Anuais registrados pela UFRN, acesse o link do Portal Nacional de Contratações Públicas:  <a href="https://pncp.gov.br/app/pca?pagina=1&orgaos=75006">https://pncp.gov.br/app/pca?pagina=1&orgaos=75006</a>
+                            Para consultar os Planos de Contratações Anuais registrados pela UFRN, acesse o link do Portal Nacional de Contratações Públicas:  <a target="_blank" rel="noopener" href="https://pncp.gov.br/app/pca?pagina=1&orgaos=75006">https://pncp.gov.br/app/pca?pagina=1&orgaos=75006</a>
 
                         </>
                         )}>
