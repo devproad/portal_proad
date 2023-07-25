@@ -11,7 +11,6 @@ const NoticiasRecentes = (props) => {
                 {props.children}
             </div>
             <Link className='visualizarNoticias' to="/noticias">Visualizar todas as noticias</Link>
-            {/* <a className='visualizarNoticias' href='#'>Visualizar todas as noticias</a> */}
         </div>
     );
 }

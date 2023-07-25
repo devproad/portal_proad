@@ -1,22 +1,30 @@
-import {Modal} from 'antd'
-import DocumentosItem from '../documentosItem/documentosItem';
+import { Modal } from 'antd';
+import DocumentosItem from '../Dcom/Banner/DocumentosItem/DocumentosItem';
+import './noticiaExpandida.css';
+import Linkify from 'react-linkify';
 
-const noticiaExpandida = (props) => {
-    <Modal title={props.titulo} visible={props.visible} onOk={props.onOk} onCancel={props.onCancel}>
-        <p>{props.dataPostagem}</p>
-        <p>{props.conteudo}</p>
-        <p>
-            <strong>Autor: {props.autor}</strong>
-            <strong>Fonte: {props.fonte}</strong>
-        </p>
-        <DocumentosItem titulo={props.docTitulo} link={props.docLink}/>
-        
-        Tags: {props.tags.map((tag) => {
-            return <span>{tag}</span>
-        })}
-        
-    </Modal>
+const NoticiaExpandida = (props) => {
+    return (
+        <Modal title={props.titulo} open={props.open} footer={false} onCancel={props.onCancel}>
+            <p>{props.dataPostagem}</p>
+            <p>
+                <Linkify componentDecorator={(decoratedHref, decoratedText, key) => ( <a target="blank" rel="noopener" href={decoratedHref} key={key}> {decoratedText} </a> )} >
+                    {props.conteudo}
+                </Linkify>
+            </p>
+            <p>
+                <strong>{props.autor}</strong> <br />
+                <strong>{props.fonte}</strong>
+            </p>
+            {props.docTitulo && props.docLink && (
+                <DocumentosItem titulo={props.docTitulo} link={props.docLink} />
+            )}
+
+            <div className='noticia-expandida-tag-container'>
+                {props.tags && props.tags.map((tag) => <span className='noticia-expandida-tag'>{tag}</span>)}
+            </div>
+        </Modal>
+    );
 }
 
-export default noticiaExpandida;
-
+export default NoticiaExpandida;

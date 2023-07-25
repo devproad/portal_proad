@@ -24,9 +24,20 @@ const TodasNoticias = () => {
       <hr className='linhaNoticias'></hr>
       <div className="cards-noticias">
         {noticias.map(noticias =>
-          <NoticiaItem key={noticias.titulo} titulo={noticias.titulo} data={noticias.dataPublicacao} descricao={noticias.descricao} imagem={noticias.imagem} />
-        )}
+          <NoticiaItem key={noticias.titulo} 
+          titulo={noticias.titulo} 
+          data={noticias.dataPublicacao} 
+          descricao={noticias.descricao} 
+          imagem={noticias.imagem} 
+          autor={noticias.autor}  
+          fonte={noticias.fonte}
+          docTitulo={noticias.docTitulo}
+          docLink={noticias.docLink}
+          tags={noticias.tags}
 
+
+          />
+        )}
       </div>
     </div>
   );
