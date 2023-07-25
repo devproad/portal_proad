@@ -124,6 +124,14 @@ const Principal = (props) => {
                                     titulo={data_noticias.titulo}
                                     descricaoDestaques={data_noticias.descricao}
                                     data_noticias={data_noticias.dataPublicacao}
+                                    descricao={data_noticias.descricao}
+                                    conteudo={data_noticias.descricao}
+                                    autor={data_noticias.autor}
+                                    fonte={data_noticias.fonte}
+                                    docLink={data_noticias.documento.link}
+                                    docTitulo={data_noticias.documento.titulo}
+                                    tags={data_noticias.tags}
+                                    data={data_noticias.dataPublicacao.slice(0, 10)}
                                 />
                             ))
                         ) : null}
@@ -135,6 +143,14 @@ const Principal = (props) => {
                                     titulo={data_noticias.titulo}
                                     descricaoDestaques={data_noticias.descricao}
                                     data_noticias={data_noticias.dataPublicacao}
+                                    descricao={data_noticias.descricao}
+                                    conteudo={data_noticias.descricao}
+                                    autor={data_noticias.autor}
+                                    fonte={data_noticias.fonte}
+                                    docLink={data_noticias.documento.link}
+                                    docTitulo={data_noticias.documento.titulo}
+                                    tags={data_noticias.tags}
+                                    data={data_noticias.dataPublicacao.slice(0, 10)}
                                 />
                             ))
                         ) : null}
@@ -146,6 +162,14 @@ const Principal = (props) => {
                                     titulo={data_noticias.titulo}
                                     descricaoDestaques={data_noticias.descricao}
                                     data_noticias={data_noticias.dataPublicacao}
+                                    descricao={data_noticias.descricao}
+                                    conteudo={data_noticias.descricao}
+                                    autor={data_noticias.autor}
+                                    fonte={data_noticias.fonte}
+                                    docLink={data_noticias.documento.link}
+                                    docTitulo={data_noticias.documento.titulo}
+                                    tags={data_noticias.tags}
+                                    data={data_noticias.dataPublicacao.slice(0, 10)}
                                 />
                             ))
                         ) : null}
@@ -161,7 +185,14 @@ const Principal = (props) => {
                                     key={data_noticias.titulo}
                                     titulo={data_noticias.titulo}
                                     descricao={data_noticias.descricao}
+                                    conteudo={data_noticias.descricao}
+                                    autor={data_noticias.autor}
+                                    fonte={data_noticias.fonte}
+                                    docLink={data_noticias.documento.link}
+                                    docTitulo={data_noticias.documento.titulo}
+                                    tags={data_noticias.tags}
                                     data_noticias={data_noticias.dataPublicacao.slice(0, 10)}
+                                    data={data_noticias.dataPublicacao.slice(0, 10)}
                                 />
                             ))
                         ) : (
@@ -170,7 +201,14 @@ const Principal = (props) => {
                                     key={data_noticias.titulo}
                                     titulo={data_noticias.titulo}
                                     descricao={data_noticias.descricao}
+                                    conteudo={data_noticias.descricao}
+                                    autor={data_noticias.autor}
+                                    fonte={data_noticias.fonte}
+                                    docLink={data_noticias.documento.link}
+                                    docTitulo={data_noticias.documento.titulo}
+                                    tags={data_noticias.tags}
                                     data_noticias={data_noticias.dataPublicacao.slice(0, 10)}
+                                    data={data_noticias.dataPublicacao.slice(0, 10)}
                                 />
                             ))
                         )
