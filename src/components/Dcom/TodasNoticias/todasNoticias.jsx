@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import NoticiaItem from '../NoticiaItem/NoticiaItem';
+import NoticiaItem from '../../NoticiaItem/NoticiaItem';
 import '../TodasNoticias/todasNoticias.css';
 
 const TodasNoticias = () => {
@@ -25,23 +25,24 @@ const TodasNoticias = () => {
       <h1 className='NoticiasTitulo'>Todas Notícias</h1>
       <hr className='linhaNoticias'></hr>
       <div className="cards-noticias">
-        {noticias.map(noticias =>
-          <NoticiaItem key={noticias.titulo} 
-          titulo={noticias.titulo.length > titLimiteCaracteres ?
-            noticias.titulo.substring(0, titLimiteCaracteres) + '...' : noticias.titulo}
-          data={noticias.dataPublicacao} 
-          descricao={noticias.descricao.length > descLimiteCaracteres ?
-            noticias.descricao.substring(0, descLimiteCaracteres) + '...' : noticias.descricao}
-          imagem={noticias.imagem} 
-          autor={noticias.autor}  
-          fonte={noticias.fonte}
-          docTitulo={noticias.docTitulo}
-          docLink={noticias.docLink}
-          tags={noticias.tags}
-
-
-          />
-        )}
+    
+{noticias
+  .filter(noticia => noticia.tags && noticia.tags.includes('compras'))
+  .map(noticia => (
+    <NoticiaItem
+      key={noticia.titulo}
+      titulo={noticia.titulo.length > titLimiteCaracteres ?
+        noticia.titulo.substring(0, titLimiteCaracteres) + '...' : noticia.titulo}
+      data={noticia.dataPublicacao}
+      descricao={noticia.descricao.length > descLimiteCaracteres ?
+        noticia.descricao.substring(0, descLimiteCaracteres) + '...' : noticia.descricao}
+      imagem={noticia.imagem}
+      autor={noticia.autor}
+      fonte={noticia.fonte}
+      tags={noticia.tags}
+    />
+  ))
+}
       </div>
     </div>
   );

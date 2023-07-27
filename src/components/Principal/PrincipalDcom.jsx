@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import './Principal.css'
 import MenuLateral from '../MenuLateral/MenuLateral';
-import NoticiasRecentes from '../NoticiasRecentes/NoticiasRecentes';
+import NoticiasRecentes from '../Dcom/NoticiasRecentes/NoticiasRecentes';
 import LinksImportantes from '../Dcom/LinksImportantes/LinksImportantes'
 import UltimosDocumentos from '../UltimosDocumentos/UltimosDocumentos';
 import UltimosDocumentosItem from '../UltimosDocumentosItem/UltimosDocumentosItem'
@@ -122,7 +122,10 @@ const PrincipalDcom = (props) => {
                 <NoticiasRecentes>
                     {
                         isMobile ? (
-                            data_noticias.slice(0, 2).map(data_noticias => (
+                            data_noticias
+                            .filter(noticia => noticia.tags && noticia.tags.includes('compras'))
+                            .slice(0, 4)
+                            .map(data_noticias => (
                                 <NoticiasRecentesItem
                                     key={data_noticias.titulo}
                                     titulo={data_noticias.titulo}
@@ -138,7 +141,10 @@ const PrincipalDcom = (props) => {
                                 />
                             ))
                         ) : (
-                            data_noticias.slice(0, 9).map(data_noticias => (
+                            data_noticias
+                            .filter(noticia => noticia.tags && noticia.tags.includes('compras'))
+                            .slice(0, 6)
+                            .map(data_noticias => (
                                 <NoticiasRecentesItem
                                     key={data_noticias.titulo}
                                     titulo={data_noticias.titulo}

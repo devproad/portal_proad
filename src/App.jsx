@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Noticias from './pages/Noticias';
 import TodasNoticias from './pages/TodasNoticias';
+import TodasNoticiasDcom from './pages/TodasNoticiasDcom';
 import Dcom from './pages/Dcom';
 import Coord from './pages/Coord';
 
@@ -16,6 +17,7 @@ import Coord from './pages/Coord';
         <Route path='/coord' element={<Coord/>}></Route>
         <Route path='/destaques' element={<TodasNoticias/>}></Route>
         <Route path='/noticias' element={<TodasNoticias/>}></Route>
+        <Route path='/compras/noticias' element={<TodasNoticiasDcom/>}></Route>
       </Routes>
     </BrowserRouter>
   

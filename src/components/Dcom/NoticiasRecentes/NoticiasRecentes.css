@@ -1,0 +1,77 @@
+.noticiasRecentes {
+  margin-left: 50px;
+  margin-top: 35px;
+  max-width: 830px;
+  margin-bottom: 150px;
+}
+
+.linhaNoticiasRecentes {
+  width: 820px;
+  height: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.noticiasRecentesTitulo {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #282828;
+  margin: 10px 0px 10px 0px;
+}
+
+.gridNoticiasRecentes {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-columns: 270px;
+  grid-template-areas: 
+  "a a a";
+  margin: 20px 0px 40px 0px;
+}
+
+.visualizarNoticias {
+  margin-top: -25px;
+  margin-bottom: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  color: #919191;
+  text-decoration: none;
+  width: 100%;
+}
+
+a.visualizarNoticias:hover {
+  color: #494949;
+}
+
+@media only screen and (max-width: 1024px) {
+  .noticiasRecentes {
+    margin-left: 0px auto;
+  }
+  .gridNoticiasRecentes {
+    grid-auto-columns: 270px;
+    grid-template-areas: "a"
+  }
+
+  .visualizarNoticias {
+    margin-left: 0px auto;
+    display: block;
+  }
+
+  .noticiasRecentesTitulo {
+   max-width: fit-content;
+  }
+  .linhaNoticiasRecentes {
+    width: 90%;
+  }
+
+  .itemNoticiasRecentes {
+    width: 100% !important;
+  }
+}
