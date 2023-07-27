@@ -13,7 +13,6 @@ const TodasNoticias = () => {
       .then(response => {
         const noticias = response.data;
         setNoticias(noticias);
-        console.log(noticias);
       })
       .catch(error => {
         console.log(error);

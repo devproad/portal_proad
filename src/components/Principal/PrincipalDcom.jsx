@@ -31,7 +31,6 @@ const PrincipalDcom = (props) => {
             .then(response => {
                 const data_noticias = response.data;
                 setDataNoticias(data_noticias);
-                console.log(data_noticias);
             })
             .catch(error => {
                 console.log(error);
