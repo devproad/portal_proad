@@ -50,3 +50,9 @@ hr {
     width: 100%;
   }
 }
+
+@media (max-width: 1000px) {
+  .containerSitesUteis hr {
+      width: 100% !important;
+  }
+}

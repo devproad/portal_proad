@@ -15,16 +15,15 @@ div .MenuLateral{
     .MenuLateral{
         display: block;
         margin: 0px auto;
-        width: 80%;
+        width: 90%;
     }
 
     div .MenuLateral{
-        margin: 20px 0px 40px 50px;
+        margin: 20px 0px 40px 25px;
 
     }
   }
 
-/* Create another @media for 1450px */
 @media (max-width: 1450px) {
     div .MenuLateral{
         margin-right: 0px;

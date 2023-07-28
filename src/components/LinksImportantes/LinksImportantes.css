@@ -45,3 +45,10 @@ hr {
     margin-left: 10px;
     width: 16px;
 }
+
+
+@media (max-width: 1000px) {
+    .LinksImportantes hr {
+        width: 100% !important;
+    }
+}
