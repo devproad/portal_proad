@@ -9,13 +9,13 @@ export default function SitesUteis() {
       </div>
       <div className="itens">
         <div className="item">
-          <a href="#">Portal da UFRN</a>
+          <a href="https://www.ufrn.br/" target="_blank" rel="noopener">Portal da UFRN</a>
         </div>
         <div className="item">
-          <a href="#">Portal de Compras</a>
+          <a href="https://www.gov.br/compras/pt-br" target="_blank" rel="noopener">Portal de Compras</a>
         </div>
         <div className="item">
-          <a href="#">SIPAC</a>
+          <a href="https://sipac.ufrn.br/" target="_blank" rel="noopener">SIPAC</a>
         </div>
       </div>
     </div>
