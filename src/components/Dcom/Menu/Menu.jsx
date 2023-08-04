@@ -106,7 +106,7 @@ const Menu = (props) => {
                                     VII – Fornecer com presteza e em tempo hábil informações às instâncias superiores e diversos órgãos de controle do poder público, sempre que solicitado.
                                 </p>
 
-                                <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="direcao@compras.ufrn.br" emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                                <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
                                 <ContatoModal nome='Rute Clea Pereira de Noronha (Diretora Substituta)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
 
                             </p>
@@ -406,7 +406,7 @@ const Menu = (props) => {
                             <ContatoModal emailPrimario="diretoriacomprasufrn@gmail.com" />
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
-                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="direcao@compras.ufrn.br" emailSecundario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                            <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
 
 
                             <h1 className='titulo-atendimento'>Secretaria</h1>
