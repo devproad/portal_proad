@@ -1,28 +1,37 @@
-import React from 'react'
-import './Banner.css'
-import logoProad from '../../assets/Banner/Logo_Proad.svg'
-import arrow from '../../assets/Banner/Arrow.svg'
-import logoUfrn from '../../assets/Banner/Logo_UFRN.svg'
-import facebook from '../../assets/Banner/facebook.svg'
-import instagram from '../../assets/Banner/instagram.svg'
-import linkedin from '../../assets/Banner/linkedin.svg'
+import React, { useState } from 'react';
+import './Banner.css';
+import logoProad from '../../assets/Banner/Logo_Proad.svg';
+import arrow from '../../assets/Banner/Arrow.svg';
+import logoUfrn from '../../assets/Banner/Logo_UFRN.svg';
+import facebook from '../../assets/Banner/facebook.svg';
+import instagram from '../../assets/Banner/instagram.svg';
+import linkedin from '../../assets/Banner/linkedin.svg';
 
-const Banner = (props) => {
+const Banner = ({ isDark, onFocusChange }) => {
+  const [isVisible, setIsVisible] = useState(true);
 
-    const banner = Array.from(document.getElementsByClassName('banner'));
+  const handleFocusChange = (isFocused) => {
+    setIsVisible(isFocused);
 
-    if (props.isDark === true) {
-        banner.forEach((item) => {
-            item.style = 'background:  linear-gradient(103.7deg, #00151b 51.45%, #004053 51.46%);'
-        })
-    } else {
-        banner.forEach((item) => {
-            item.style = 'background:  linear-gradient(103.7deg, #00607D 51.45%, #0387AE 51.46%)'
-        })
+    if (onFocusChange) {
+      onFocusChange(isFocused);
     }
+  };
 
-    return (
-        <div className='banner'>
+  const bannerStyle = {
+    background: isDark
+      ? 'linear-gradient(103.7deg, #00151b 51.45%, #004053 51.46%)'
+      : 'linear-gradient(103.7deg, #00607D 51.45%, #0387AE 51.46%)',
+  };
+
+  return (
+    <div
+      className='banner '
+      style={bannerStyle}
+      onFocus={() => handleFocusChange(true)} 
+      onBlur={() => handleFocusChange(false)}  
+    >
+       
             <div className='bannerTopo'>
                 <div className='bannerMenu'>
                     <img src={logoUfrn} alt="UFRN"></img>
