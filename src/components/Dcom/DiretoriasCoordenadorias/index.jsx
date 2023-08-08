@@ -67,7 +67,7 @@ const DiretoriasCoord = (props) => {
               </p>
 
               <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-              <ContatoModal nome='Rute Clea Pereira de Noronha (Diretora Substituta)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
+              <ContatoModal nome='Rute Clea Pereira de Noronha (Diretora Substituta)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
             </p>
           </>
           )}>
@@ -102,8 +102,8 @@ const DiretoriasCoord = (props) => {
               <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
 
-              <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99899-3667" />
-              <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99639-6314" />
+              <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+              <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
 
             </p>
           </>
@@ -139,7 +139,7 @@ const DiretoriasCoord = (props) => {
                 <p>VII – formalizar e conduzir a publicação dos atos cabíveis aos certames licitatórios, de acordo com a modalidade de disputa. </p>
 
 
-                <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 98746-7713" />
+                <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
 
               </p>
             </>
@@ -180,8 +180,8 @@ const DiretoriasCoord = (props) => {
                                     VII – controlar e acompanhar as notificações para fins de apuração de inadimplências.
                                 </p>
 
-                                <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
-                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="planejamentodpgcufrn@gmail.com " telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
+                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
 
                             </p>
                         </>
