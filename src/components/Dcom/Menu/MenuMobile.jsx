@@ -106,9 +106,9 @@ const Navbar = (props) => {
           'DFI', <>
           <p>
             À Divisão de Fase Interna de Compras compete: <br />
-            <p>
-              I – formalizar os processos licitatórios para aquisição de bens e materiais em sua fase interna; II – elaborar minutas de editais dos processos licitatórios para aquisição de bens e materiais;
-            </p>
+            <p>I – formalizar os processos licitatórios para aquisição de bens e materiais em sua fase interna;</p>
+
+            <p>II – elaborar minutas de editais dos processos licitatórios para aquisição de bens e materiais;</p>
 
             <p>III – auxiliar as equipes de planejamento na realização de pesquisas de mercado;</p>
 

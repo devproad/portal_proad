@@ -158,9 +158,9 @@ const Menu = (props) => {
                             'DFI', <>
                             <p>
                                 À Divisão de Fase Interna de Compras compete: <br />
-                                <p>
-                                    I – formalizar os processos licitatórios para aquisição de bens e materiais em sua fase interna; II – elaborar minutas de editais dos processos licitatórios para aquisição de bens e materiais;
-                                </p>
+                                <p>I – formalizar os processos licitatórios para aquisição de bens e materiais em sua fase interna;</p>
+
+                                <p>II – elaborar minutas de editais dos processos licitatórios para aquisição de bens e materiais;</p>
 
                                 <p>III – auxiliar as equipes de planejamento na realização de pesquisas de mercado;</p>
 
@@ -536,7 +536,7 @@ const Menu = (props) => {
                             <ContatoModal emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 99193-6375" />
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
-                            <ContatoModal nome="Adriana da Silva Cardoso (Titular)" emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 98746-7713" />
+                            <ContatoModal nome="Adriana da Silva Cardoso (Titular)" emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
 
                             <h1 className='titulo-atendimento'>Pregoeiros</h1>
 
