@@ -77,11 +77,11 @@ const Menu = (props) => {
                             <DocumentosItem titulo='Cartilha Assinatura Eletrônica'  link='/documentos/Cartilha Assinatura Eletrônica_Atualizada.pdf' />
                             <DocumentosItem titulo='CÓDIGO DE CONDUTA DOS AGENTES PÚBLICOS E ESTUDANTES DA UFRN'  link='/documentos/CÓDIGO DE CONDUTA DOS AGENTES PÚBLICOS E ESTUDANTES DA UFRN.pdf' />
                             <DocumentosItem titulo="GESTAO PATRIMONIAL DE BENS MOVEIS NA UFRN" link='/documentos/GESTAO PATRIMONIAL DE BENS MOVEIS NA UFRN.pdf' />
-                              <DocumentosItem titulo="ORGANOGRAMA_PROAD_NOVO" link='/documentos/ORGANOGRAMA_PROAD_NOVO.pdf' />
-                              <DocumentosItem titulo="Planejamento Estratégico Diretoria de Compras UFRN 2020 2023 (1)" link='/documentos/Planejamento Estratégico Diretoria de Compras UFRN 2020 2023 (1).pdf' />
-                              <DocumentosItem titulo="PROAD E UNIDADES" link='/documentos/PROAD E UNIDADES.pdf' />
-                              <DocumentosItem titulo="SISTEMA DE GOVERNANÇA DA UFRN" link='/documentos/SISTEMA DE GOVERNANÇA DA UFRN.pdf' />
-                              <DocumentosItem titulo="SOBRE GESTORAS" link='/documentos/SOBRE GESTORAS.pdf' />
+                            <DocumentosItem titulo="ORGANOGRAMA PROAD" link='/documentos/ORGANOGRAMA_PROAD_NOVO.doc' />
+                            <DocumentosItem titulo="Planejamento Estratégico Diretoria de Compras UFRN 2020-2023" link='/documentos/Planejamento Estratégico Diretoria de Compras UFRN 2020 2023 (1).pdf' />
+                            <DocumentosItem titulo="PROAD E UNIDADES" link='/documentos/PROAD E UNIDADES.doc' />
+                            <DocumentosItem titulo="SISTEMA DE GOVERNANÇA DA UFRN" link='/documentos/SISTEMA DE GOVERNANÇA DA UFRN.pdf' />
+                            <DocumentosItem titulo="SOBRE GESTORAS" link='/documentos/SOBRE GESTORAS.doc' />
                         </p>
                     </>
                     )}>
