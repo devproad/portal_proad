@@ -3,6 +3,7 @@ import './Contato.css'
 import whatsapp from '../../assets/Contato/whatsapp.svg'
 import mail from '../../assets/Contato/EmailIcon.svg'
 import tel from '../../assets/Contato/TelIcon.svg'
+import instagram from '../../assets/Contato/Instagram.png'
 
 const Contato = () => {
     return (
@@ -15,18 +16,24 @@ const Contato = () => {
                     <span className='subtitulo'>Telefones</span> <br />
                         <div className='contatos'>
                             <img src={tel} alt='Telefone'></img>
-                            <a className='subtitulo'>(84) 3215-3305 / 3208</a>
+                            <a className='subtitulo'>(84) 3342-2328</a>
                         </div>
 
                         <div className='contatos'>
                             <img src={whatsapp} alt='Whatsapp'></img>
-                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584998993667">(84) 99899-3667</a>
+                            <a className='subtitulo' target="_blank" rel="noopener" href="https://wa.me/5584991936022">(84) 99193-6022</a>
                         </div>
 
                         <span className='subtitulo'>Email</span> <br />
                         <div className='contatos'>
                             <img src={mail} alt='Email'></img>
                             <a className='subtitulo' href="mailto:secretariaproad@reitoria.ufrn.br">secretariaproad@reitoria.ufrn.br</a>
+                        </div>
+
+                        <span className='subtitulo'>Instagram</span> <br />
+                        <div className='contatos'>
+                            <img src={instagram} alt='Instagram'></img>
+                            <a className='subtitulo' href="https://www.instagram.com/proadufrn/">proadufrn</a>
                         </div>
                     </div>
 

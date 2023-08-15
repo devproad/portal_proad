@@ -25,6 +25,16 @@ h1.tituloEquipe {
     padding: 15px 0;
 }
 
+.gridEquipePROAD {
+    grid-gap: 30px;
+    display: grid;
+    gap: 30px;
+    grid-auto-columns: 10%;
+    grid-template-areas: "a a";
+    justify-content: center;
+    padding: 15px 0;
+}
+
 .itemEquipe {
     background: #FFFFFF;
     border-radius: 10px;
@@ -107,7 +117,7 @@ h1.tituloEquipe {
     color: #818181CC;
 }
 
-.perfilEquipe, .descEquipe{
+.perfilEquipe{
     margin: 13px;
 }
 
