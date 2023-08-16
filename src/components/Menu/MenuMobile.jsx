@@ -24,13 +24,11 @@ const Navbar = (props) => {
   const menu = (
     <Menu>
       <SubMenu key="sub1" title="INSTITUICIONAL">
-        <Menu.Item key="1.1">EXEMPLO 1</Menu.Item>
-        <Menu.Item key="1.2">EXEMPLO 2</Menu.Item>
-        <Menu.Item key="1.3">EXEMPLO 3</Menu.Item>
-        <Menu.Item key="1.4">EXEMPLO 4</Menu.Item>
+        <Menu.Item key="1.1"><a href='https://calendar.google.com/calendar/u/0/embed?src=proadufrn@gmail.com&ctz=America/Fortaleza' target="_blank" rel='noopener'>Agenda Administrativa</a>
+        </Menu.Item>
       </SubMenu>
-      <Menu.Item key="1">NOTÍCIAS</Menu.Item>
-      <Menu.Item key="4">  <a onClick={() => openModal(
+      <Menu.Item key="2">NOTÍCIAS</Menu.Item>
+      <Menu.Item key="3">  <a onClick={() => openModal(
         'DOCUMENTOS', <>
         <DocumentosItem titulo='Cartilha Assinatura Eletrônica' link='/documentos/Cartilha Assinatura Eletrônica_Atualizada.pdf' />
         <DocumentosItem titulo='CÓDIGO DE CONDUTA DOS AGENTES PÚBLICOS E ESTUDANTES DA UFRN' link='/documentos/CÓDIGO DE CONDUTA DOS AGENTES PÚBLICOS E ESTUDANTES DA UFRN.pdf' />
@@ -44,8 +42,38 @@ const Navbar = (props) => {
       )}>
         DOCUMENTOS
       </a></Menu.Item>
-      <Menu.Item key="3">QUEM SOMOS</Menu.Item>
-      <Menu.Item key="4">CONTATO</Menu.Item>
+      <Menu.Item key="4"> <a onClick={() => openModal(
+        'QUEM SOMOS', <>
+        <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        </p>
+      </>
+      )}>QUEM SOMOS</a></Menu.Item>
+
+      <SubMenu key="sub2" title="CONTATO">
+        <Menu.Item key="2.1">
+          <a onClick={() => openModal(
+            'SCDP', <>
+            <p>SCDP - Sistema de Concessão de Diárias e Passagens</p>
+
+            <h1 className='titulo-atendimento'>EQUIPE</h1>
+            <p>
+              Ricardo <br />
+              Jorge<br />
+              Marcelino<br />
+              Josenilma<br />
+              Priscila<br />
+            </p>
+            <p>
+              Contato: 84 99229-6490
+            </p>
+          </>
+          )}>SCDP</a>
+
+
+        </Menu.Item>
+      </SubMenu>
     </Menu>
   );
 

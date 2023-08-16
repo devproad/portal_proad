@@ -60,10 +60,7 @@ const Menu = (props) => {
                 <li><Link to='/'>INÍCIO</Link></li>
                 <li id='dropdown'><a href='#'>INSTITUICIONAL <img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu'>
-                    <li><a href='#'>EXEMPLO 1</a></li>
-                    <li><a href='#'>EXEMPLO 2</a></li>
-                    <li><a href='#'>EXEMPLO 3</a></li>
-                    <li><a href='#'>EXEMPLO 4</a></li>
+                    <li><a href='https://calendar.google.com/calendar/u/0/embed?src=proadufrn@gmail.com&ctz=America/Fortaleza' target="_blank" rel='noopener'>Agenda Administrativa</a></li>
                 </ul>
                 <li><a href='#'>NOTÍCIAS</a></li>
             </ul>
@@ -88,10 +85,35 @@ const Menu = (props) => {
                         DOCUMENTOS
                     </a>
                 </li>
-                <li><a href='#'>QUEM SOMOS</a></li>
-                <li><a href='#'>CONTATO</a></li>
+                <li><a onClick={() => openModal(
+                    'QUEM SOMOS', <>
+                    <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                        </p>
+                </>
+                )}>QUEM SOMOS</a></li>
+                  <li id='dropdown'><a href='#'>CONTATO <img id="dropdownArrow" src={arrow}></img></a></li>
+                <ul className='dropdownMenu dropdownContatosPROAD'>
+                    <li><a onClick={() => openModal(
+                        'SCDP', <>
+                        <p>SCDP - Sistema de Concessão de Diárias e Passagens</p>
+                      
+                        <h1 className='titulo-atendimento'>EQUIPE</h1>
+                        <p>
+                            Ricardo <br />
+                            Jorge<br />
+                            Marcelino<br />
+                            Josenilma<br />
+                            Priscila<br />
+                        </p>
+                        <p>
+                         Contato: 84 99229-6490
+                        </p>
+                    </>
+                    )}>SCDP</a></li>
+             </ul>
             </ul>
-
 
 
             <Modal
