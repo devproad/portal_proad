@@ -59,6 +59,9 @@ a.visualizarNoticias:hover {
     grid-template-areas: "a"
   }
 
+  .noticiasRecentes{
+    margin-bottom: 0px !important;
+  }
   .visualizarNoticias {
     margin-left: 0px auto;
     display: block;

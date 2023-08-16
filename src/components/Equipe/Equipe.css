@@ -130,7 +130,7 @@ h1.tituloEquipe {
 }
 
 @media (max-width: 768px) {
-    .gridEquipe {
+    .gridEquipePROAD {
         grid-template-areas: "a";
         grid-auto-columns: auto;
         padding: 0px;

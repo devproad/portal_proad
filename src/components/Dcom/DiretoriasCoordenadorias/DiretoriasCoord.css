@@ -1,14 +1,13 @@
 .DiretCoord {
   width: 100%;
-  height: 563px;
   background: linear-gradient(93.93deg, #00607d 45.4%, #0089b2 99.79%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .container-DiretCoord {
-  width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: column;

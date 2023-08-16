@@ -27,7 +27,7 @@ const Equipe = () => {
                     
                     <span className='descEquipe'>Mestre em Ciências Contábeis</span>
 
-                    <span className='emailEquipe'><a href='mailto:mariadocarmo@reitoria.ufrn.br'>mariadocarmo@reitoria.ufrn.br</a></span>
+                    <span className='emailEquipe'><a href='mailto:izabel.coelho@reitoria.ufrn.br'>izabel.coelho@reitoria.ufrn.br</a></span>
                 </div>
             </div>
 

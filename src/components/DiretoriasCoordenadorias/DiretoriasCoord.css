@@ -1,14 +1,14 @@
 .DiretCoord {
   width: 100%;
-  height: 563px;
   background: linear-gradient(93.93deg, #00607d 45.4%, #0089b2 99.79%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .container-DiretCoord {
-  width: 1200px;
+  max-width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
 }
 
 .header-DiretCoord p:hover {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.733) !important;
   transition: 400ms;
 }
 
@@ -51,15 +51,12 @@
 }
 
 .item-DiretCoord {
-  display: flex;
-  flex-direction: row;
   width: 330px;
   border: 1px solid #fff;
   border-radius: 10px;
   padding: 20px;
   margin: 7px;
   cursor: pointer;
-  transition: 400ms;
 }
 
 
@@ -96,4 +93,11 @@
 
 .link-DiretCoord{
  text-decoration: none;
+ color: rgba(255, 255, 255, 0.6);
 }
+
+.link-DiretCoord.active {
+  color: #fff;
+  border-bottom: 1.5px solid #5FC2E0;
+}
+
