@@ -10,7 +10,7 @@ import ContatoModal from '../Dcom/ContatoModal/ContatoModal';
 import ContatoModalHorizontal from '../Dcom/ContatoModal/ContatoModalHorizontal';
 
 
-import DocumentosItem from '../../components/Dcom/Banner/DocumentosItem/DocumentosItem'
+import DocumentosItem from '../Dcom/DocumentosItem/DocumentosItem'
 
 
 const Menu = (props) => {

@@ -4,7 +4,7 @@ import { BarsOutlined } from '@ant-design/icons';
 import logoDcom from '../../../assets/Menu/LogoDCOM.svg'
 import './MenuMobile.css'
 import ContatoModal from '../ContatoModal/ContatoModal';
-import DocumentosItem from '../Banner/DocumentosItem/DocumentosItem';
+import DocumentosItem from '../DocumentosItem/DocumentosItem';
 import ContatoModalHorizontal from '../ContatoModal/ContatoModalHorizontal';
 
 const { SubMenu } = Menu;

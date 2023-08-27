@@ -1,4 +1,4 @@
-import Documento from '../../../../assets/Modal/Documento.svg'
+import Documento from '../../../assets/Modal/Documento.svg';
 
 const DocumentosItem = (props) => {
     return (

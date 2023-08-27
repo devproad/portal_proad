@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Modal } from 'antd';
 import logoProad from '../../assets/Menu/LogoPROAD.svg'
 import './MenuMobile.css'
-import DocumentosItem from '../../components/Dcom/Banner/DocumentosItem/DocumentosItem'
+import DocumentosItem from '../Dcom/DocumentosItem/DocumentosItem'
 
 
 

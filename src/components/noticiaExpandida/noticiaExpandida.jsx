@@ -1,5 +1,5 @@
 import { Modal } from 'antd';
-import DocumentosItem from '../Dcom/Banner/DocumentosItem/DocumentosItem';
+import DocumentosItem from '../Dcom/DocumentosItem/DocumentosItem';
 import './noticiaExpandida.css';
 import Linkify from 'react-linkify';
 

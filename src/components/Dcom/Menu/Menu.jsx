@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import ContatoModal from '../ContatoModal/ContatoModal';
-import DocumentosItem from '../Banner/DocumentosItem/DocumentosItem';
+import DocumentosItem from '../DocumentosItem/DocumentosItem';
 
 import ContatoModalHorizontal from '../ContatoModal/ContatoModalHorizontal';
 
