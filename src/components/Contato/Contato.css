@@ -23,6 +23,14 @@
   font-weight: 500;
 }
 
+/* .div2 .subtitulo {
+  margin-left: 41px;
+} 
+
+.div2 .localizacao {
+  margin-left: 41px;
+} */
+
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -34,7 +42,6 @@
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   margin-top: 50px;
   margin-right: 50px;
 }
@@ -169,6 +176,15 @@ form button {
 
 
 @media (max-width: 1000px) {
+
+  .div1{
+    align-items: flex-start !important;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  
   .form-contatos {
     padding: 7px;
   }

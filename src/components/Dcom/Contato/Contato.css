@@ -47,7 +47,7 @@
   overflow: hidden;
 }
 
-.localizacao {
+.localizacao{
   color: #4e4e4e;
   margin-block: 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -169,6 +169,15 @@ form button {
 
 
 @media (max-width: 1000px) {
+  .div1{
+    align-items: flex-start !important;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  
+
   .form-contatos {
     padding: 7px;
   }

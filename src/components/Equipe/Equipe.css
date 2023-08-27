@@ -15,21 +15,12 @@ h1.tituloEquipe {
     text-align: center;
 }
 
-.gridEquipe {
-    grid-gap: 30px;
-    display: grid;
-    gap: 30px;
-    grid-auto-columns: 10%;
-    grid-template-areas: "a a a";
-    justify-content: center;
-    padding: 15px 0;
-}
 
 .gridEquipePROAD {
     grid-gap: 30px;
     display: grid;
     gap: 30px;
-    grid-auto-columns: 10%;
+    grid-auto-columns: auto;
     grid-template-areas: "a a";
     justify-content: center;
     padding: 15px 0;
@@ -47,7 +38,7 @@ h1.tituloEquipe {
 }
 
 .perfilEquipe {
-    width: 85%;
+    width: 153px;
     border-radius: 50%;
     height: 160px;
     object-fit: cover;

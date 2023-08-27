@@ -122,8 +122,27 @@
 }
 
 @media only screen and (max-width: 1200px) {
+
+  .card-destaque{
+    width: 75% !important;
+    height: 300px !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    
+  }
+
+  .card-destaque img{
+    width: 100% !important;
+    height: 150px;
+  }
+
+  .slick-dots{
+   display: none !important;
+  }
+
   .container-destaques {
-    /* width: 311px !important; */
     width: 70vw !important;
     margin: 0px auto !important;
     margin-left: 0px;
