@@ -256,23 +256,74 @@ const Menu = (props) => {
 
                 <li id='dropdown'><a href='#'>CONTATO <img id="dropdownArrow" src={arrow}></img></a></li>
                 <ul className='dropdownMenu dropdownContatosPROAD'>
-                    <li><a onClick={() => openModal(
-                        'SCDP', <>
-                        <p>SCDP - Sistema de Concessão de Diárias e Passagens</p>
 
-                        <h1 className='titulo-atendimento'>EQUIPE</h1>
-                        <p>
-                            Ricardo <br />
-                            Jorge<br />
-                            Marcelino<br />
-                            Josenilma<br />
-                            Priscila<br />
-                        </p>
-                        <p>
-                            Contato: 84 99229-6490
-                        </p>
+                    <li><a onClick={() => openModal(
+                        'Gabinete do Pró-Reitor', <>
+                        <p>Para manter contato, utilize os seguintes canais de comunicação:</p>
+                        <h1 className='titulo-atendimento'>Atendimento</h1>
+                        <ContatoModal telefone='(84) 3342-2328' emailPrimario="proad@reitoria.ufrn.br" />
+
+                        <h1 className='titulo-atendimento'>Pró-Reitora</h1>
+                        <ContatoModal nome='Maria do Carmo Araújo de Medeiros Fernandes de Oliveira' telefoneSecundario='(84) 99132-2952' emailSecundario="mariadocarmo@reitoria.ufrn.br" />
+
+                        <h1 className='titulo-atendimento' >Pró-Reitora Adjunta</h1>
+                        <ContatoModal nome='Profa. Izabel de Medeiros Coelho' telefoneSecundario='(84) 99229-6501' emailSecundario="izabel.coelho@reitoria.ufrn.br" />
+
                     </>
-                    )}>SCDP</a></li>
+                    )}>Gabinete do Pró-Reitor</a></li>
+
+
+                    <li><a onClick={() => openModal(
+                        'Secretaria Administrativa', <>
+                        <p>Para manter contato, utilize os seguintes canais de comunicação:</p>
+
+                        <h1 className='titulo-atendimento'>Atendimento</h1>
+                        <ContatoModal telefoneFixo='(84) 3342-2328 (Ramais 302, 304, 305)' telefone="(84) 99224-0096" emailPrimario="secretariaproad@reitoria.ufrn.br" />
+
+                        <h1 className='titulo-atendimento'>Coordenador</h1>
+                        <ContatoModal nome="Pedro Rodrigues Gonçalves" telefone="(84) 99193-6073" telefoneSecundario="(84) 99193-6022" />
+
+                        <h1 className='titulo-atendimento'>Equipe</h1>
+                        <ContatoModal nome="João Maria da Silva" emailPrimario="joaomariabird@gmail.com" />
+                        <ContatoModal nome="José Eduardo Alves Nunes" emailPrimario="telefoniamovel@reitoria.ufrn.br" />
+                        <ContatoModal nome="Katyuscia Vanessa Gonçalves e Silva" emailPrimario="katy@reitoria.ufrn.br" />
+                        <ContatoModal nome="Eliene Andrade Silva de Lima" />
+
+
+                    </>
+                    )}>Secretaria Administrativa</a></li>
+                     
+
+
+                    <li><a onClick={() => openModal(
+                        'Seção de Bolsas', <>
+                         <p>Para manter contato, utilize os seguintes canais de comunicação:</p>
+
+                        <h1 className='titulo-atendimento'>Equipe</h1>
+                        <ContatoModal nome="Regina Câmara do Nascimento" telefoneFixo='(84) 3215-3313' telefoneSecundario="(84) 99167-6587" emailPrimario="bolsas@reitoria.ufrn.br" />
+                        <ContatoModal nome="Jacqueline de Medeiros Cruz" emailPrimario="jacquelinedemedeiros@yahoo.com.br" />
+
+                        <h1 className='titulo-atendimento'>Bolsistas</h1>
+                        <ContatoModal nome="Ellen kauanna da Costa Oliveira" />
+
+                    </>
+                    )}>Seção de Bolsas</a></li>
+
+                    <li><a onClick={() => openModal(
+                        'Sistemas SCDP', <>
+                        <p>Sistema de Concessão de Diárias e Passagens.</p>
+                        <p>Para manter contato, utilize os seguintes canais de comunicação:</p>
+
+                        <h1 className='titulo-atendimento'>Equipe</h1>
+                        <ContatoModal nome="Ricardo José Leite de Oliveira" telefoneFixo='(84) 3342-2228 (Ramal 104)' telefone="(84) 99224-0096" emailPrimario="ricardo.leite@reitoria.ufrn.br" />        
+                        <ContatoModal nome="Jorge Ricardo Dias Santiago" />
+                        <ContatoModal nome="Marcelino dos Santos Dantas" />
+                        <ContatoModal nome="Josenilma Carla de Souza" />
+                        <ContatoModal nome="Priscila Rafaele Silva Rodrigues do Amaral" />
+                       
+                    </>
+                    )}>Sistemas SCDP</a></li>
+
                 </ul>
             </ul >
 
