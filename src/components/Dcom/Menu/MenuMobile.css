@@ -1,17 +1,18 @@
 div.menuMobile {
-   padding: 10px 
-}
+   padding: 10px;
+ }
 
-.menu-bloco{
+ .menu-bloco {
    display: flex;
    align-items: center;
-}
+ }
 
-.menuMobile button:active{
+ .menuMobile button:active {
    background-color: #FFF !important;
-}
+ }
 
-.logoProadMobile{
+ .logoProadMobile {
    width: 50px;
-   margin: 0px auto 0px 35%;
-}
+   margin: 0 auto 0 calc(50% - 58px); 
+   display: block; 
+ }

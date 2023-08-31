@@ -1,13 +1,14 @@
-.noticia-expandida-tag{
+.noticia-expandida-tag {
     font-size: small;
     color: #fff;
     background-color: #0387ae;
     padding: 5px 12px;
     border-radius: 0.5rem;
-    margin: 10px 2px 0px 2px;
+    margin: 2px; 
+    display: inline-block; 
 }
 
-.noticia-expandida-tag-container{
+.noticia-expandida-tag-container {
     margin-bottom: 25px;
     margin-top: 20px;
 }

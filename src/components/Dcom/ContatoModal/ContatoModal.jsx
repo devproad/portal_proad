@@ -1,12 +1,12 @@
 import './ContatoModal.css'
 import email from '../../../assets/Contato/EmailIcon.svg'
 import whatsapp from '../../../assets/Contato/whatsapp.svg'
+import telefone from '../../../assets/Contato/TelIcon.svg'
 
 const ContatoModal = (props) => {
     return (
         <div className="contatoModal">
             <h1>{props.nome}</h1>
-
 
             {props.emailPrimario &&
                 <div className="contatosModal">
@@ -17,9 +17,6 @@ const ContatoModal = (props) => {
                 </div>
             }
 
-
-
-
             {props.emailSecundario &&
                 <div className="contatosModal">
                     <img src={email} />
@@ -29,9 +26,6 @@ const ContatoModal = (props) => {
                 </div>
             }
 
-
-
-
             {props.telefone &&
                 <div className="contatosModal">
                     <img src={whatsapp} />
@@ -40,6 +34,23 @@ const ContatoModal = (props) => {
                     </a>
                 </div>
             }
+
+            {props.telefoneSecundario &&
+                <div className="contatosModal">
+                    <img src={whatsapp} />
+                    <a target='_blank' rel='noopener' href={"https://wa.me/55" + props.telefoneSecundario.replace(/\D/g, "")}>
+                        {props.telefoneSecundario}
+                    </a>
+                </div>
+            }
+
+            {props.telefoneFixo && (
+                <div className="contatosModal">
+                    <img src={telefone} />
+                    <span>{props.telefoneFixo}</span>
+                   
+                </div>
+            )}
 
 
         </div>

@@ -18,3 +18,10 @@ body {
 .ant-modal-body{
   margin-left: 25px !important;
 }
+
+
+@media (max-width: 1000px) {
+  .ant-modal-title{
+    font-size: 0.90rem !important;
+  }
+}

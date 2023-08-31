@@ -4,7 +4,6 @@ import React from "react";
 import './Carousel.css';
 import Slider from "react-slick";
 
-
 const SimpleSlider = ({ children }) => {
   const settings = {
     dots: true,
@@ -17,13 +16,29 @@ const SimpleSlider = ({ children }) => {
     customPaging: i => (
       <div className="dots"></div>
     ),
-    responsive: [{
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
       }
-    }]
+    ]
   };
 
   return (

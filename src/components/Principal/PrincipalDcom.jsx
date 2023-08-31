@@ -111,7 +111,7 @@ const PrincipalDcom = (props) => {
     };
 
     return (
-        <div className='Principal'>
+        <div className='PrincipalDcom'>
 
             <div className='esquerdo'>
                 <div className='sobreDcom'>
@@ -167,13 +167,6 @@ const PrincipalDcom = (props) => {
             </div>
             <div className='direito'>
                 <MenuLateral>
-                    {/* <UltimosDocumentos>
-                        {this.state.data.map(data =>
-                            // <UltimosDocumentosItem key={data.id} titulo={data.attributes.Title} linkDocumento = {"http://localhost:1337"+data.attributes.Arquivo.url}/>
-                         <UltimosDocumentosItem key={data.id} titulo={data.attributes.Title} linkDocumento = {data.attributes.Arquivo.url}/>
-                            
-                        )}
-                    </UltimosDocumentos> */}
                     <Informacoes></Informacoes>
                     <LinksImportantes></LinksImportantes>
                     <SitesUteis></SitesUteis>

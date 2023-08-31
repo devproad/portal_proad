@@ -26,7 +26,6 @@
   cursor: pointer;
 }
 
-/* CARDS */
 .cards-destaques {
   display: flex;
   flex-direction: row;
@@ -40,6 +39,7 @@
   border-radius: 10px;
   color: #fff;
   box-shadow: 1px 5px 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .card-destaque img {
@@ -124,13 +124,19 @@
 @media only screen and (max-width: 1200px) {
 
   .card-destaque{
-    width: 75% !important;
+    width: 85% !important;
     height: 300px !important;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
-   
-    
+    transform: translateX(-50%);    
+  }
+
+  .card-destaque h1{
+    font-size: 0.7rem !important;
+  }
+
+  .card-destaque p{
+    font-size: 0.80rem !important;
   }
 
   .card-destaque img{
@@ -160,7 +166,6 @@
   }
 
   .header-destaques span {
-    margin: 5px;
-    
+    margin: 5px; 
   }
 }
