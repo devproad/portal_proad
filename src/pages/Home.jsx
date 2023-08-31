@@ -12,7 +12,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalTheme from '../globals';
 import { lightTheme, darkTheme } from '../theme';
 import MenuMobile from '../components/Menu/MenuMobile';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1000);
@@ -66,7 +66,6 @@ const Home = () => {
         <meta name="keywords" content="PROAD, UFRN, Pró-Reitoria de Administração, coordenação administrativa, contabilidade, finanças, material, patrimônio, segurança universitária, transportes universitários, gestão da informação, contratos administrativos, pareceres universitários" />
         <meta name="robots" content="index" />
         <meta name="language" content="Portuguese" />
-        <meta  property='url' content='https://portalproad.ufrn.br/'/>
 
         <meta property="og:title" content="Pró-Reitoria de Administração - UFRN" />
         <meta property="og:description" content="Sendo diretamente subordinada à Reitoria, a PROAD é um órgão responsável pela supervisão e coordenação das áreas de contabilidade, finanças, material, patrimônio, segurança, transportes, gestão da informação e contratos administrativos da UFRN." />

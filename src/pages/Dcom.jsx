@@ -9,7 +9,9 @@ import Banner from '../components/Dcom/Banner/Banner';
 import Principal from '../components/Principal/PrincipalDcom';
 import Equipe from '../components/Dcom/Equipe/Equipe';
 import MenuMobile from '../components/Dcom/Menu/MenuMobile';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
+
 const Dcom = () => {
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 728);
@@ -35,7 +37,6 @@ const Dcom = () => {
         <meta name="keywords" content="Diretoria de Compras, PROAD, aquisições, contratações, UFRN, processos de aquisição, aquisições nacionais, aquisições internacionais" />
         <meta name="robots" content="index" />
         <meta name="language" content="Portuguese" />
-        <meta property='url' content='https://portalproad.ufrn.br/compras' />
 
         <meta property="og:title" content="Diretoria de Compras - PROAD/UFRN" />
         <meta property="og:description" content="A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão promover soluções em compras institucionais." />

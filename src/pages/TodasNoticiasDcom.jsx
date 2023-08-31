@@ -6,14 +6,13 @@ import MenuMobile from '../components/Menu/MenuMobile';
 import MenuLateral from '../components/MenuLateral/MenuLateral';
 import SitesUteis from '../components/SitesUteis/sitesuteis';
 import TodasNoticias from '../components/Dcom/TodasNoticias/todasNoticias'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 const TodasAsNoticias = () => {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1000);
 
     useEffect(() => {
-        document.title = "Diretoria de Compras - PROAD";
         const handleResize = () => {
             setIsDesktop(window.innerWidth > 1000);
         };
@@ -34,7 +33,6 @@ const TodasAsNoticias = () => {
                 <meta name="keywords" content="Diretoria de Compras, PROAD, aquisições, contratações, UFRN, processos de aquisição, aquisições nacionais, aquisições internacionais" />
                 <meta name="robots" content="noindex, nofollow" />
                 <meta name="language" content="Portuguese" />
-                <meta property='url' content='https://portalproad.ufrn.br/compras' />
 
                 <meta property="og:title" content="Diretoria de Compras - PROAD/UFRN" />
                 <meta property="og:description" content="A Diretoria de Compras coordena os processos de aquisições e contratações nacionais e internacionais no âmbito da Universidade Federal do Rio Grande do Norte (UFRN), e tem como missão promover soluções em compras institucionais." />
