@@ -364,6 +364,7 @@ const Menu = (props) => {
                         <DocumentosItem titulo="Pregão Eletrônico – Lei n° 8.666/1993" link="https://drive.google.com/file/d/17A3sseWtaB0NOpyxwZCywNOWHgx1CAr-/view?usp=sharing" />
                         <DocumentosItem titulo="Dispensa de Licitação Eletrônica – Lei n° 14.133/2021" link="https://drive.google.com/file/d/1N2xN_01NLCLV2jLA-1-70PAX0jKJ22Gg/view?usp=sharing" />
                         <DocumentosItem titulo="Inexigibilidade de Licitação – Lei n° 14.133/2021" link="https://drive.google.com/file/d/1yMy6V-mxIrd_t_ZK8fQZi54YSwi5-GCu/view?usp=sharing" />
+                        <DocumentosItem titulo="Plano de Contratação Anual" link="https://drive.google.com/file/d/1p3ycGuNeZlv12RLk-tGCNyotPK-vFxqs/view?usp=sharing" />
 
                     </>
                     )}>
