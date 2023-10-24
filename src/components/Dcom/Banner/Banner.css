@@ -19,3 +19,17 @@ p.bannerDescricao {
     grid-row-gap: 80px;
 
 }
+
+@media (max-height: 750px) {
+    p.bannerDescricao {
+        margin-bottom: 10px ;
+    }
+
+    .bannerBase{
+        margin-top: -55px ;
+    }
+    
+    .bannerLadoEsquerdo h1{
+        margin: 10px;
+    }
+}
