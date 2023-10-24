@@ -260,7 +260,11 @@ const Navbar = (props) => {
       <SubMenu key="sub3" title="ORIENTAÇÕES">
         <Menu.Item key="15"><a onClick={() => openModal(
           'Cartilhas', <>
-          <p>Em elaboração</p>
+            <h1 className='titulo-atendimento'>Tutorial – Pagamento de Notas Fiscais</h1>
+                        
+            <p>Após o fornecimento de bem/material ou prestação de serviço, a unidade deverá encaminhar à Diretoria de Compras a respectiva NOTA FISCAL ELETRÔNICA (NF-e) recebida da empresa contratada para que seja iniciado o processo de pagamento.</p>
+            <p>Desse modo, disponibilizamos o tutorial com os procedimentos a serem realizados de forma eletrônica no SIPAC, conforme o link <a href='https://encurtador.com.br/pEP34'>https://encurtador.com.br/pEP34</a>.</p>
+            <p>Em caso de dúvidas, manter contato a Divisão de Planejamento e Gerenciamento de Compras.</p>
         </>
         )}>
           Cartilhas
