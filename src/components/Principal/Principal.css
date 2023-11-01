@@ -8,7 +8,7 @@
 
 .PrincipalDcom {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -39,6 +39,16 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
+
+  .PrincipalDcom{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+  }
+
 
   .esquerdo {
     margin-left: 0px;
