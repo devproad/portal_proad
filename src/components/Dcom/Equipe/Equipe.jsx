@@ -23,21 +23,15 @@ const Equipe = () => {
                 </div>
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={rute} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Rute Noronha</h1>
-                    <span className='cargoEquipe'>Diretora (Substituta) <br/> Chefe da DPGC</span>
-                </div>
-
-                <div className='itemEquipe'>
                     <img className='perfilEquipe' src={daniel} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Daniel Oliveira</h1>
-                    <span className='cargoEquipe'>Chefe da DPGC (Substituto)</span>
+                    <span className='cargoEquipe'>Chefe da DPGC</span>
                 </div>
 
                 <div className='itemEquipe'>
                     <img className='perfilEquipe' src={chianc} alt='perfil'></img>
                     <h1 className='nomeEquipe'>Chianc Leocádio</h1>
-                    <span className='cargoEquipe'>Chefe da DFI</span>
+                    <span className='cargoEquipe'>Diretor (Substituto) <br/> Chefe da DFI</span>
                 </div>
 
 

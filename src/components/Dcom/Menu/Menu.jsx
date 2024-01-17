@@ -107,8 +107,7 @@ const Menu = (props) => {
                                 </p>
 
                                 <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-                                <ContatoModal nome='Rute Clea Pereira de Noronha (Diretora Substituta)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
-
+                                <ContatoModal nome='Chianc Leocádio de Lima (Substituto)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
                             </p>
                         </>
                         )}>
@@ -144,8 +143,8 @@ const Menu = (props) => {
                                 </p>
 
                                 <h1 className='titulo-atendimento'>Chefia</h1>
-                                <ContatoModal nome='Rute Clea Pereira de Noronha (Titular)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
-                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Substituto)' emailPrimario="daniel.nazareno@ufrn.br " telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Titular)' emailPrimario="daniel.nazareno@ufrn.br " telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Adrielly Nunes (Substituto)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004"  />
                             </p>
                         </>
                         )}>
@@ -445,17 +444,13 @@ const Menu = (props) => {
                             <div className='grid-contatos'>
 
                                 <ContatoModal emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
-
-
-
                                 <ContatoModal emailPrimario="poscomprasufrn@gmail.com" telefone="(84) 99193-6070" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <div className='grid-contatos'>
-
-                                <ContatoModal nome='Rute Clea Pereira de Noronha (Titular)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
-                                <ContatoModal nome='Daniel Oliveira (Substituto)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Daniel Oliveira (Titular)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Adrielly Nunes' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
