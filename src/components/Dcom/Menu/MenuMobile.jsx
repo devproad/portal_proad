@@ -353,7 +353,7 @@ const Navbar = (props) => {
 
 
 
-          <ContatoModal emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99204-5432" />
+          <ContatoModal emailPrimario="planejamentodpgcufrn@gmail.com" telefone=" (84) 99480-6873" />
 
 
           <h1 className='titulo-atendimento'>Pós-Compras</h1>
@@ -363,13 +363,12 @@ const Navbar = (props) => {
           <h1 className='titulo-atendimento'>Chefia</h1>
           <div className='grid-contatos'>
           <ContatoModal nome='Daniel Oliveira (Titular)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
-          <ContatoModal nome='Adrielly Nunes' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
+          <ContatoModal nome='Adrielly Nunes (Substituta)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
           </div>
 
           <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
 
           <div className='grid-contatos'>
-            <ContatoModal nome='Adrielly Nunes' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
             <ContatoModal nome='Flávio Albuquerque' emailPrimario="flavio.carlos@ufrn.br" telefone="(84) 99126-5808" />
             <ContatoModal nome='Jorge Melo' emailPrimario="jorge.melo@ufrn.br" telefone="(84) 98855-2302" />
             <ContatoModal nome='Pedro Rocha' emailPrimario="pedro.rocha@ufrn.br" telefone="(84) 98704-1923" />

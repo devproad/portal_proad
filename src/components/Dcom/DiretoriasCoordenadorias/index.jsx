@@ -67,7 +67,7 @@ const DiretoriasCoord = (props) => {
               </p>
 
               <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-              <ContatoModal nome='Rute Clea Pereira de Noronha (Diretora Substituta)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
+              <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
             </p>
           </>
           )}>
@@ -180,8 +180,8 @@ const DiretoriasCoord = (props) => {
                 VII – controlar e acompanhar as notificações para fins de apuração de inadimplências.
               </p>
 
-              <ContatoModal nome='Rute Clea Pereira de Noronha (Chefe)' emailPrimario="rute.noronha@ufrn.br" telefone="(84) 99204-5432" />
-              <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe Substituto)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
+              <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
+              <ContatoModal nome='Adrielly Nunes (Chefe Substituto)'emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99480-6873" />
 
             </p>
           </>
