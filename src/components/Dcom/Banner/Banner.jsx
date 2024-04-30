@@ -34,7 +34,7 @@ const Banner = () => {
                     </button>
 
                     <button id='btnContato'>
-                        <a href='#'>Contato</a> 
+                        <a href='#contato'>Contato</a> 
                     </button>
                 </div>
             </div>

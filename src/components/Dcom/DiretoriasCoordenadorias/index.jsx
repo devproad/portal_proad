@@ -67,7 +67,7 @@ const DiretoriasCoord = (props) => {
               </p>
 
               <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-              <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
+              <ContatoModal nome='Chianc Leocádio de Lima (Diretor Substituto)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
             </p>
           </>
           )}>
@@ -181,7 +181,7 @@ const DiretoriasCoord = (props) => {
               </p>
 
               <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
-              <ContatoModal nome='Adrielly Nunes (Chefe Substituto)'emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99480-6873" />
+              <ContatoModal nome='Adrielly Nunes (Chefe Substituto)'emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
 
             </p>
           </>

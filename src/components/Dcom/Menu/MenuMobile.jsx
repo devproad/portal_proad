@@ -62,7 +62,7 @@ const Navbar = (props) => {
             </p>
 
             <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
-            <ContatoModal nome='Chianc Leocádio de Lima (Substituto)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+            <ContatoModal nome='Chianc Leocádio de Lima (Diretor Substituto)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
           </p>
         </>
         )}>
@@ -219,6 +219,7 @@ const Navbar = (props) => {
         </a></Menu.Item>
         <Menu.Item key="10"> <a onClick={() => openModal(
           'Planos de Gestão', <>
+          <DocumentosItem titulo="Planejamento Diretoria de Compras 2024-2027" link="https://drive.google.com/file/d/1usAl0XAVyplxG8O705Y_3vehX4OiDYK_/view" />
           <DocumentosItem titulo="Planejamento Estratégico 2020-2023" link="/documentos/Planejamento Estratégico Diretoria de Compras UFRN 2020 2023.pdf" />
         </>
         )}>
@@ -450,7 +451,7 @@ const Navbar = (props) => {
           <div className='grid-contatos'>
             <ContatoModal nome="Andrea Lopes" emailPrimario="andrea.lopes@ufrn.br" telefone="(84) 99120-7227" />
             <ContatoModal nome="Diego Brito" emailPrimario="diego.brito@ufrn.br" telefone="(84) 99660-9085" />
-            <ContatoModal nome="Leonardo Belchior" emailPrimario="leonardo.belchior@ufrn.br" telefone="(85) 98153-7379" />
+            <ContatoModal nome="Leonardo Belchior" emailPrimario="leonardo.belchior@ufrn.br" telefone="(84) 99404-3237" />
             <ContatoModal nome="Paulo Pereira" emailPrimario="paulo.jose.pereira@ufrn.br" telefone="(84) 99952-6209" />
             <ContatoModal nome="Patrícia Melo" emailPrimario="patricia.melo@ufrn.br" telefone="(84) 99630-9934" />
           </div>
