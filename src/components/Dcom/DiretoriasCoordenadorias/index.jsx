@@ -108,7 +108,7 @@ const DiretoriasCoord = (props) => {
             </p>
           </>
           )}>
-            <img src={HammerLogo} alt="logo" />
+            <img src={ContractLogo} alt="logo" />
             <div className="item-content">
               <h1 className='item-title'>DIVISÃO DE FASE INTERNA</h1>
               <p className="item-description">A Divisão de Fase Interna (DFI) é responsável por formalizar os processos licitatórios em sua fase interna: editais, pesquisas de mercado, contratações diretas nacionais e internacionais, e divulgação dessas demandas nos sítios do Governo Federal.</p>
@@ -144,7 +144,7 @@ const DiretoriasCoord = (props) => {
             </p>
           </>
           )}>
-            <img src={ContractLogo} alt="logo" />
+            <img src={HammerLogo} alt="logo" />
             <div className="item-content">
               <h1 className='item-title'>DIVISÃO DE FASE EXTERNA</h1>
               <p className="item-description">Compete à Divisão de Fase Externa de Compras coordenar e gerenciar a fase externa dos processos licitatórios, dispensa de licitação eletrônica e Regime Diferenciado de Contratação (RDC). </p>

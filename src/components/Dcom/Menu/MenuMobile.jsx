@@ -61,7 +61,7 @@ const Navbar = (props) => {
               VII – Fornecer com presteza e em tempo hábil informações às instâncias superiores e diversos órgãos de controle do poder público, sempre que solicitado.
             </p>
 
-            <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+            <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="diretor.compras@proad.ufrn.br" telefone="(84) 99480-6899" />
             <ContatoModal nome='Chianc Leocádio de Lima (Diretor Substituto)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
           </p>
         </>
@@ -127,7 +127,7 @@ const Navbar = (props) => {
             <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
             <h1 className='titulo-atendimento'>Chefia</h1>
-            <ContatoModal nome='Chianc Leocádio de Lima (Titular)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+            <ContatoModal nome='Chianc Leocádio de Lima (Titular)' emailPrimario="chefe.dfi.compras@proad.ufrn.br" telefone="(84) 99899-3667" />
             <ContatoModal nome='Thiago Renan da Silva Correia (Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
           </p>
         </>
@@ -157,7 +157,7 @@ const Navbar = (props) => {
             <p>VII – formalizar e conduzir a publicação dos atos cabíveis aos certames licitatórios, de acordo com a modalidade de disputa. </p>
 
             <h1 className='titulo-atendimento'>Chefia</h1>
-            <ContatoModal nome='Adriana da Silva Cardoso (Titular)' emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
+            <ContatoModal nome='Adriana da Silva Cardoso (Titular)' emailPrimario="chefe.licitacaocompras@proad.ufrn.br" telefone="(84) 98746-7713" />
 
 
           </p>
@@ -227,10 +227,10 @@ const Navbar = (props) => {
         </a></Menu.Item>
         <Menu.Item key="11"> <a onClick={() => openModal(
           'Relatórios de gestão', <>
-          <DocumentosItem titulo="Relatório de Gestão 2020" link="/documentos/RELATÓRIO DE GESTÃO 2020 - Diretoria de Compras.pdf" />
-          <DocumentosItem titulo="Relatório de Gestão 2021" link="/documentos/Relatório de Gestão 2021 - Diretoria de Compras.pdf" />
-          <DocumentosItem titulo="Relatório de Gestão 2022" link="/documentos/Relatório de Gestão 2022 (Diretoria de Compras).pdf" />
-
+              <DocumentosItem titulo="Relatório de Gestão 2020" link="https://drive.google.com/file/d/1pI0bNW8lACGlJu1gPpeNt8UQ-yF8PtZe/view" />
+              <DocumentosItem titulo="Relatório de Gestão 2021" link="https://drive.google.com/file/d/1xd8O5frXrQjEQk1ufsr4HPDnxaP7WYLW/view" />
+              <DocumentosItem titulo="Relatório de Gestão 2022" link="https://drive.google.com/file/d/14EdnLO5qMfLe6erMfnZ_U2PvW7tq4yId/view" />
+              <DocumentosItem titulo="Relatório de Gestão 2023" link="https://drive.google.com/file/d/1joQLBUhxE3j62vwTlidHUFKoQihVq6Lz/view" />
         </>
         )}>
           Relatórios de gestão
@@ -322,7 +322,7 @@ const Navbar = (props) => {
           </p>
 
           <h1 className='titulo-atendimento'>Atendimento</h1>
-          <ContatoModal emailPrimario="diretoriacomprasufrn@gmail.com" />
+          <ContatoModal emailPrimario="secretaria.compras@proad.ufrn.br" />
 
           <h1 className='titulo-atendimento'>Chefia</h1>
           <ContatoModal nome='João Paulo Paiva (Diretor de Compras)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
@@ -352,18 +352,16 @@ const Navbar = (props) => {
 
           </div>
 
-
-
-          <ContatoModal emailPrimario="planejamentodpgcufrn@gmail.com" telefone=" (84) 99480-6873" />
+          <ContatoModal emailPrimario="dpgc.compras@proad.ufrn.br" telefone=" (84) 99480-6873" />
 
 
           <h1 className='titulo-atendimento'>Pós-Compras</h1>
-          <ContatoModal emailPrimario="poscomprasufrn@gmail.com" telefone="(84) 99193-6070" />
+          <ContatoModal emailPrimario="poscompras.compras@proad.ufrn.br" telefone="(84) 99193-6070" />
 
 
           <h1 className='titulo-atendimento'>Chefia</h1>
           <div className='grid-contatos'>
-          <ContatoModal nome='Daniel Oliveira (Titular)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
+          <ContatoModal nome='Daniel Oliveira (Titular)' emailPrimario="chefe.dpgc.compras@proad.ufrn.br" telefone="(84) 98821-4683" />
           <ContatoModal nome='Adrielly Nunes (Substituta)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
           </div>
 
@@ -390,7 +388,7 @@ const Navbar = (props) => {
 
 
           <h1 className='titulo-atendimento'>Atendimento</h1>
-          <ContatoModal emailPrimario="dfi@compras.ufrn.br" telefone="(84) 99421-6182" />
+          <ContatoModal emailPrimario="dfi.compras@proad.ufrn.br" telefone="(84) 99421-6182" />
 
           <h1 className='titulo-atendimento'>Chefia</h1>
           <div className='grid-contatos'>
@@ -423,9 +421,10 @@ const Navbar = (props) => {
           </div>
 
           <h1 className='titulo-atendimento'>Equipe Pesquisa de Preços</h1>
-          <ContatoModal telefone="(84) 99421-6182" />
+          <ContatoModal emailPrimario="cotacao.compras@proad.ufrn.br" telefone="(84) 99421-6182" />
 
-
+          <h1 className='titulo-atendimento'>Intenção de Registro de Preços</h1>
+          <ContatoModal emailPrimario="irp.compras@proad.ufrn.br"/>
         </>
         )}>
           DFI
@@ -441,7 +440,7 @@ const Navbar = (props) => {
           </p>
 
           <h1 className='titulo-atendimento'>Atendimento</h1>
-          <ContatoModal emailPrimario="licitacaoufrn@gmail.com" telefone="(84) 99193-6375" />
+          <ContatoModal emailPrimario="licitacaocompras@proad.ufrn.br" telefone="(84) 99193-6375" />
 
           <h1 className='titulo-atendimento'>Chefia</h1>
           <ContatoModal nome="Adriana da Silva Cardoso (Titular)" emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />

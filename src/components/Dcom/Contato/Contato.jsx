@@ -37,7 +37,7 @@ const Contato = () => {
                         <span className='subtitulo'>Email</span> <br />
                         <div className='contatos'>
                             <img src={mail} alt='Email'></img>
-                            <a className='subtitulo' href="mailto:diretoriacomprasufrn@gmail.com">diretoriacomprasufrn@gmail.com</a>
+                            <a className='subtitulo' href="mailto:secretaria.compras@proad.ufrn.br">secretaria.compras@proad.ufrn.br</a>
                         </div>
                     </div>
 
