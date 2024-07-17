@@ -47,6 +47,14 @@
     max-width: 600px;
 }
 
+.grid-contatos-titulo-unico{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0px;
+    max-width: 600px;
+}
+
 div.grid-contatos-titulo > h1:nth-child(2) {
     margin-left: 59px;
 }

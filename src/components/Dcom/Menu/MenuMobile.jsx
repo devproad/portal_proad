@@ -95,8 +95,7 @@ const Navbar = (props) => {
             </p>
 
             <h1 className='titulo-atendimento'>Chefia</h1>
-            <ContatoModal nome='Daniel Nazareno Souza Oliveira (Titular)' emailPrimario="daniel.nazareno@ufrn.br " telefone="(84) 98821-4683" />
-            <ContatoModal nome='Adrielly Nunes (Substituto)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004"  />
+            <ContatoModal nome='Adrielly Nunes (Titular)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
           </p>
         </>
         )}>
@@ -227,10 +226,10 @@ const Navbar = (props) => {
         </a></Menu.Item>
         <Menu.Item key="11"> <a onClick={() => openModal(
           'Relatórios de gestão', <>
-              <DocumentosItem titulo="Relatório de Gestão 2020" link="https://drive.google.com/file/d/1pI0bNW8lACGlJu1gPpeNt8UQ-yF8PtZe/view" />
-              <DocumentosItem titulo="Relatório de Gestão 2021" link="https://drive.google.com/file/d/1xd8O5frXrQjEQk1ufsr4HPDnxaP7WYLW/view" />
-              <DocumentosItem titulo="Relatório de Gestão 2022" link="https://drive.google.com/file/d/14EdnLO5qMfLe6erMfnZ_U2PvW7tq4yId/view" />
-              <DocumentosItem titulo="Relatório de Gestão 2023" link="https://drive.google.com/file/d/1joQLBUhxE3j62vwTlidHUFKoQihVq6Lz/view" />
+          <DocumentosItem titulo="Relatório de Gestão 2020" link="https://drive.google.com/file/d/1pI0bNW8lACGlJu1gPpeNt8UQ-yF8PtZe/view" />
+          <DocumentosItem titulo="Relatório de Gestão 2021" link="https://drive.google.com/file/d/1xd8O5frXrQjEQk1ufsr4HPDnxaP7WYLW/view" />
+          <DocumentosItem titulo="Relatório de Gestão 2022" link="https://drive.google.com/file/d/14EdnLO5qMfLe6erMfnZ_U2PvW7tq4yId/view" />
+          <DocumentosItem titulo="Relatório de Gestão 2023" link="https://drive.google.com/file/d/1joQLBUhxE3j62vwTlidHUFKoQihVq6Lz/view" />
         </>
         )}>
           Relatórios de gestão
@@ -261,18 +260,24 @@ const Navbar = (props) => {
       <SubMenu key="sub3" title="ORIENTAÇÕES">
         <Menu.Item key="15"><a onClick={() => openModal(
           'Cartilhas', <>
-            <h1 className='titulo-atendimento'>Tutorial – Pagamento de Notas Fiscais</h1>
-                        
-            <p>Após o fornecimento de bem/material ou prestação de serviço, a unidade deverá encaminhar à Diretoria de Compras a respectiva NOTA FISCAL ELETRÔNICA (NF-e) recebida da empresa contratada para que seja iniciado o processo de pagamento.</p>
-            <p>Desse modo, disponibilizamos o tutorial com os procedimentos a serem realizados de forma eletrônica no SIPAC, conforme o link <a href='https://encurtador.com.br/pEP34'>https://encurtador.com.br/pEP34</a>.</p>
-            <p>Em caso de dúvidas, manter contato a Divisão de Planejamento e Gerenciamento de Compras.</p>
+          <h1 className='titulo-atendimento'>Tutorial – Pagamento de Notas Fiscais</h1>
+
+          <p>Após o fornecimento de bem/material ou prestação de serviço, a unidade deverá encaminhar à Diretoria de Compras a respectiva NOTA FISCAL ELETRÔNICA (NF-e) recebida da empresa contratada para que seja iniciado o processo de pagamento.</p>
+          <p>Desse modo, disponibilizamos o tutorial com os procedimentos a serem realizados de forma eletrônica no SIPAC, conforme o link <a href='https://encurtador.com.br/pEP34'>https://encurtador.com.br/pEP34</a>.</p>
+          <p>Em caso de dúvidas, manter contato a Divisão de Planejamento e Gerenciamento de Compras.</p>
         </>
         )}>
           Cartilhas
         </a></Menu.Item>
         <Menu.Item key="16"><a onClick={() => openModal(
           'Manuais', <>
-          <p>Em elaboração</p>
+
+          <h1 className='titulo-atendimento'>Manual de Compras e Contratações da UFRN</h1>
+          <p>
+            A Diretoria de Compras disponibiliza o Manual de Compras e Contratações da UFRN, conforme link abaixo:
+          </p>
+
+          <DocumentosItem titulo="Manual de Compras e Contratações da UFRN" link="https://docs.google.com/presentation/d/1Vt7YE6FLAjqL7EQGSPCvSczGCFfNvOV8vGhX90I9LMU/edit#slide=id.p" />
         </>
         )}>
           Manuais
@@ -290,7 +295,7 @@ const Navbar = (props) => {
           <DocumentosItem titulo="Dispensa de Licitação Eletrônica – Lei n° 14.133/2021" link="https://drive.google.com/file/d/1N2xN_01NLCLV2jLA-1-70PAX0jKJ22Gg/view?usp=sharing" />
           <DocumentosItem titulo="Inexigibilidade de Licitação – Lei n° 14.133/2021" link="https://drive.google.com/file/d/1yMy6V-mxIrd_t_ZK8fQZi54YSwi5-GCu/view?usp=sharing" />
           <DocumentosItem titulo="Plano de Contratação Anual" link="https://drive.google.com/file/d/1p3ycGuNeZlv12RLk-tGCNyotPK-vFxqs/view?usp=sharing" />
-          
+
         </>
         )}>
           Fluxos processuais
@@ -361,8 +366,7 @@ const Navbar = (props) => {
 
           <h1 className='titulo-atendimento'>Chefia</h1>
           <div className='grid-contatos'>
-          <ContatoModal nome='Daniel Oliveira (Titular)' emailPrimario="chefe.dpgc.compras@proad.ufrn.br" telefone="(84) 98821-4683" />
-          <ContatoModal nome='Adrielly Nunes (Substituta)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
+            <ContatoModal nome='Adrielly Nunes (Titular)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
           </div>
 
           <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
@@ -424,7 +428,7 @@ const Navbar = (props) => {
           <ContatoModal emailPrimario="cotacao.compras@proad.ufrn.br" telefone="(84) 99421-6182" />
 
           <h1 className='titulo-atendimento'>Intenção de Registro de Preços</h1>
-          <ContatoModal emailPrimario="irp.compras@proad.ufrn.br"/>
+          <ContatoModal emailPrimario="irp.compras@proad.ufrn.br" />
         </>
         )}>
           DFI

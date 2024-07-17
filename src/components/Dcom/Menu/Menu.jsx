@@ -106,7 +106,7 @@ const Menu = (props) => {
                                     VII – Fornecer com presteza e em tempo hábil informações às instâncias superiores e diversos órgãos de controle do poder público, sempre que solicitado.
                                 </p>
 
-                                <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+                                <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="diretor.compras@proad.ufrn.br" telefone="(84) 99480-6899" />
                                 <ContatoModal nome='Chianc Leocádio de Lima (Diretor Substituto)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
                             </p>
                         </>
@@ -143,8 +143,8 @@ const Menu = (props) => {
                                 </p>
 
                                 <h1 className='titulo-atendimento'>Chefia</h1>
-                                <ContatoModal nome='Daniel Nazareno Souza Oliveira (Titular)' emailPrimario="daniel.nazareno@ufrn.br " telefone="(84) 98821-4683" />
-                                <ContatoModal nome='Adrielly Nunes (Substituto)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004"  />
+                            
+                                <ContatoModal nome='Adrielly Nunes (Titular)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
                             </p>
                         </>
                         )}>
@@ -178,7 +178,7 @@ const Menu = (props) => {
                                 <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
                                 <h1 className='titulo-atendimento'>Chefia</h1>
-                                <ContatoModal nome='Chianc Leocádio de Lima (Titular)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+                                <ContatoModal nome='Chianc Leocádio de Lima (Titular)' emailPrimario="chefe.dfi.compras@proad.ufrn.br" telefone="(84) 99899-3667" />
                                 <ContatoModal nome='Thiago Renan da Silva Correia (Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
                             </p>
                         </>
@@ -211,7 +211,7 @@ const Menu = (props) => {
                                 <p>VII – formalizar e conduzir a publicação dos atos cabíveis aos certames licitatórios, de acordo com a modalidade de disputa. </p>
 
                                 <h1 className='titulo-atendimento'>Chefia</h1>
-                                <ContatoModal nome='Adriana da Silva Cardoso (Titular)' emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
+                                <ContatoModal nome='Adriana da Silva Cardoso (Titular)' emailPrimario="chefe.licitacaocompras@proad.ufrn.br" telefone="(84) 98746-7713" />
 
 
                             </p>
@@ -342,7 +342,7 @@ const Menu = (props) => {
                     <li><a onClick={() => openModal(
                         'Cartilhas', <>
                         <h1 className='titulo-atendimento'>Tutorial – Pagamento de Notas Fiscais</h1>
-                        
+
                         <p>Após o fornecimento de bem/material ou prestação de serviço, a unidade deverá encaminhar à Diretoria de Compras a respectiva NOTA FISCAL ELETRÔNICA (NF-e) recebida da empresa contratada para que seja iniciado o processo de pagamento.</p>
                         <p>Desse modo, disponibilizamos o tutorial com os procedimentos a serem realizados de forma eletrônica no SIPAC, conforme o link <a href='https://encurtador.com.br/pEP34'>https://encurtador.com.br/pEP34</a>.</p>
                         <p>Em caso de dúvidas, manter contato a Divisão de Planejamento e Gerenciamento de Compras.</p>
@@ -352,7 +352,13 @@ const Menu = (props) => {
                     </a></li>
                     <li><a onClick={() => openModal(
                         'Manuais', <>
-                        <p>Em elaboração</p>
+
+<h1 className='titulo-atendimento'>Manual de Compras e Contratações da UFRN</h1>
+          <p>
+            A Diretoria de Compras disponibiliza o Manual de Compras e Contratações da UFRN, conforme link abaixo:
+          </p>
+
+          <DocumentosItem titulo="Manual de Compras e Contratações da UFRN" link="https://docs.google.com/presentation/d/1Vt7YE6FLAjqL7EQGSPCvSczGCFfNvOV8vGhX90I9LMU/edit#slide=id.p" />
                     </>
                     )}>
                         Manuais
@@ -437,7 +443,7 @@ const Menu = (props) => {
                             </p>
 
 
-                            <div className='grid-contatos-titulo'>
+                            <div className='grid-contatos-titulo-unico'>
                                 <h1 className='titulo-atendimento'>Atendimento</h1>
                                 <ContatoModal emailPrimario="dpgc.compras@proad.ufrn.br" telefone=" (84) 99480-6873" />
 
@@ -446,16 +452,9 @@ const Menu = (props) => {
                                 <ContatoModal emailPrimario="poscompras.compras@proad.ufrn.br" telefone="(84) 99193-6070" />
                             </div>
 
-                            <div className='grid-contatos'>
-
-                                <ContatoModal emailPrimario="planejamentodpgcufrn@gmail.com" telefone="(84) 99480-6873" />
-                                <ContatoModal emailPrimario="poscomprasufrn@gmail.com" telefone="(84) 99193-6070" />
-                            </div>
-
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <div className='grid-contatos'>
-                                <ContatoModal nome='Daniel Oliveira (Titular)' emailPrimario="chefe.dpgc.compras@proad.ufrn.br" telefone="(84) 98821-4683" />
-                                <ContatoModal nome='Adrielly Nunes (Substituta)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
+                                <ContatoModal nome='Adrielly Nunes (Titular)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
@@ -524,7 +523,7 @@ const Menu = (props) => {
                             <ContatoModal emailPrimario="cotacao.compras@proad.ufrn.br" telefone="(84) 99421-6182" />
 
                             <h1 className='titulo-atendimento'>Intenção de Registro de Preços</h1>
-                            <ContatoModal emailPrimario="irp.compras@proad.ufrn.br"/>
+                            <ContatoModal emailPrimario="irp.compras@proad.ufrn.br" />
                         </>
                         )}>
                             DFI

@@ -66,7 +66,7 @@ const DiretoriasCoord = (props) => {
                 VII – Fornecer com presteza e em tempo hábil informações às instâncias superiores e diversos órgãos de controle do poder público, sempre que solicitado.
               </p>
 
-              <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="joao.paulo.paiva@ufrn.br" telefone="(84) 99480-6899" />
+              <ContatoModal nome='João Paulo Paiva (Diretor)' emailPrimario="diretor.compras@proad.ufrn.br" telefone="(84) 99480-6899" />
               <ContatoModal nome='Chianc Leocádio de Lima (Diretor Substituto)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
             </p>
           </>
@@ -102,7 +102,7 @@ const DiretoriasCoord = (props) => {
               <p>X – formalizar os processos de contratações diretas nacionais e internacionais para contratação de serviços.</p>
 
 
-              <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chianc.leocadio@ufrn.br" telefone="(84) 99899-3667" />
+              <ContatoModal nome='Chianc Leocádio de Lima (Chefe)' emailPrimario="chefe.dfi.compras@proad.ufrn.br" telefone="(84) 99899-3667" />
               <ContatoModal nome='Thiago Renan da Silva Correia (Chefe Substituto)' emailPrimario="thiago.correia@ufrn.br" telefone="(84) 99639-6314" />
 
             </p>
@@ -139,7 +139,7 @@ const DiretoriasCoord = (props) => {
               <p>VII – formalizar e conduzir a publicação dos atos cabíveis aos certames licitatórios, de acordo com a modalidade de disputa. </p>
 
 
-              <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' emailPrimario="adriana.cardoso@ufrn.br" telefone="(84) 98746-7713" />
+              <ContatoModal nome='Adriana da Silva Cardoso (Chefe)' emailPrimario="chefe.licitacaocompras@proad.ufrn.br" telefone="(84) 98746-7713" />
 
             </p>
           </>
@@ -180,8 +180,7 @@ const DiretoriasCoord = (props) => {
                 VII – controlar e acompanhar as notificações para fins de apuração de inadimplências.
               </p>
 
-              <ContatoModal nome='Daniel Nazareno Souza Oliveira (Chefe)' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
-              <ContatoModal nome='Adrielly Nunes (Chefe Substituto)'emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
+              <ContatoModal nome='Adrielly Nunes (Titular)'emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
 
             </p>
           </>
