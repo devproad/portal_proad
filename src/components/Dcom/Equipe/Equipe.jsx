@@ -6,7 +6,7 @@ import adrielly from '../../../assets/Equipe/adriellynunes.jpeg'
 import thiago from '../../../assets/Equipe/thiagocorreia.jpeg'
 import joao from '../../../assets/Equipe/joaopaulo.jpeg'
 import adriana from '../../../assets/Equipe/adrianacardoso.jpeg'
-import daniel from '../../../assets/Equipe/danieloliveira.jpeg'
+import jorge from '../../../assets/Equipe/jorgemelo.jpeg'
 
 
 const Equipe = () => {
@@ -35,15 +35,15 @@ const Equipe = () => {
                 </div>
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={daniel} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Daniel Oliveira</h1>
+                    <img className='perfilEquipe' src={adrielly} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Adrielly Nunes</h1>
                     <span className='cargoEquipe'>Chefe da DPGC</span>
                 </div>
 
                 <div className='itemEquipe'>
-                    <img className='perfilEquipe' src={adrielly} alt='perfil'></img>
-                    <h1 className='nomeEquipe'>Adrielly Nunes</h1>
-                    <span className='cargoEquipe'>Chefe da DPGC (Substituta)</span>
+                    <img className='perfilEquipe' src={jorge} alt='perfil'></img>
+                    <h1 className='nomeEquipe'>Jorge Melo</h1>
+                    <span className='cargoEquipe'>Chefe da DPGC (Substituto)</span>
                 </div>
 
                 <div className='itemEquipe'>

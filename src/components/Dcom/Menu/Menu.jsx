@@ -143,8 +143,9 @@ const Menu = (props) => {
                                 </p>
 
                                 <h1 className='titulo-atendimento'>Chefia</h1>
-                            
+
                                 <ContatoModal nome='Adrielly Nunes (Titular)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
+                                <ContatoModal nome='Jorge Melo (Substituto)' emailPrimario="jorge.melo@ufrn.br" telefone="(84) 98855-2302" />
                             </p>
                         </>
                         )}>
@@ -343,9 +344,11 @@ const Menu = (props) => {
                         'Cartilhas', <>
                         <h1 className='titulo-atendimento'>Tutorial – Pagamento de Notas Fiscais</h1>
 
-                        <p>Após o fornecimento de bem/material ou prestação de serviço, a unidade deverá encaminhar à Diretoria de Compras a respectiva NOTA FISCAL ELETRÔNICA (NF-e) recebida da empresa contratada para que seja iniciado o processo de pagamento.</p>
-                        <p>Desse modo, disponibilizamos o tutorial com os procedimentos a serem realizados de forma eletrônica no SIPAC, conforme o link <a href='https://encurtador.com.br/pEP34'>https://encurtador.com.br/pEP34</a>.</p>
-                        <p>Em caso de dúvidas, manter contato a Divisão de Planejamento e Gerenciamento de Compras.</p>
+                        <p>  Após o fornecimento de bem/material ou prestação de serviço, a unidade deverá encaminhar à Diretoria de Compras a respectiva NOTA FISCAL ELETRÔNICA (NF-e) recebida da empresa contratada para que seja iniciado o processo de pagamento.</p>
+                        <p> Desse modo, disponibilizamos o tutorial com os procedimentos a serem realizados de forma eletrônica no SIPAC, conforme o link: </p>
+                       
+                      <DocumentosItem titulo="Tutorial – Pagamento de Notas Fiscais" link="https://docs.google.com/document/u/1/d/e/2PACX-1vQoon-w01vO032teprQPhBj3iDVJZm9AfYVsucsgzHU5VA3b_xMaKQGl2pUSq_F6cM9QUoKY6YSpw51/pub" />
+
                     </>
                     )}>
                         Cartilhas
@@ -353,12 +356,12 @@ const Menu = (props) => {
                     <li><a onClick={() => openModal(
                         'Manuais', <>
 
-<h1 className='titulo-atendimento'>Manual de Compras e Contratações da UFRN</h1>
-          <p>
-            A Diretoria de Compras disponibiliza o Manual de Compras e Contratações da UFRN, conforme link abaixo:
-          </p>
+                        <h1 className='titulo-atendimento'>Manual de Compras e Contratações da UFRN</h1>
+                        <p>
+                            A Diretoria de Compras disponibiliza o Manual de Compras e Contratações da UFRN, conforme link abaixo:
+                        </p>
 
-          <DocumentosItem titulo="Manual de Compras e Contratações da UFRN" link="https://docs.google.com/presentation/d/1Vt7YE6FLAjqL7EQGSPCvSczGCFfNvOV8vGhX90I9LMU/edit#slide=id.p" />
+                        <DocumentosItem titulo="Manual de Compras e Contratações da UFRN" link="https://docs.google.com/presentation/d/1Vt7YE6FLAjqL7EQGSPCvSczGCFfNvOV8vGhX90I9LMU/edit#slide=id.p" />
                     </>
                     )}>
                         Manuais
@@ -455,13 +458,14 @@ const Menu = (props) => {
                             <h1 className='titulo-atendimento'>Chefia</h1>
                             <div className='grid-contatos'>
                                 <ContatoModal nome='Adrielly Nunes (Titular)' emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
+                                <ContatoModal nome='Jorge Melo (Substituto)' emailPrimario="jorge.melo@ufrn.br" telefone="(84) 98855-2302" />
                             </div>
 
                             <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
 
                             <div className='grid-contatos'>
-                                <ContatoModal nome='Flávio Albuquerque' emailPrimario="flavio.carlos@ufrn.br" telefone="(84) 99126-5808" />
-                                <ContatoModal nome='Jorge Melo' emailPrimario="jorge.melo@ufrn.br" telefone="(84) 98855-2302" />
+                                <ContatoModal nome='Daniel Oliveira' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
+                                <ContatoModal nome='Flávio Albuquerque' emailPrimario="flavio.carlos@ufrn.br" telefone="(84) 99919-8964" />
                                 <ContatoModal nome='Pedro Rocha' emailPrimario="pedro.rocha@ufrn.br" telefone="(84) 98704-1923" />
                                 <ContatoModal nome='Renato Carvalho' emailPrimario="renato.carvalho@ufrn.br" telefone="(81) 99928-5281" />
                                 <ContatoModal nome='Thays Lins' emailPrimario="thays.lins@ufrn.br" telefone="(84) 98166-5859" />

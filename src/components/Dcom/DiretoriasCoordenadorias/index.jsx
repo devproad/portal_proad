@@ -181,7 +181,7 @@ const DiretoriasCoord = (props) => {
               </p>
 
               <ContatoModal nome='Adrielly Nunes (Titular)'emailPrimario="adrielly.vital@ufrn.br" telefone="(84) 99632-8004" />
-
+              <ContatoModal nome='Jorge Melo (Substituto)' emailPrimario="jorge.melo@ufrn.br" telefone="(84) 98855-2302" />
             </p>
           </>
           )} >
