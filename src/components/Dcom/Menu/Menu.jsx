@@ -464,7 +464,6 @@ const Menu = (props) => {
                             <h1 className='titulo-atendimento'>Gestores de planejamento</h1>
 
                             <div className='grid-contatos'>
-                                <ContatoModal nome='Daniel Oliveira' emailPrimario="daniel.nazareno@ufrn.br" telefone="(84) 98821-4683" />
                                 <ContatoModal nome='Flávio Albuquerque' emailPrimario="flavio.carlos@ufrn.br" telefone="(84) 99919-8964" />
                                 <ContatoModal nome='Pedro Rocha' emailPrimario="pedro.rocha@ufrn.br" telefone="(84) 98704-1923" />
                                 <ContatoModal nome='Renato Carvalho' emailPrimario="renato.carvalho@ufrn.br" telefone="(81) 99928-5281" />
@@ -500,7 +499,6 @@ const Menu = (props) => {
 
                             <div className='grid-contatos'>
                                 <ContatoModal nome='Stefferson Sarthour' emailPrimario="stefferson.sarthour@ufrn.br" telefone="(84) 99629-6551" />
-                                <ContatoModal nome='Klayton Lima' emailPrimario="klayton.figueiredo@ufrn.br" telefone="(84) 99854-2266" />
                                 <ContatoModal nome='Rosana Garcia' emailPrimario="rosana.garcia@ufrn.br" telefone="(84) 98838-0349" />
                             </div>
 
@@ -554,7 +552,7 @@ const Menu = (props) => {
                                 <ContatoModal nome="Diego Brito" emailPrimario="diego.brito@ufrn.br" telefone="(84) 99660-9085" />
                                 <ContatoModal nome="Leonardo Belchior" emailPrimario="leonardo.belchior@ufrn.br" telefone="(84) 99404-3237" />
                                 <ContatoModal nome="Paulo Pereira" emailPrimario="paulo.jose.pereira@ufrn.br" telefone="(84) 99952-6209" />
-                                <ContatoModal nome="Patrícia Melo" emailPrimario="patricia.melo@ufrn.br" telefone="(84) 99630-9934" />
+                                <ContatoModal nome="Klayton Lima" emailPrimario="klayton.figueiredo@ufrn.br" telefone="(84) 99854-2266" />
                             </div>
 
                         </>
